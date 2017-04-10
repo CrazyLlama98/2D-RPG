@@ -8,10 +8,9 @@
 #include "Stage.h"
 #include "DebugActor.h"
 #include "Game.h"
-
+#include "Utils.h"
 
 using namespace oxygine;
-
 
 // This function is called each frame
 int mainloop()

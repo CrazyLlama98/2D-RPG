@@ -5,15 +5,15 @@ using namespace oxygine;
 
 Resources gameResources;
 
-game_preinit() { }
+void game_preinit() { }
 
-game_init() {
-	gameResources.loadXML("res.xml");
+void game_init() {
+	//gameResources.loadXML("res.xml");
 
 }
 
-game_update() { }
+void game_update() { }
 
-game_destroy() {
+void game_destroy() {
 	gameResources.free();
 }
