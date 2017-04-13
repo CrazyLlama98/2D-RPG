@@ -1,7 +1,6 @@
 #pragma once
 #include "oxygine-framework.h"
-#include "Box2D\Box2D.h"
-//using namespace oxygine;
+#include "Box2D/Box2D.h"
 
 class Entity : public oxygine::Sprite 
 {
