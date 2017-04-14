@@ -5,7 +5,8 @@
 class Entity : public oxygine::Sprite 
 {
 public:
-	Entity(b2World *_world, b2BodyType _def, const oxygine::Vector2 &_pos, const float _scale = 1.0f);
+	Entity(b2World *_world, b2BodyType _def, const oxygine::Vector2 &_pos, 
+		   const float _scale = 1.0f);
 
 	virtual void DealDamage() = 0;
 	virtual void Respawn() = 0;
