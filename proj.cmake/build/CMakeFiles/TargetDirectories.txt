@@ -1,0 +1,14 @@
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/install.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/list_install_components.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/rebuild_cache.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/install/strip.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/install/local.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/edit_cache.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework/CMakeFiles/install.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework/CMakeFiles/list_install_components.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework/CMakeFiles/rebuild_cache.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework/CMakeFiles/oxygine-framework.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework/CMakeFiles/install/strip.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework/CMakeFiles/install/local.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework/CMakeFiles/edit_cache.dir
