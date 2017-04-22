@@ -5,8 +5,9 @@
 class Plant : public oxygine::Sprite
 {
 public:
-	Plant(b2World *_world, const oxygine::Vector2 &_pos, 
+	Plant(const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, 
 		  const float _scale = 1.0f);
+	~Plant();
 
 	void Click(oxygine::Event *_event);
 };

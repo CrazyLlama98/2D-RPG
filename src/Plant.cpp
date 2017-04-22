@@ -1,7 +1,8 @@
 #include "Plant.h"
 #include "Utils.h"
 
-Plant::Plant(b2World *_world, const oxygine::Vector2 &_pos, const float _scale)
+Plant::Plant(const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, 
+			 const float _scale)
 {
 	setAnchor(oxygine::Vector2(0.5f, 0.5f));
 	setTouchChildrenEnabled(false);
@@ -20,6 +21,13 @@ Plant::Plant(b2World *_world, const oxygine::Vector2 &_pos, const float _scale)
 	fixtureDef.friction = 0.3f;
 	body->CreateFixture(&fixtureDef);
 	body->SetUserData(this);
+
+	// setResAnim(_res);
+}
+
+Plant::~Plant()
+{
+	detach();
 }
 
 void Plant::Click(oxygine::Event *_event) { return; }

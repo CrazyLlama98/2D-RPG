@@ -839,6 +839,8 @@ Game.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.h
 oxygine-framework.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/oxygine-framework.h
+Utils.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.h
 
@@ -889,8 +891,6 @@ DebugActor.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/DebugActor.h
 Game.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.h
-Utils.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
 SDL_main.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SDL_main.h
 SDL.h
