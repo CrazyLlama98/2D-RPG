@@ -15,5 +15,5 @@ void game_init() {
 void game_update() { }
 
 void game_destroy() {
-	gameResources.free();
+	//gameResources.free();
 }
