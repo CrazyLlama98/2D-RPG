@@ -1,5 +1,5 @@
 #pragma once
-#include "Entity"
+#include "Entity.h"
 #define ENTITY_CONSTRUCT b2World *_world, const oxygine::Vector2 &_pos, const float _scale = 1.0f
 
 class Hero : public Entity
