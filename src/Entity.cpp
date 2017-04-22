@@ -1,7 +1,9 @@
 #include "Entity.h"
 #include "Utils.h"
 
-Entity::Entity(b2World *_world, b2BodyType _bodyDefinition, const oxygine::Vector2 & _pos, const float _scale)
+Entity::Entity(const oxygine::ResAnim *_res, const int _health, const int _damage, 
+		 const int _xp, b2World *_world, b2BodyType _bodyDefinition, 
+		 const oxygine::Vector2 & _pos, const float _scale)
 {
 	setAnchor(oxygine::Vector2(0.5f, 0.5f));
 	setTouchChildrenEnabled(false);
@@ -19,4 +21,14 @@ Entity::Entity(b2World *_world, b2BodyType _bodyDefinition, const oxygine::Vecto
 	fixtureDef.friction = 0.3f;
 	body->CreateFixture(&fixtureDef);
 	body->SetUserData(this);
+
+	setResAnim(_res);
+	SetHealth(_health);
+	SetDamage(_damage);
+	SetXp(_xp);
+}
+
+Entity::~Entity()
+{
+	detach();
 }

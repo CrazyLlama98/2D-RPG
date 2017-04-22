@@ -4,7 +4,7 @@
 class SpecialPlant : public Plant
 {
 public:
-	SpecialPlant(b2World *_world, const oxygine::Vector2 &_pos, 
+	SpecialPlant(oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, 
 				 const float _scale = 1.0f);
 
 	void Click(oxygine::Event *_event);

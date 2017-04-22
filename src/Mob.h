@@ -5,7 +5,8 @@
 class Mob : public Entity 
 {
 public:
-	Mob(const int _health, const int _damage, const int _xp, ENTITY_CONSTRUCT);
+	Mob(const oxygine::ResAnim *_res, const int _health, const int _damage,
+		const int _xp, ENTITY_CONSTRUCT);
 
 	void DealDamage();
 	void Respawn();

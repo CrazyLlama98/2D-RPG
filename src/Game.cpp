@@ -1,15 +1,15 @@
 #include "Game.h"
 #include "oxygine-framework.h"
+#include "Utils.h"
 
 using namespace oxygine;
 
-Resources gameResources;
+// Resources gameResources;
 
 void game_preinit() { }
 
 void game_init() {
 	//gameResources.loadXML("res.xml");
-
 }
 
 void game_update() { }
