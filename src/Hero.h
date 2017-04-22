@@ -15,6 +15,11 @@ public:
 	void AddHealth(const int _health){ health = health + _haleth; };
 	
 	void AddXp(const int _xp){ xp = xp + _xp};
+    
+    void DealDamage();
+    void Respawn();
+    void Die();
+    void Click(oxygine::Event *_event);
 private:
 	int armor; 
 }
