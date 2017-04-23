@@ -23,4 +23,4 @@ public:
     void Click(oxygine::Event *_event);
 private:
 	int armor; 
-}
+};

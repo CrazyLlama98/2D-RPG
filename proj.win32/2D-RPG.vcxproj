@@ -159,7 +159,12 @@
     <ClCompile Include="..\box2d\Box2D\Rope\b2Rope.cpp" />
     <ClCompile Include="..\src\Entity.cpp" />
     <ClCompile Include="..\src\Game.cpp" />
+    <ClCompile Include="..\src\Hero.cpp" />
     <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Map.cpp" />
+    <ClCompile Include="..\src\Mob.cpp" />
+    <ClCompile Include="..\src\Plant.cpp" />
+    <ClCompile Include="..\src\SpecialPlant.cpp" />
     <ClCompile Include="..\src\Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -212,6 +217,11 @@
     <ClInclude Include="..\box2d\Box2D\Rope\b2Rope.h" />
     <ClInclude Include="..\src\Entity.h" />
     <ClInclude Include="..\src\Game.h" />
+    <ClInclude Include="..\src\Hero.h" />
+    <ClInclude Include="..\src\Map.h" />
+    <ClInclude Include="..\src\Mob.h" />
+    <ClInclude Include="..\src\Plant.h" />
+    <ClInclude Include="..\src\SpecialPlant.h" />
     <ClInclude Include="..\src\Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

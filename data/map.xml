@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="18" height="11" tilewidth="64" tileheight="64" nextobjectid="37">
+ <properties>
+  <property name="enemyTint" type="color" value="#ffa33636"/>
+ </properties>
+ <tileset firstgid="1" name="outdoor" tilewidth="64" tileheight="64" tilecount="400" columns="18">
+  <image source=".\\..\\data\\Sprites.png" width="1280" height="823"/>
+  <terraintypes>
+   <terrain name="Grass" tile="0"/>
+   <!-- <terrain name="Dirt" tile="100"/> -->
+   <!-- <terrain name="Dark Dirt" tile="34"/> -->
+   <!-- <terrain name="Water" tile="171"/> -->
+  </terraintypes>
+</tileset>
+<layer name="Ground" width="18" height="11">
+  <data>
+   <tile gid="66" nr-repeats="9"/> <!--zid-->
+   <tile gid="107" nr-repeats="1"/> <!--iarba + poarta-->
+   <tile gid="66" nr-repeats="9"/> <!--zid-->
+   <tile gid="44" nr-repeats="16"/> <!--iarba-->
+   <tile gid="66" nr-repeats="2"/> <!--zid-->
+   <tile gid="44" nr-repeats="16"/> <!--iarba-->
+   <tile gid="66" nr-repeats="2"/> <!--zid-->
+   <tile gid="44" nr-repeats="2"/> <!--iarba-->
+   <tile gid="6" nr-repeats="1"/>
+   <tile gid="7" nr-repeats="1"/>  <!--namol dif modele-->
+   <tile gid="8" nr-repeats="1"/>
+   <tile gid="44" nr-repeats="11"/>
+   <tile gid="66" nr-repeats="2"/> <!--zid-->
+   <tile gid="44" nr-repeats="1"/>
+   <tile gid="6" nr-repeats="1"/>
+   <tile gid="30" nr-repeats="1"/>
+   <tile gid="27" nr-repeats="1"/>
+   <tile gid="29" nr-repeats="1"/>
+   <tile gid="7" nr-repeats="4"/>
+   <tile gid="8" nr-repeats="1"/>
+   <tile gid="44" nr-repeats="6"/>
+   <tile gid="66" nr-repeats="2"/> <!--zid-->
+   <tile gid="44" nr-repeats="1"/>
+   <tile gid="26" nr-repeats="1"/>
+   <tile gid="1" nr-repeats="1"/>
+   <tile gid="3" nr-repeats="1"/>
+   <tile gid="27" nr-repeats="5"/>
+   <tile gid="28" nr-repeats="1"/>
+   <tile gid="44" nr-repeats="6"/>
+   <tile gid="66" nr-repeats="2"/> <!--zid-->
+   <tile gid="44" nr-repeats="1"/>
+   <tile gid="26" nr-repeats="1"/>
+   <tile gid="41" nr-repeats="1"/>
+   <tile gid="43" nr-repeats="1"/>
+   <tile gid="27" nr-repeats="5"/>
+   <tile gid="28" nr-repeats="1"/>
+   <tile gid="44" nr-repeats="6"/>
+   <tile gid="66" nr-repeats="2"/> <!--zid-->
+   <tile gid="44" nr-repeats="1"/>
+   <tile gid="46" nr-repeats="1"/>
+   <tile gid="47" nr-repeats="7"/>
+   <tile gid="48" nr-repeats="1"/>
+   <tile gid="44" nr-repeats="6"/>
+   <tile gid="66" nr-repeats="2"/> <!--zid-->
+   <tile gid="44" nr-repeats="16"/>
+   <tile gid="66" nr-repeats="2"/> <!--zid-->
+   <tile gid="44" nr-repeats="16"/>
+   <tile gid="66" nr-repeats="19"/> <!--zid-->
+   <tile gid="66" nr-repeats="1000"/>
+  </data>
+ </layer>
+ <layer name="OnGround" width="18" height="11">
+	<data>
+		<tile gid="16" nr-repeats="9"/> <!--gol-->
+		<tile gid="215" nr-repeats="1"/>
+		<tile gid="16" nr-repeats="1000"/> <!--gol-->
+	</data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="1" name="maggots" type="location" x="435" y="74" width="155" height="99">
+   <properties>
+    <property name="spawncount" type="int" value="5"/>
+    <property name="spawntype" value="maggot"/>
+   </properties>
+  </object>
+  <object id="2" name="discover chest" type="trigger" x="201" y="200" width="127" height="127">
+   <properties>
+    <property name="script" value="chest-discovered.lua"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="3" name="unreachable" type="Fixture" x="2" y="158">
+   <properties>
+    <property name="friction" type="float" value="1"/>
+    <property name="static" type="bool" value="true"/>
+   </properties>
+   <polygon points="0,0 55,-23 96,-117 110,-61 104,-42 119,-33 116,6 104,9 100,36 60,43 53,58 43,58 34,74 21,69 18,90 0,89"/>
+  </object>
+  <object id="5" name="guard" type="NPC" x="22" y="361">
+   <polyline points="-3,120 87,91 154,96 181,16 273,-1"/>
+  </object>
+  <object id="6" name="guard" type="NPC" x="277" y="18">
+   <polyline points="0,0 75,78 133,82 176,179 274,183"/>
+  </object>
+  <object id="10" gid="282" x="413.333" y="225.333" width="16" height="16"/>
+  <object id="11" gid="282" x="421.667" y="218" width="16" height="16"/>
+  <object id="12" gid="2147483930" x="423" y="235.333" width="16" height="16"/>
+  <object id="13" gid="282" x="5" y="70" width="16" height="16"/>
+  <object id="14" gid="282" x="-3.66667" y="80.3333" width="16" height="16"/>
+  <object id="16" gid="283" x="538" y="418.333" width="16" height="16"/>
+  <object id="17" gid="283" x="407.667" y="462" width="16" height="16"/>
+  <object id="18" gid="283" x="417" y="473.667" width="16" height="16"/>
+  <object id="19" gid="283" x="402.667" y="469" width="16" height="16"/>
+  <object id="21" gid="2147483930" x="683.333" y="260.5" width="16" height="16"/>
+  <object id="22" gid="282" x="692.167" y="269.167" width="16" height="16"/>
+  <object id="23" gid="282" x="701.667" y="247.833" width="16" height="16"/>
+  <object id="24" gid="282" x="688.5" y="242" width="16" height="16"/>
+  <object id="25" gid="282" x="670.5" y="263.5" width="16" height="16"/>
+  <object id="26" gid="282" x="680" y="284" width="16" height="16"/>
+  <object id="27" gid="282" x="643.833" y="283.667" width="16" height="16"/>
+  <object id="28" gid="282" x="63.4165" y="386" width="16" height="16"/>
+  <object id="29" gid="282" x="9.0835" y="356.167" width="16" height="16"/>
+  <object id="30" gid="282" x="11.9165" y="385" width="16" height="16"/>
+  <object id="31" gid="282" x="54.2495" y="378.5" width="16" height="16"/>
+  <object id="32" gid="2147483930" x="2.4165" y="364.5" width="16" height="16"/>
+  <object id="33" gid="2147483930" x="41.5835" y="382.833" width="16" height="16"/>
+  <object id="34" type="Sign" gid="257" x="670.667" y="87" width="16" height="16">
+   <properties>
+    <property name="text" value="East West"/>
+   </properties>
+  </object>
+  <object id="36" name="player-start" type="Location" x="192" y="160" width="16" height="16"/>
+ </objectgroup>
+</map>

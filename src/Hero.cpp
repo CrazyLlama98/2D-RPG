@@ -18,7 +18,7 @@ void Hero::AddDamage(const int _damage)
 
 void Hero::AddHealth(const int _health)
 {
-    Sethealth(GetHealth() + _health);
+    SetHealth(GetHealth() + _health);
 }
 
 void Hero::AddXp(const int _xp)
