@@ -822,6 +822,14 @@ Box2D/Rope/b2Rope.h
 Box2D/Common/b2Draw.h
 -
 
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.cpp
+Character.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
+Entity.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
+
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.cpp
 Entity.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
@@ -834,6 +842,14 @@ oxygine-framework.h
 Box2D/Box2D.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2D/Box2D.h
 
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.cpp
+Environment.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
+Entity.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
+
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.cpp
 Game.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.h
@@ -841,36 +857,34 @@ oxygine-framework.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/oxygine-framework.h
 Utils.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
+Map.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.h
 
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Mob.cpp
-Mob.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Mob.h
-
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Mob.h
-Entity.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
-
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Plant.cpp
-Plant.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Plant.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.cpp
+Map.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
+core/file.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/core/file.h
+res/SingleResAnim.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res/SingleResAnim.h
+Material.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Material.h
 Utils.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
 
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Plant.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
 oxygine-framework.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/oxygine-framework.h
-Box2D/Box2D.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2D/Box2D.h
 
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialPlant.cpp
-SpecialPlant.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialPlant.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.cpp
+SpecialEnvironment.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
 
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialPlant.h
-Plant.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Plant.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
+Environment.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.cpp
 Utils.h
@@ -1061,6 +1075,10 @@ oxygine-include.h
 /home/andu/oxygine/oxygine-framework/oxygine/src/oxygine-include.h
 Sprite.h
 /home/andu/oxygine/oxygine-framework/oxygine/src/Sprite.h
+
+/home/andu/oxygine/oxygine-framework/oxygine/src/Material.h
+oxygine-include.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/oxygine-include.h
 
 /home/andu/oxygine/oxygine-framework/oxygine/src/MemoryTexture.h
 oxygine_include.h

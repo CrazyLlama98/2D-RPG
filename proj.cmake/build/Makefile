@@ -1422,6 +1422,33 @@ home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.cpp.s:
 	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.cpp.s
 .PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.cpp.s
 
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.o
+
+# target to build an object file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.i: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.i
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.i
+
+# target to preprocess a source file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.i:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.i
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.i
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.s: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.s
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.s
+
+# target to generate assembly for a file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.s:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.s
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.s
+
 home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.cpp.o
 
 .PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.o
@@ -1448,6 +1475,33 @@ home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.s: home/andu/Desktop/Fa
 home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.cpp.s:
 	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.cpp.s
 .PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.cpp.s
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.o
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.o
+
+# target to build an object file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.o:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.o
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.o
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.i: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.i
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.i
+
+# target to preprocess a source file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.i:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.i
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.i
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.s: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.s
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.s
+
+# target to generate assembly for a file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.s:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.s
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.s
 
 home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o
 
@@ -1476,86 +1530,59 @@ home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.s
 .PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.s
 
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.o
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o
 
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.o
-
-# target to build an object file
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.o:
-	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.o
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.o
-
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.i: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.i
-
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.i
-
-# target to preprocess a source file
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.i:
-	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.i
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.i
-
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.s: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.s
-
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.s
-
-# target to generate assembly for a file
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.s:
-	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.s
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.cpp.s
-
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.o
-
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.o
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.o
 
 # target to build an object file
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.o:
-	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.o
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.o
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o
 
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.i: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.i
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.i: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.i
 
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.i
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.i
 
 # target to preprocess a source file
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.i:
-	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.i
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.i
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.i:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.i
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.i
 
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.s: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.s
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.s: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.s
 
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.s
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.s
 
 # target to generate assembly for a file
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.s:
-	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.s
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.cpp.s
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.s:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.s
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.s
 
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.o
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o
 
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.o
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.o
 
 # target to build an object file
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.o:
-	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.o
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.o
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o
 
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.i: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.i
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.i: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.i
 
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.i
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.i
 
 # target to preprocess a source file
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.i:
-	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.i
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.i
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.i:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.i
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.i
 
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.s: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.s
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.s: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.s
 
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.s
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.s
 
 # target to generate assembly for a file
-home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.s:
-	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.s
-.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.cpp.s
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.s:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.s
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.s
 
 home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Utils.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Utils.cpp.o
 
@@ -1763,21 +1790,24 @@ help:
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.o"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.i"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.s"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.o"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.i"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.s"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.o"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.i"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.s"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.o"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.i"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.s"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.o"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.i"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.s"
-	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.o"
-	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.i"
-	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Mob.s"
-	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.o"
-	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.i"
-	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Plant.s"
-	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.o"
-	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.i"
-	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialPlant.s"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.o"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.i"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.s"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.o"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.i"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.s"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Utils.o"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Utils.i"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Utils.s"
