@@ -1,11 +1,10 @@
 #pragma once
-#include "Plant.h"
+#include "Environment.h"
 
-class SpecialPlant : public Plant
+class SpecialEnvironment : public Environment
 {
 public:
-	SpecialPlant(oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, 
-				 const float _scale = 1.0f);
+	SpecialEnvironment(ENTITY_CONSTRUCT);
 
 	void Click(oxygine::Event *_event);
 

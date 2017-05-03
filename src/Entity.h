@@ -5,25 +5,9 @@
 class Entity : public oxygine::Sprite 
 {
 public:
-	Entity(const oxygine::ResAnim *_res, const int _health, const int _damage, 
-		 const int _xp, b2World *_world, b2BodyType _def, const oxygine::Vector2 &_pos, 
-		 const float _scale = 1.0f);
+	Entity(const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, 
+		const b2BodyType _def, const float _scale = 1.0f);
 	~Entity();
 
-	virtual void DealDamage() = 0;
-	virtual void Respawn() = 0;
-	virtual void Die() = 0;
 	virtual void Click(oxygine::Event *_event) = 0;
-	
-	int GetHealth() const { return health; };
-	void SetHealth(const int _health) { health = _health; };
-
-	int GetDamage() const { return damage; };
-	void SetDamage(const int _damage) { damage = _damage; };
-
-	int GetXp() const { return xp; };
-	void SetXp(const int _xp) { xp = _xp; };
-
-private:
-	int xp, health, damage;
 };

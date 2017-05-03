@@ -12,7 +12,7 @@ file(GLOB_RECURSE BOX2DSRC
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OXYGINE_CXX_FLAGS}")
 
-add_executable(2D-RPG ${BOX2DSRC} ../src/Game.cpp ../src/main.cpp ../src/Entity.cpp ../src/Utils.cpp ../src/Mob.cpp ../src/Plant.cpp ../src/SpecialPlant.cpp  ../src/Game.h ../src/Entity.h ../src/Utils.h ../src/Mob.h ../src/Plant.h ../src/SpecialPlant.h)
+add_executable(2D-RPG ${BOX2DSRC} ../src/Game.cpp ../src/main.cpp ../src/Entity.cpp ../src/Utils.cpp ../src/Character.cpp ../src/Environment.cpp ../src/SpecialEnvironment.cpp ../src/Map.cpp  ../src/Game.h ../src/Entity.h ../src/Utils.h ../src/Character.h ../src/Environment.h ../src/SpecialEnvironment.h ../src/Map.h)
 source_group(box2d FILES ${BOX2DSRC})
 include_directories(../box2d)
 

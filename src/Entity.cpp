@@ -1,14 +1,13 @@
 #include "Entity.h"
 #include "Utils.h"
 
-Entity::Entity(const oxygine::ResAnim *_res, const int _health, const int _damage, 
-		 const int _xp, b2World *_world, b2BodyType _bodyDefinition, 
-		 const oxygine::Vector2 & _pos, const float _scale)
+Entity::Entity(const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 & _pos, 
+	const b2BodyType _def, const float _scale)
 {
 	setAnchor(oxygine::Vector2(0.5f, 0.5f));
 	setTouchChildrenEnabled(false);
 	b2BodyDef bodyDef;
-	bodyDef.type = _bodyDefinition;
+	bodyDef.type = _def;
 	bodyDef.position = Utils::convert(_pos);
 	b2Body* body = _world->CreateBody(&bodyDef);
 	setUserData(body);
@@ -23,9 +22,6 @@ Entity::Entity(const oxygine::ResAnim *_res, const int _health, const int _damag
 	body->SetUserData(this);
 
 	setResAnim(_res);
-	SetHealth(_health);
-	SetDamage(_damage);
-	SetXp(_xp);
 }
 
 Entity::~Entity()

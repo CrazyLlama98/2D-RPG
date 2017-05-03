@@ -1,29 +1,9 @@
 #include "Hero.h"
-#define ENTITY_PARAMS b2World *_world, const oxygine::Vector2 &_pos, const float _scale
 
-Hero::Hero(const oxygine::ResAnim *_res, const int _health, const int _damage, const int _xp, const int _armor, ENTITY_PARAMS) : Entity(_res, _health, _damage, _xp, _world, b2_dynamicBody, _pos, _scale)
+Hero::Hero(const int _health, const int _damage, const int _xp, const int _armor, CHARACTER_PARAMS) : 
+	Character(_health, _damage, _xp, _res, _world, _pos, b2_dynamicBody, _scale)
 {
-    SetArmor(_armor);
-}
-
-void Hero::AddArmor(const int _armor)
-{
-    SetArmor(GetArmor() + _armor);
-}
-
-void Hero::AddDamage(const int _damage)
-{
-    SetDamage(GetDamage() + _damage);
-}
-
-void Hero::AddHealth(const int _health)
-{
-    SetHealth(GetHealth() + _health);
-}
-
-void Hero::AddXp(const int _xp)
-{
-    SetXp(GetXp() + _xp);
+    armor = _armor;
 }
 
 void Hero::DealDamage(){ };
