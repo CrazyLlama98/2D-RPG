@@ -1,10 +1,24 @@
 #include "MainActor.h"
+#include "Utils.h"
+#include "Map.h"
+#include "Hero.h"
+#include "res.h"
+#include <iostream>
+
+using namespace oxygine;
 
 MainActor::MainActor(): _world(0)
 {
     
-    setSize(oxygine::getStage()->getSize());
+    setSize(getStage()->getSize());
     
-    _world = new b2World(b2Vec2(0, 10));
-    
+	spMap map = new Map("map.xml", "Sprites.png");
+	addChild(map);
+
+    _world = new b2World(b2Vec2(0, 10));   
+
+	spHero hero = new Hero(100, 10, 0, 100, res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
+	std::cout << (hero->getPosition()).x << '\n';
+	// hero->setPosition(getSize() / 2);
+	addChild(hero);
 }
