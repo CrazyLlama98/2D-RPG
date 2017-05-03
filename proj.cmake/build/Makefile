@@ -1530,6 +1530,33 @@ home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.s
 .PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.s
 
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.o
+
+# target to build an object file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.i: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.i
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.i
+
+# target to preprocess a source file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.i:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.i
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.i
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.s: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.s
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.s
+
+# target to generate assembly for a file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.s:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.s
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.s
+
 home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o
 
 .PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.o
@@ -1802,6 +1829,9 @@ help:
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.o"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.i"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.s"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.o"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.i"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.s"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.o"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.i"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.s"

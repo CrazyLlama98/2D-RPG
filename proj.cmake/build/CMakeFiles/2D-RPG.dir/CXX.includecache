@@ -859,8 +859,18 @@ Utils.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
 Map.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
+Hero.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.h
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.cpp
+Hero.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
+Character.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.cpp
 Map.h

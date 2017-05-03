@@ -54,6 +54,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.cpp" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.cpp.o"
   "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.cpp" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Environment.cpp.o"
   "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.cpp" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o"
+  "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.cpp" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o"
   "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.cpp" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o"
   "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.cpp" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o"
   "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.cpp" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Utils.cpp.o"

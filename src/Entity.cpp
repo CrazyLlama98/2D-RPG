@@ -4,6 +4,8 @@
 Entity::Entity(const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 & _pos, 
 	const b2BodyType _def, const float _scale)
 {
+	setResAnim(_res);
+
 	setAnchor(oxygine::Vector2(0.5f, 0.5f));
 	setTouchChildrenEnabled(false);
 	b2BodyDef bodyDef;
@@ -20,8 +22,6 @@ Entity::Entity(const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vec
 	fixtureDef.friction = 0.3f;
 	body->CreateFixture(&fixtureDef);
 	body->SetUserData(this);
-
-	setResAnim(_res);
 }
 
 Entity::~Entity()
