@@ -7,88 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04059FEA1872027500BA6557 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A57D861872012D0068B1E5 /* SDL2.framework */; };
-		04059FEB1872027B00BA6557 /* liboxygine_macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FE41872026200BA6557 /* liboxygine_macosx.a */; };
 		04059FED187202A200BA6557 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FEC187202A200BA6557 /* libz.dylib */; };
 		04059FEF187202AC00BA6557 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FEE187202AC00BA6557 /* OpenGL.framework */; };
 		0405A00018720D2200BA6557 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FF01872031A00BA6557 /* libjpeg.a */; };
 		0405A00118720D2200BA6557 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04059FF11872031A00BA6557 /* libpng.a */; };
 		049B57321871FBE900EF3C66 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049B57311871FBE900EF3C66 /* Cocoa.framework */; };
 		049B574A1871FBE900EF3C66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049B57491871FBE900EF3C66 /* Images.xcassets */; };
-
-		
+		5321FF8A1EBA392900DE59C5 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321FF791EBA392900DE59C5 /* Entity.cpp */; };
+		5321FF8B1EBA392900DE59C5 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321FF7B1EBA392900DE59C5 /* Game.cpp */; };
+		5321FF8C1EBA392900DE59C5 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321FF7D1EBA392900DE59C5 /* Hero.cpp */; };
+		5321FF8D1EBA392900DE59C5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321FF7F1EBA392900DE59C5 /* main.cpp */; };
+		5321FF8E1EBA392900DE59C5 /* MainActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321FF801EBA392900DE59C5 /* MainActor.cpp */; };
+		5321FF8F1EBA392900DE59C5 /* Mob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321FF821EBA392900DE59C5 /* Mob.cpp */; };
+		5321FF901EBA392900DE59C5 /* Plant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321FF841EBA392900DE59C5 /* Plant.cpp */; };
+		5321FF911EBA392900DE59C5 /* SpecialPlant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321FF861EBA392900DE59C5 /* SpecialPlant.cpp */; };
+		5321FF921EBA392900DE59C5 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321FF881EBA392900DE59C5 /* Utils.cpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		04059FE31872026200BA6557 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 049B52BB1871EDE900EF3C66;
-			remoteInfo = oxygine_macosx;
-		};
-		04059FE81872027200BA6557 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 049B52BA1871EDE900EF3C66;
-			remoteInfo = oxygine_macosx;
-		};
-		04A57D851872012D0068B1E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BECDF66C0761BA81005FE872;
-			remoteInfo = Framework;
-		};
-		04A57D871872012D0068B1E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BECDF6B30761BA81005FE872;
-			remoteInfo = "Static Library";
-		};
-		04A57D891872012D0068B1E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DB31407717554B71006C0E22;
-			remoteInfo = "Shared Library";
-		};
-		04A57D8B1872012D0068B1E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BECDF6BE0761BA81005FE872;
-			remoteInfo = "Standard DMG";
-		};
-		04A57D8E187201EF0068B1E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BECDF5FE0761BA81005FE872;
-			remoteInfo = Framework;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04059FEC187202A200BA6557 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		04059FEE187202AC00BA6557 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		04059FF01872031A00BA6557 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = ../../../../../../../oxygine/oxygine-framework//oxygine/third_party/macosx/libraries/libjpeg.a; sourceTree = "<group>"; };
-		04059FF11872031A00BA6557 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = ../../../../../../../oxygine/oxygine-framework//oxygine/third_party/macosx/libraries/libpng.a; sourceTree = "<group>"; };
-		04059FF4187203A600BA6557 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = ../../../../../../../oxygine/oxygine-framework//oxygine/third_party/ios/libraries/libjpeg.a; sourceTree = "<group>"; };
-		04059FF5187203A600BA6557 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = ../../../../../../../oxygine/oxygine-framework//oxygine/third_party/ios/libraries/libpng.a; sourceTree = "<group>"; };
-		049B572E1871FBE900EF3C66 /* demo_macosx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2D-RPG_macosx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04059FF01872031A00BA6557 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = "../oxygine-framework-with-sdl/oxygine-framework/oxygine/third_party/macosx/libraries/libjpeg.a"; sourceTree = "<group>"; };
+		04059FF11872031A00BA6557 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = "../oxygine-framework-with-sdl/oxygine-framework/oxygine/third_party/macosx/libraries/libpng.a"; sourceTree = "<group>"; };
+		04059FF4187203A600BA6557 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = "../oxygine-framework-with-sdl/oxygine-framework/oxygine/third_party/ios/libraries/libjpeg.a"; sourceTree = "<group>"; };
+		04059FF5187203A600BA6557 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = "../oxygine-framework-with-sdl/oxygine-framework/oxygine/third_party/ios/libraries/libpng.a"; sourceTree = "<group>"; };
+		049B572E1871FBE900EF3C66 /* 2D-RPG_macosx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2D-RPG_macosx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		049B57311871FBE900EF3C66 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		049B57341871FBE900EF3C66 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		049B57351871FBE900EF3C66 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		049B57361871FBE900EF3C66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		049B57391871FBE900EF3C66 /* demo_macosx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "2D-RPG_macosx-Info.plist"; sourceTree = "<group>"; };
-		049B57491871FBE900EF3C66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = 2D-RPG/Images.xcassets; sourceTree = "<group>"; };
+		049B57391871FBE900EF3C66 /* 2D-RPG_macosx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "2D-RPG_macosx-Info.plist"; sourceTree = "<group>"; };
+		049B57491871FBE900EF3C66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "2D-RPG/Images.xcassets"; sourceTree = "<group>"; };
 		049B57501871FBE900EF3C66 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-
-		04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oxygine_macosx.xcodeproj; path = ../../../../../../../oxygine/oxygine-framework//oxygine/SDL/macosx/oxygine_macosx/oxygine_macosx.xcodeproj; sourceTree = "<group>"; };
-		04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = ../../../../../../../oxygine//SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
+		04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oxygine_macosx.xcodeproj; path = "../oxygine-framework-with-sdl/oxygine-framework/oxygine/SDL/macosx/oxygine_macosx/oxygine_macosx.xcodeproj"; sourceTree = "<group>"; };
+		04A57D7E1872012A0068B1E5 /* oxygine_macosx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oxygine_macosx.xcodeproj; path = "../oxygine-framework-with-sdl/SDL/Xcode/oxygine_macosx.xcodeproj"; sourceTree = "<group>"; };
+		5321FF791EBA392900DE59C5 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Entity.cpp; path = ../src/Entity.cpp; sourceTree = "<group>"; };
+		5321FF7A1EBA392900DE59C5 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = ../src/Entity.h; sourceTree = "<group>"; };
+		5321FF7B1EBA392900DE59C5 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = ../src/Game.cpp; sourceTree = "<group>"; };
+		5321FF7C1EBA392900DE59C5 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../src/Game.h; sourceTree = "<group>"; };
+		5321FF7D1EBA392900DE59C5 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Hero.cpp; path = ../src/Hero.cpp; sourceTree = "<group>"; };
+		5321FF7E1EBA392900DE59C5 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hero.h; path = ../src/Hero.h; sourceTree = "<group>"; };
+		5321FF7F1EBA392900DE59C5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = "<group>"; };
+		5321FF801EBA392900DE59C5 /* MainActor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainActor.cpp; path = ../src/MainActor.cpp; sourceTree = "<group>"; };
+		5321FF811EBA392900DE59C5 /* libjpeg.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libjpeg.a; path = "../oxygine-framework/oxygine/third_party/macosx/libraries/libjpeg.a"; sourceTree = "<group>"; };
+		5321FF821EBA392900DE59C5 /* Mob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Mob.cpp; path = ../src/Mob.cpp; sourceTree = "<group>"; };
+		5321FF831EBA392900DE59C5 /* Mob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mob.h; path = ../src/Mob.h; sourceTree = "<group>"; };
+		5321FF841EBA392900DE59C5 /* Plant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Plant.cpp; path = ../src/Plant.cpp; sourceTree = "<group>"; };
+		5321FF851EBA392900DE59C5 /* Plant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plant.h; path = ../src/Plant.h; sourceTree = "<group>"; };
+		5321FF861EBA392900DE59C5 /* SpecialPlant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpecialPlant.cpp; path = ../src/SpecialPlant.cpp; sourceTree = "<group>"; };
+		5321FF871EBA392900DE59C5 /* SpecialPlant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpecialPlant.h; path = ../src/SpecialPlant.h; sourceTree = "<group>"; };
+		5321FF881EBA392900DE59C5 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Utils.cpp; path = ../src/Utils.cpp; sourceTree = "<group>"; };
+		5321FF891EBA392900DE59C5 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = ../src/Utils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +69,6 @@
 				0405A00118720D2200BA6557 /* libpng.a in Frameworks */,
 				04059FEF187202AC00BA6557 /* OpenGL.framework in Frameworks */,
 				04059FED187202A200BA6557 /* libz.dylib in Frameworks */,
-				04059FEB1872027B00BA6557 /* liboxygine_macosx.a in Frameworks */,
-				04059FEA1872027500BA6557 /* SDL2.framework in Frameworks */,
 				049B57321871FBE900EF3C66 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,21 +76,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04059FE01872026200BA6557 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				04059FE41872026200BA6557 /* liboxygine_macosx.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		049B57251871FBE900EF3C66 = {
 			isa = PBXGroup;
 			children = (
 				049B57491871FBE900EF3C66 /* Images.xcassets */,
 				049B57381871FBE900EF3C66 /* Supporting Files */,
 				04A57D391871FF8B0068B1E5 /* src */,
-				04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */,
+				04A57D7E1872012A0068B1E5 /* oxygine_macosx.xcodeproj */,
 				04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */,
 				049B57301871FBE900EF3C66 /* Frameworks */,
 				049B572F1871FBE900EF3C66 /* Products */,
@@ -164,17 +123,9 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		049B57371871FBE900EF3C66 /* demo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = demo;
-			sourceTree = "<group>";
-		};
 		049B57381871FBE900EF3C66 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-
 				049B57391871FBE900EF3C66 /* 2D-RPG_macosx-Info.plist */,
 			);
 			name = "Supporting Files";
@@ -183,20 +134,25 @@
 		04A57D391871FF8B0068B1E5 /* src */ = {
 			isa = PBXGroup;
 			children = (
-
+				5321FF791EBA392900DE59C5 /* Entity.cpp */,
+				5321FF7A1EBA392900DE59C5 /* Entity.h */,
+				5321FF7B1EBA392900DE59C5 /* Game.cpp */,
+				5321FF7C1EBA392900DE59C5 /* Game.h */,
+				5321FF7D1EBA392900DE59C5 /* Hero.cpp */,
+				5321FF7E1EBA392900DE59C5 /* Hero.h */,
+				5321FF7F1EBA392900DE59C5 /* main.cpp */,
+				5321FF801EBA392900DE59C5 /* MainActor.cpp */,
+				5321FF811EBA392900DE59C5 /* libjpeg.a */,
+				5321FF821EBA392900DE59C5 /* Mob.cpp */,
+				5321FF831EBA392900DE59C5 /* Mob.h */,
+				5321FF841EBA392900DE59C5 /* Plant.cpp */,
+				5321FF851EBA392900DE59C5 /* Plant.h */,
+				5321FF861EBA392900DE59C5 /* SpecialPlant.cpp */,
+				5321FF871EBA392900DE59C5 /* SpecialPlant.h */,
+				5321FF881EBA392900DE59C5 /* Utils.cpp */,
+				5321FF891EBA392900DE59C5 /* Utils.h */,
 			);
 			name = src;
-			sourceTree = "<group>";
-		};
-		04A57D7F1872012A0068B1E5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				04A57D861872012D0068B1E5 /* SDL2.framework */,
-				04A57D881872012D0068B1E5 /* libSDL2.a */,
-				04A57D8A1872012D0068B1E5 /* libSDL2.dylib */,
-				04A57D8C1872012D0068B1E5 /* Standard DMG */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,11 +169,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				04059FE91872027200BA6557 /* PBXTargetDependency */,
-				04A57D8F187201EF0068B1E5 /* PBXTargetDependency */,
 			);
-			name = 2D-RPG_macosx;
-			productName = 2D-RPG;
+			name = "2D-RPG_macosx";
+			productName = "2D-RPG";
 			productReference = 049B572E1871FBE900EF3C66 /* 2D-RPG_macosx.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -241,16 +195,6 @@
 			mainGroup = 049B57251871FBE900EF3C66;
 			productRefGroup = 049B572F1871FBE900EF3C66 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 04059FE01872026200BA6557 /* Products */;
-					ProjectRef = 04A57D761871FFEB0068B1E5 /* oxygine_macosx.xcodeproj */;
-				},
-				{
-					ProductGroup = 04A57D7F1872012A0068B1E5 /* Products */;
-					ProjectRef = 04A57D7E1872012A0068B1E5 /* SDL.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				049B572D1871FBE900EF3C66 /* 2D-RPG_macosx */,
@@ -258,50 +202,11 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		04059FE41872026200BA6557 /* liboxygine_macosx.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = liboxygine_macosx.a;
-			remoteRef = 04059FE31872026200BA6557 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		04A57D861872012D0068B1E5 /* SDL2.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SDL2.framework;
-			remoteRef = 04A57D851872012D0068B1E5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		04A57D881872012D0068B1E5 /* libSDL2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2.a;
-			remoteRef = 04A57D871872012D0068B1E5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		04A57D8A1872012D0068B1E5 /* libSDL2.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libSDL2.dylib;
-			remoteRef = 04A57D891872012D0068B1E5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		04A57D8C1872012D0068B1E5 /* Standard DMG */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = "Standard DMG";
-			remoteRef = 04A57D8B1872012D0068B1E5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		049B572C1871FBE900EF3C66 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				049B574A1871FBE900EF3C66 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,24 +218,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
+				5321FF8F1EBA392900DE59C5 /* Mob.cpp in Sources */,
+				5321FF911EBA392900DE59C5 /* SpecialPlant.cpp in Sources */,
+				5321FF8C1EBA392900DE59C5 /* Hero.cpp in Sources */,
+				5321FF901EBA392900DE59C5 /* Plant.cpp in Sources */,
+				5321FF921EBA392900DE59C5 /* Utils.cpp in Sources */,
+				5321FF8A1EBA392900DE59C5 /* Entity.cpp in Sources */,
+				5321FF8D1EBA392900DE59C5 /* main.cpp in Sources */,
+				5321FF8B1EBA392900DE59C5 /* Game.cpp in Sources */,
+				5321FF8E1EBA392900DE59C5 /* MainActor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		04059FE91872027200BA6557 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = oxygine_macosx;
-			targetProxy = 04059FE81872027200BA6557 /* PBXContainerItemProxy */;
-		};
-		04A57D8F187201EF0068B1E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Framework;
-			targetProxy = 04A57D8E187201EF0068B1E5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		049B575D1871FBE900EF3C66 /* Debug */ = {
@@ -368,7 +268,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "../../../../../../../oxygine/oxygine-framework//oxygine/src ../../../../../../../oxygine//SDL/include";
-				VALID_ARCHS = "x86_64";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -402,7 +302,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "../../../../../../../oxygine/oxygine-framework//oxygine/src ../../../../../../../oxygine//SDL/include";
-				VALID_ARCHS = "x86_64";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -419,7 +319,7 @@
 					"../../../../../../../oxygine/oxygine-framework//oxygine/third_party/macosx/libraries",
 					"../../../../../../../oxygine/oxygine-framework//oxygine/third_party/ios/libraries",
 				);
-				PRODUCT_NAME = 2D-RPG_macosx;
+				PRODUCT_NAME = "2D-RPG_macosx";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -437,7 +337,7 @@
 					"../../../../../../../oxygine/oxygine-framework//oxygine/third_party/macosx/libraries",
 					"../../../../../../../oxygine/oxygine-framework//oxygine/third_party/ios/libraries",
 				);
-				PRODUCT_NAME = 2D-RPG_macosx;
+				PRODUCT_NAME = "2D-RPG_macosx";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
