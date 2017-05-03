@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <resources>
-	<set path = "images" />
+	<set path="sprites" />
 	<atlas>
+		<image file="hero_idle_up.png" />
 	</atlas>
 </resources>
