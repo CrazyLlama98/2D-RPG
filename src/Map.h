@@ -2,7 +2,7 @@
 #include "oxygine-framework.h"
 
 DECLARE_SMART(Map, spMap);
-class Map : public oxygine::Sprite 
+class Map : public oxygine::Sprite
 {
 public:
 	Map(const std::string& tmx, const std::string& texture);

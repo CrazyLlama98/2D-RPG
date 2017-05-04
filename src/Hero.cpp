@@ -14,6 +14,7 @@ void Hero::Die(){ };
 void Hero::Click(oxygine::Event *_event) 
 {
 	addTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_up")), 1000, 1);
+	_event->stopImmediatePropagation();
 }
 
 void Hero::Move(const oxygine::Vector2 _pos) const { };
