@@ -835,6 +835,8 @@ Entity.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
 Utils.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
+iostream
+-
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
 oxygine-framework.h
@@ -855,22 +857,44 @@ Game.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.h
 oxygine-framework.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/oxygine-framework.h
-Utils.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
-Map.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
-Hero.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
+MainActor.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
+res.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.cpp
 Hero.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
+res.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
+iostream
+-
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
 Character.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.cpp
+MainActor.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
+Utils.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
+Map.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
+Hero.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
+res.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
+iostream
+-
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
+oxygine-framework.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/oxygine-framework.h
+Box2D/Box2D.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2D/Box2D.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.cpp
 Map.h
@@ -883,6 +907,8 @@ Material.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Material.h
 Utils.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
+MainActor.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
 oxygine-framework.h
@@ -919,6 +945,14 @@ SDL_main.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SDL_main.h
 SDL.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SDL.h
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.cpp
+res.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
+oxygine-framework.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/oxygine-framework.h
 
 /home/andu/oxygine/oxygine-framework/oxygine/src/Actor.h
 oxygine-include.h

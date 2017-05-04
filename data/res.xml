@@ -3,5 +3,6 @@
 	<set path="sprites" />
 	<atlas>
 		<image file="hero_idle_up.png" />
+		<image file="hero_walk_up.png" cols="10" />
 	</atlas>
 </resources>
