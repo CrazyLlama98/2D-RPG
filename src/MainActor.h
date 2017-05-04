@@ -9,4 +9,5 @@ public:
     b2World* _world;
     
     MainActor();
+    static void Move();
 };

@@ -3,6 +3,7 @@
 #include "res/SingleResAnim.h"
 #include "Material.h"
 #include "Utils.h"
+#include "MainActor.h"
 
 Map::Map(const std::string & tmx, const std::string & texture)
 {
@@ -40,6 +41,8 @@ Map::Map(const std::string & tmx, const std::string & texture)
 	oxygine::file::read(texture, fb);
 	src.init(fb, true);
 	createTileSetTexture(src);
+
+	// addEventListener(oxygine::TouchEvent::CLICK, CLOSURE(this, &MainActor::Move));
 }
 
 void Map::drawLayer(int startX, int startY, int endX, int endY, const std::vector<unsigned int>& layer)

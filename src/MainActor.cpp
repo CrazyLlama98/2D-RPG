@@ -18,7 +18,10 @@ MainActor::MainActor(): _world(0)
     _world = new b2World(b2Vec2(0, 10));   
 
 	spHero hero = new Hero(100, 10, 0, 100, res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
-	std::cout << (hero->getPosition()).x << '\n';
-	// hero->setPosition(getSize() / 2);
 	addChild(hero);
+}
+
+void MainActor::Move()
+{
+
 }
