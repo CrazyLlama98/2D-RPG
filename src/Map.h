@@ -2,8 +2,7 @@
 #include "oxygine-framework.h"
 
 DECLARE_SMART(Map, spMap);
-class Hero;
-class Map : public oxygine::Sprite 
+class Map : public oxygine::Sprite
 {
 public:
 	Map(const std::string& tmx, const std::string& texture);
@@ -23,8 +22,6 @@ public:
 	void drawLayer(int startX, int startY, int endX, int endY, const std::vector<unsigned int>& layer);
 	void createTileSetTexture(oxygine::Image& src);
 	void doRender(const oxygine::RenderState& rs);
-
-	void Click(oxygine::Event *_event, Hero _hero);
 
 private:
 	std::list< std::vector<unsigned int> > layers;

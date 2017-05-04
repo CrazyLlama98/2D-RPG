@@ -40,6 +40,7 @@ Map::Map(const std::string & tmx, const std::string & texture)
 	oxygine::file::read(texture, fb);
 	src.init(fb, true);
 	createTileSetTexture(src);
+	setTouchEnabled(true);
 }
 
 void Map::drawLayer(int startX, int startY, int endX, int endY, const std::vector<unsigned int>& layer)

@@ -1,5 +1,7 @@
 #pragma once
 #include "oxygine-framework.h"
+#include "Map.h"
+#include "Hero.h"
 #include "Box2D/Box2D.h"
 
 class MainActor : public oxygine::Actor
@@ -7,6 +9,8 @@ class MainActor : public oxygine::Actor
 public:
 
     b2World* _world;
-    
+	spHero hero;
+	spMap map;
     MainActor();
+    void MoveHero(oxygine::Event* ev);
 };
