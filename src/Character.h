@@ -8,6 +8,8 @@ class Character : public Entity {
 public:
 	Character(const int _health, const int _damage, const int _xp, const std::string _type, ENTITY_CONSTRUCT);
 
+	// Anims the character when attacking and returns a random value between
+	// 1 and 'damage'
 	int DealDamage();
 	void Die();
 
@@ -20,6 +22,7 @@ public:
 	int GetXp() const { return xp; };
 	void SetXp(const int _xp) { xp = _xp; };
 
+	// Resets the sprite to idle state
 	void GoIdle(oxygine::Event *_event);
 
 protected:

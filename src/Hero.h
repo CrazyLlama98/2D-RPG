@@ -18,6 +18,8 @@ public:
 	
     void AddXp(const int _xp) { xp += _xp; }
     
+    // Anims the hero when attacking and returns a random value between
+    // 1 and 'damage'
     int DealDamage();
     void Die();
     

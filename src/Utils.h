@@ -12,7 +12,7 @@ public:
 	{
 		return b2Vec2(_pos.x / scale, _pos.y / scale);
 	}
-// 
+
 	static oxygine::Vector2 convert(const b2Vec2& _pos)
 	{
 		return oxygine::Vector2(_pos.x * scale, _pos.y * scale);
