@@ -7,10 +7,11 @@
 class MainActor : public oxygine::Actor
 {
 public:
-
-    b2World* _world;
-	spHero hero;
-	spMap map;
     MainActor();
     void MoveHero(oxygine::Event* ev);
+
+private:
+	b2World* _world;
+	spHero hero;
+	spMap map;
 };

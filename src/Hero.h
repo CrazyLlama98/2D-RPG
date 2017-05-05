@@ -25,6 +25,7 @@ public:
     void Click(oxygine::Event *_event);
     void Move(const oxygine::Vector2 _pos) const;
     void Move(const float _x, const float _y) const;
+    
 private:
 	int armor; 
 };

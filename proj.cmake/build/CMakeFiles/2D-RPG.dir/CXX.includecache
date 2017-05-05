@@ -893,6 +893,10 @@ iostream
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
 oxygine-framework.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/oxygine-framework.h
+Map.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
+Hero.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
 Box2D/Box2D.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2D/Box2D.h
 

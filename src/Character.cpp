@@ -7,8 +7,3 @@ Character::Character(const int _health, const int _damage, const int _xp, ENTITY
 	damage = _damage;
 	xp = _xp;
 }
-
-void Character::Click(oxygine::Event *_event)
-{
-	return;
-}

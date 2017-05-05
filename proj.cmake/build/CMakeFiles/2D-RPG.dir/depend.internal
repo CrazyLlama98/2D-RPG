@@ -1125,9 +1125,13 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp
  ../../box2d/Box2D/Dynamics/b2TimeStep.h
  ../../box2d/Box2D/Dynamics/b2World.h
  ../../box2d/Box2D/Dynamics/b2WorldCallbacks.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.cpp
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
  /home/andu/oxygine/oxygine-framework/oxygine/src/Actor.h
  /home/andu/oxygine/oxygine-framework/oxygine/src/AnimationFrame.h
@@ -1679,6 +1683,9 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.
  ../../box2d/Box2D/Dynamics/b2TimeStep.h
  ../../box2d/Box2D/Dynamics/b2World.h
  ../../box2d/Box2D/Dynamics/b2WorldCallbacks.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.cpp
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
