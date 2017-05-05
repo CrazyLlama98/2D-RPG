@@ -4,6 +4,9 @@
 #include "Hero.h"
 #include "res.h"
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <cstring>
 
 using namespace oxygine;
 
@@ -19,6 +22,7 @@ MainActor::MainActor(): _world(0)
 	hero = new Hero(100, 10, 0, 100, "hero", res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
 	addChild(hero);
 	this->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::MoveHero));
+	RandomSpawn();
 }
 
 void MainActor::MoveHero(Event* ev)
@@ -30,5 +34,18 @@ void MainActor::MoveHero(Event* ev)
 
 void MainActor::RandomSpawn()
 {
-
+	std::string mob_types[] = { "dwarf", "troll", "skeleton" };
+	srand(time(0));
+	for (int i = 0; i < 10; ++i)
+	{
+		int type = rand() % 3;
+		Vector2 pos;
+		do {
+			pos.x = rand() % (int)getSize().x;
+			pos.y = rand() % (int)getSize().y;
+		} while (pos.x < 70 || pos.x > getSize().x - 70 || pos.y < 70 || pos.y > getSize().y - 70 || overlaps());
+		spCharacter mob = new Character(100, 5, 20, mob_types[type], res::resources.getResAnim(mob_types[type] + "_spawn"), _world, pos, b2_staticBody, 1);
+		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
+		addChild(mob);
+	}
 }

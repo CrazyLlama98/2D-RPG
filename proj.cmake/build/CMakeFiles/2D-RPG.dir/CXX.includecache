@@ -891,6 +891,12 @@ res.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
 iostream
 -
+cstdlib
+-
+ctime
+-
+cstring
+-
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
 oxygine-framework.h
