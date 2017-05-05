@@ -27,3 +27,13 @@ void MainActor::MoveHero(Event* ev)
 	if (tev->localPosition.x > 64 && tev->localPosition.y > 64 && tev->localPosition.y < 630 && tev->localPosition.x < 1080)
 		hero->addTween(createTween(Actor::TweenPosition(tev->localPosition), 1500));
 }
+
+void MainActor::ClickCharacter(Event* _event)
+{
+    TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
+    
+    MainActor::MoveHero(_event);
+    
+    for(auto it : en)
+    
+}

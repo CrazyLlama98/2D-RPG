@@ -14,4 +14,10 @@ private:
 	b2World* _world;
 	spHero hero;
 	spMap map;
+<<<<<<< Updated upstream
+=======
+    MainActor();
+    void MoveHero(oxygine::Event* ev);
+    void ClickCharacter(oxygine::Event* _event);
+>>>>>>> Stashed changes
 };
