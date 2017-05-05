@@ -34,6 +34,37 @@ void MainActor::ClickCharacter(Event* _event)
     
     MainActor::MoveHero(_event);
     
-    for(auto it : en)
+    for(auto it : _entities)
+    {
+        if(it == _event->target.get())
+        {
+            int heroArmor = hero->GetArmor();
+            int heroHealth = hero->GetHealth();
+            int heroDamage = hero->DealDamage();
+            int mobHealth = it->GetHealth();
+            int mobDamage = it->DealDamage();
+            
+            if(heroArmor >= mobDamage)
+            {
+                hero->SetAromr(heroArmor - mobDamage);
+            }
+            else
+            {
+                hero->SetArmor(0);
+                hero->SetHealth(heroHealth + heroArmor - mobDamage);
+            }
+            it->SetHealth(mobHealth - heroDamage);
+            if(hero->GetHealth() <= 0)
+            {
+                hero->Die();
+                return;
+            }
+            if(it->GetHealth() <= 0)
+            {
+                it->Die();
+                return;
+            }
+        }
+    }
     
 }
