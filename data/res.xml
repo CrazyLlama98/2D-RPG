@@ -4,20 +4,17 @@
 	<atlas>
 		<image file="hero_idle_up.png" />
 		<image file="hero_walk_up.png" cols="10" />
-		<image file="troll_spawn.png" cols="2" />
-		<image file="dwarf_spawn.png" cols="3" />
 		<image file="skeleton_spawn.png" cols="7" />
 		<image file="skeleton_idle.png" />
 		<image file="skeleton_attack.png" cols="3" />
 		<image file="skeleton_die.png" cols="6" />
-		<image file="skeleton_spawn.png" cols="7" />
+		<image file="troll_spawn.png" cols="2" />
 		<image file="troll_idle.png" />
 		<image file="troll_attack.png" cols="2" />
 		<image file="troll_die.png" cols="9" />
-		<image file="troll_spawn.png" cols="2" />
+		<image file="dwarf_spawn.png" cols="3" />
 		<image file="dwarf_idle.png" />
 		<image file="dwarf_attack.png" cols="8" />
 		<image file="dwarf_die.png" cols="4" />
-		<image file="dwarf_spawn.png" cols="3" />
 	</atlas>
 </resources>
