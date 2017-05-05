@@ -20,6 +20,8 @@ public:
 	int GetXp() const { return xp; };
 	void SetXp(const int _xp) { xp = _xp; };
 
+	void GoIdle(oxygine::Event *_event);
+
 protected:
 	int xp, health, damage;
 	std::string type;

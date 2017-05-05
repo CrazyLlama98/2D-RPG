@@ -581,6 +581,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Characte
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Character.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Character.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Entity.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/res.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Actor.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AnimationFrame.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AsyncTask.h

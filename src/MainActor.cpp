@@ -36,7 +36,7 @@ void MainActor::MoveHero(Event* ev)
 
 void MainActor::RandomSpawn()
 {
-	std::string mob_types[] = { "dwarf", "troll", "skeleton" };
+	std::string mob_types[] = { "skeleton", "dwarf", "troll" };
 	srand(time(0));
 	for (int i = _entities.size(); i < 11; ++i)
 	{
@@ -46,10 +46,11 @@ void MainActor::RandomSpawn()
 			pos.x = rand() % (int)getSize().x;
 			pos.y = rand() % (int)getSize().y;
 		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos));
-		Character *mob = new Character(100, 5, 20, mob_types[type], res::resources.getResAnim(mob_types[type] + "_spawn"),
+		Character *mob = new Character(100, 5, 20, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"),
 						 _world, pos, b2_staticBody, 1);
 		_entities.push_back(mob);
 		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
+		mob->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickCharacter));
 		addChild(mob);
 	}
 }
@@ -64,7 +65,7 @@ void MainActor::ClickCharacter(Event* _event)
     {
         if(it == (Character*)_event->target.get())
         {
-        	std::cout << "WORKING\n";
+        	std::cout << "APP_LOG: CHARACTER CLICKED\n";
         	Character *mob = (Character*)it;
             int heroArmor = hero->GetArmor();
             int heroHealth = hero->GetHealth();

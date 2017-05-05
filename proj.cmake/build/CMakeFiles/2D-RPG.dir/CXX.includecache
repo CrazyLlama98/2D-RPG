@@ -825,6 +825,12 @@ Box2D/Common/b2Draw.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.cpp
 Character.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
+res.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
+cstdlib
+-
+ctime
+-
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
 Entity.h
@@ -872,6 +878,10 @@ Hero.h
 res.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
 iostream
+-
+cstdlib
+-
+ctime
 -
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
