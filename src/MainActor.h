@@ -17,12 +17,8 @@ private:
 	b2World* _world;
 	spHero hero;
 	spMap map;
-<<<<<<< HEAD
 
 	void RandomSpawn();
-=======
     void MoveHero(oxygine::Event* ev);
     void ClickCharacter(oxygine::Event* _event);
-    
->>>>>>> ClickCharacter
 };

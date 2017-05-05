@@ -43,11 +43,12 @@ void MainActor::RandomSpawn()
 		do {
 			pos.x = rand() % (int)getSize().x;
 			pos.y = rand() % (int)getSize().y;
-		} while (pos.x < 70 || pos.x > getSize().x - 70 || pos.y < 70 || pos.y > getSize().y - 70 || overlaps());
+		} while (pos.x < 70 || pos.x > getSize().x - 70 || pos.y < 70 || pos.y > getSize().y - 70); //|| overlaps());
 		spCharacter mob = new Character(100, 5, 20, mob_types[type], res::resources.getResAnim(mob_types[type] + "_spawn"), _world, pos, b2_staticBody, 1);
 		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
 		addChild(mob);
 	}
+}
 
 void MainActor::ClickCharacter(Event* _event)
 {
@@ -89,4 +90,4 @@ void MainActor::ClickCharacter(Event* _event)
             }
         }
     }
-    }
+}
