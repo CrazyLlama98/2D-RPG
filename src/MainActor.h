@@ -10,15 +10,13 @@ class MainActor : public oxygine::Actor
 {
 public:
     MainActor();
-    void MoveHero(oxygine::Event* ev);
 
 private:
     
-    std::list<spEntity> _entities;
+    std::list<Entity*> _entities;
 	b2World* _world;
 	spHero hero;
 	spMap map;
-    MainActor();
     void MoveHero(oxygine::Event* ev);
     void ClickCharacter(oxygine::Event* _event);
     

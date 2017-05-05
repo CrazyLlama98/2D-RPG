@@ -32,36 +32,38 @@ void MainActor::ClickCharacter(Event* _event)
 {
     TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
     
-    MainActor::MoveHero(_event);
+    MoveHero(_event);
     
     for(auto it : _entities)
     {
-        if(it == _event->target.get())
+        if(it == (Character*)_event->target.get())
         {
+        	std::cout << "WORKING\n";
+        	Character *mob = (Character*)it;
             int heroArmor = hero->GetArmor();
             int heroHealth = hero->GetHealth();
             int heroDamage = hero->DealDamage();
-            int mobHealth = it->GetHealth();
-            int mobDamage = it->DealDamage();
+            int mobHealth = mob->GetHealth();
+            int mobDamage = mob->DealDamage();
             
             if(heroArmor >= mobDamage)
             {
-                hero->SetAromr(heroArmor - mobDamage);
+                hero->SetArmor(heroArmor - mobDamage);
             }
             else
             {
                 hero->SetArmor(0);
                 hero->SetHealth(heroHealth + heroArmor - mobDamage);
             }
-            it->SetHealth(mobHealth - heroDamage);
+            mob->SetHealth(mobHealth - heroDamage);
             if(hero->GetHealth() <= 0)
             {
                 hero->Die();
                 return;
             }
-            if(it->GetHealth() <= 0)
+            if(mob->GetHealth() <= 0)
             {
-                it->Die();
+                mob->Die();
                 return;
             }
         }

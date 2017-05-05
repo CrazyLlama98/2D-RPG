@@ -9,7 +9,7 @@ class Character : public Entity {
 public:
 	Character(const int _health, const int _damage, const int _xp, ENTITY_CONSTRUCT);
 
-	void DealDamage();
+	int DealDamage();
 	void Die();
 
 	int GetHealth() const { return health; };

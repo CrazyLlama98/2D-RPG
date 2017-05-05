@@ -8,19 +8,5 @@ Hero::Hero(const int _health, const int _damage, const int _xp, const int _armor
     armor = _armor;
 }
 
-void Hero::DealDamage(){ };
-void Hero::Respawn(){ };
+int Hero::DealDamage(){ return 1; }
 void Hero::Die(){ };
-void Hero::Click(oxygine::Event *_event) 
-{
-	addTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_up")), 1000, 1);
-	_event->stopImmediatePropagation();
-}
-
-void Hero::Move(const oxygine::Vector2 _pos) const { };
-void Hero::Move(const float _x, const float _y) const
-{
-	// oxygine::Resources res;
-	// res.loadXML("res.xml");
-	// Sprite::addTween(oxygine::Sprite::TweenAnim(res.getResAnim("hero_walk_up")), 1000, 2);
-}
