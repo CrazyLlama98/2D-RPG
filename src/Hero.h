@@ -1,7 +1,7 @@
 #pragma once
 #include "Character.h"
-#define CHARACTER_CONSTRUCT const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, const float _scale = 1.0f
-#define CHARACTER_PARAMS const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, const float _scale
+#define CHARACTER_CONSTRUCT const std::string _type, const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, const float _scale = 1.0f
+#define CHARACTER_PARAMS const std::string _type, const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, const float _scale
 
 DECLARE_SMART(Hero, spHero);
 class Hero : public Character
