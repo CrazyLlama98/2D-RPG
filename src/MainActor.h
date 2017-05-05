@@ -15,10 +15,11 @@ private:
     
     std::list<Entity*> _entities;
 	b2World* _world;
-	spHero hero;
+	Hero *hero;
 	spMap map;
 
 	void RandomSpawn();
     void MoveHero(oxygine::Event* ev);
     void ClickCharacter(oxygine::Event* _event);
+    bool Overlaps(const oxygine::Vector2 _pos);
 };
