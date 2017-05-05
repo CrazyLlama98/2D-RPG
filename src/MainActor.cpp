@@ -32,7 +32,6 @@ void MainActor::MoveHero(Event* ev)
 		hero->addTween(createTween(Actor::TweenPosition(tev->localPosition), 1500));
 }
 
-<<<<<<< HEAD
 void MainActor::RandomSpawn()
 {
 	std::string mob_types[] = { "dwarf", "troll", "skeleton" };
@@ -49,7 +48,7 @@ void MainActor::RandomSpawn()
 		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
 		addChild(mob);
 	}
-=======
+
 void MainActor::ClickCharacter(Event* _event)
 {
     TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
@@ -90,6 +89,4 @@ void MainActor::ClickCharacter(Event* _event)
             }
         }
     }
-    
->>>>>>> ClickCharacter
-}
+    }
