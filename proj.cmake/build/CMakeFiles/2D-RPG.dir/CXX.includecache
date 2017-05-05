@@ -907,6 +907,10 @@ Hero.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
 Box2D/Box2D.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2D/Box2D.h
+Entity.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
+list
+-
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.cpp
 Map.h

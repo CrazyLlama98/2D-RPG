@@ -32,6 +32,7 @@ void MainActor::MoveHero(Event* ev)
 		hero->addTween(createTween(Actor::TweenPosition(tev->localPosition), 1500));
 }
 
+<<<<<<< HEAD
 void MainActor::RandomSpawn()
 {
 	std::string mob_types[] = { "dwarf", "troll", "skeleton" };
@@ -48,4 +49,47 @@ void MainActor::RandomSpawn()
 		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
 		addChild(mob);
 	}
+=======
+void MainActor::ClickCharacter(Event* _event)
+{
+    TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
+    
+    MoveHero(_event);
+    
+    for(auto it : _entities)
+    {
+        if(it == (Character*)_event->target.get())
+        {
+        	std::cout << "WORKING\n";
+        	Character *mob = (Character*)it;
+            int heroArmor = hero->GetArmor();
+            int heroHealth = hero->GetHealth();
+            int heroDamage = hero->DealDamage();
+            int mobHealth = mob->GetHealth();
+            int mobDamage = mob->DealDamage();
+            
+            if(heroArmor >= mobDamage)
+            {
+                hero->SetArmor(heroArmor - mobDamage);
+            }
+            else
+            {
+                hero->SetArmor(0);
+                hero->SetHealth(heroHealth + heroArmor - mobDamage);
+            }
+            mob->SetHealth(mobHealth - heroDamage);
+            if(hero->GetHealth() <= 0)
+            {
+                hero->Die();
+                return;
+            }
+            if(mob->GetHealth() <= 0)
+            {
+                mob->Die();
+                return;
+            }
+        }
+    }
+    
+>>>>>>> ClickCharacter
 }
