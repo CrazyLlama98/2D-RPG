@@ -14,4 +14,6 @@ private:
 	b2World* _world;
 	spHero hero;
 	spMap map;
+
+	void RandomSpawn();
 };
