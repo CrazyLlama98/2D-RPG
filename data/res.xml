@@ -4,5 +4,8 @@
 	<atlas>
 		<image file="hero_idle_up.png" />
 		<image file="hero_walk_up.png" cols="10" />
+		<image file="troll_spawn.png" cols="2" />
+		<image file="dwarf_spawn.png" cols="3" />
+		<image file="skeleton_spawn.png" cols="7" />
 	</atlas>
 </resources>
