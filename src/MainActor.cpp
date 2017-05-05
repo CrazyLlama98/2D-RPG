@@ -25,5 +25,23 @@ void MainActor::MoveHero(Event* ev)
 {
 	TouchEvent* tev = safeCast<TouchEvent*>(ev);
 	if (tev->localPosition.x > 64 && tev->localPosition.y > 64 && tev->localPosition.y < 630 && tev->localPosition.x < 1080)
+	{
 		hero->addTween(createTween(Actor::TweenPosition(tev->localPosition), 1500));
+		if (tev->localPosition.x > hero->getPosition().x)
+			hero->addTween(TweenQueue::create(
+				createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_right")), 1500, 1),
+				createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_right")), 500, 1)));
+		else if (tev->localPosition.y > hero->getPosition().y)
+			hero->addTween(TweenQueue::create(
+				createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_down")), 1500, 1),
+				createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_down")), 500, 1)));
+		else if (tev->localPosition.y < hero->getPosition().y)
+			hero->addTween(TweenQueue::create(
+				createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_up")), 1500, 1),
+				createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_up")), 500, 1)));
+		else if (tev->localPosition.x < hero->getPosition().x)
+			hero->addTween(TweenQueue::create(
+				createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_left")), 1500, 1),
+				createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_left")), 500, 1)));
+	}
 }
