@@ -10,9 +10,7 @@ public:
 	Character(const int _health, const int _damage, const int _xp, ENTITY_CONSTRUCT);
 
 	void DealDamage();
-	void Respawn();
 	void Die();
-	void Click(oxygine::Event *_event);
 
 	int GetHealth() const { return health; };
 	void SetHealth(const int _health) { health = _health; };

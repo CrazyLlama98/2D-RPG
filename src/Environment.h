@@ -7,6 +7,4 @@ class Environment : public Entity
 {
 public:
 	Environment(ENTITY_CONSTRUCT);
-
-	void Click(oxygine::Event *_event);
 };

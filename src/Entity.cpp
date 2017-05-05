@@ -28,8 +28,6 @@ Entity::Entity(const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vec
 
 	body->CreateFixture(&fixtureDef);
 	body->SetUserData(this);
-
-	addEventListener(oxygine::TouchEvent::CLICK, CLOSURE(this, &Entity::Click));
 }
 
 Entity::~Entity()

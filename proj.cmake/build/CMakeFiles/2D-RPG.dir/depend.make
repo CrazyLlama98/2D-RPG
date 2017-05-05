@@ -1124,9 +1124,13 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: ../../box2d/Box2D/Dynamics/b2TimeStep.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: ../../box2d/Box2D/Dynamics/b2World.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: ../../box2d/Box2D/Dynamics/b2WorldCallbacks.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Character.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Entity.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Game.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Game.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Hero.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/MainActor.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Map.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/res.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Actor.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AnimationFrame.h
@@ -1678,6 +1682,9 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: ../../box2d/Box2D/Dynamics/b2TimeStep.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: ../../box2d/Box2D/Dynamics/b2World.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: ../../box2d/Box2D/Dynamics/b2WorldCallbacks.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Character.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Entity.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Hero.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/MainActor.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Map.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Map.h
