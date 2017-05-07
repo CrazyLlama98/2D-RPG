@@ -7,6 +7,7 @@ class Utils
 public:
 	static const float scale;
 	static const unsigned int FLIPPED_HORIZONTALLY_FLAG, FLIPPED_VERTICALLY_FLAG, FLIPPED_DIAGONALLY_FLAG;
+	static const int inf;
 
 	static b2Vec2 convert(const oxygine::Vector2& _pos)
 	{
