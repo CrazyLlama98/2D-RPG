@@ -18,13 +18,59 @@ MainActor::MainActor(): _world(0)
     
 	map = new Map("map.xml", "Sprites.png");
 	addChild(map);
-    _world = new b2World(b2Vec2(0, 10));   
+    _world = new b2World(b2Vec2(0, 10));
+	
+	// The following 4 lines of code are used for Box2dDebug -- comment them to make the debug button to disappear 
+	spButton btn = new Button();
+	btn->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::showHideDebug));
+	btn->setPosition(Vector2(1000, 20));
+	btn->attachTo(this);
 
 	hero = new Hero(100, 10, 0, 100, "hero", res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
 	_entities.push_back(hero);
 	addChild(hero);
 	this->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::MoveHero));
+	_world->SetContactListener(&contactListener);
 	RandomSpawn();
+}
+
+void MainActor::doUpdate(const UpdateState& us)
+{
+	//in real project you should make steps with fixed dt, check box2d documentation
+	_world->Step(us.dt / 1000.0f, 6, 2);
+
+	//update each body position on display
+	b2Body* body = _world->GetBodyList();
+	while (body)
+	{
+		Actor* actor = (Actor*)body->GetUserData();
+		b2Body* next = body->GetNext();
+		if (actor)
+		{
+			Vector2 pos = actor->getPosition();
+			body->SetTransform(Utils::convert(pos), 0);
+		}
+
+		body = next;
+	}
+}
+
+void MainActor::showHideDebug(Event* ev)
+{
+	TouchEvent* te = safeCast<TouchEvent*>(ev);
+	te->stopsImmediatePropagation = true;
+	if (_debugDraw)
+	{
+		_debugDraw->detach();
+		_debugDraw = 0;
+		return;
+	}
+
+	_debugDraw = new Box2DDraw;
+	_debugDraw->SetFlags(b2Draw::e_shapeBit | b2Draw::e_jointBit | b2Draw::e_pairBit | b2Draw::e_centerOfMassBit);
+	_debugDraw->attachTo(this);
+	_debugDraw->setWorld(Utils::scale, _world);
+	_debugDraw->setPriority(1);
 }
 
 void MainActor::MoveHero(Event* ev)
@@ -40,7 +86,7 @@ void MainActor::MoveHero(Event* ev)
 		{
 			if (yTarget - y <= 0)
 			{
-				if (tg <= -1)
+				if (tg > -1)
 					hero->addTween(TweenQueue::create(
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_left")), 1500, 1),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_left")), 500, 1)));
@@ -51,7 +97,7 @@ void MainActor::MoveHero(Event* ev)
 			}
 			else if (x - xTarget <= 0)
 			{
-				if (tg <= -1)
+				if (tg > -1)
 					hero->addTween(TweenQueue::create(
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_right")), 1500, 1),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_right")), 500, 1)));

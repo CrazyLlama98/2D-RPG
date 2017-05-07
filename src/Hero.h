@@ -24,5 +24,5 @@ public:
     void Die();
     
 private:
-	int armor; 
+	int armor;
 };
