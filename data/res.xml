@@ -3,6 +3,12 @@
 	<set path="sprites" />
 	<atlas>
 		<image file="hero_idle_up.png" />
+		<image file="hero_idle_down.png" cols="3" />
+		<image file="hero_idle_right.png" cols="3" />
+		<image file="hero_idle_left.png" cols="3" />
+		<image file="hero_walk_down.png" cols="10" />
+		<image file="hero_walk_right.png" cols="10" />
+		<image file="hero_walk_left.png" cols="10" />
 		<image file="hero_walk_up.png" cols="10" />
 		<image file="skeleton_spawn.png" cols="7" />
 		<image file="skeleton_idle.png" />
@@ -18,3 +24,4 @@
 		<image file="dwarf_die.png" cols="4" />
 	</atlas>
 </resources>
+

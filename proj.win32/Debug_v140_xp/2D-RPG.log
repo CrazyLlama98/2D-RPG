@@ -1,4 +1,7 @@
-﻿  Hero.cpp
+﻿  MainActor.cpp
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(19): warning C4305: 'argument': truncation from 'double' to 'const float'
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(30): warning C4244: 'initializing': conversion from 'const float' to 'int', possible loss of data
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(31): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 b2BroadPhase.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
   oxygine_d.lib(jerror.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
 b2BroadPhase.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
