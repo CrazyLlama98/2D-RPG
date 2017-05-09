@@ -22,40 +22,57 @@ MainActor::MainActor(): _world(0)
 	
 	// The following 4 lines of code are used for Box2dDebug -- comment them to make the debug button to disappear 
 	spButton btn = new Button();
-	btn->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::showHideDebug));
+	btn->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ShowHideDebug));
 	btn->setPosition(Vector2(1000, 20));
 	btn->attachTo(this);
 
 	hero = new Hero(100, 10, 0, 100, "hero", res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
-	_entities.push_back(hero);
+	//_entities.push_back(hero);
 	addChild(hero);
+	((b2Body*)(hero->getUserData()))->SetGravityScale(0);
+	((b2Body*)(hero->getUserData()))->SetFixedRotation(true);
 	this->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::MoveHero));
-	_world->SetContactListener(&contactListener);
+	hero->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickOnHero));
+	//_world->SetContactListener(&contactListener);
 	RandomSpawn();
+}
+
+void MainActor::ClickOnHero(Event * ev)
+{
+	ev->stopImmediatePropagation();
 }
 
 void MainActor::doUpdate(const UpdateState& us)
 {
-	//in real project you should make steps with fixed dt, check box2d documentation
 	_world->Step(us.dt / 1000.0f, 6, 2);
 
 	//update each body position on display
 	b2Body* body = _world->GetBodyList();
 	while (body)
 	{
-		Actor* actor = (Actor*)body->GetUserData();
+		spActor actor = (Actor*)body->GetUserData();
 		b2Body* next = body->GetNext();
 		if (actor)
 		{
-			Vector2 pos = actor->getPosition();
-			body->SetTransform(Utils::convert(pos), 0);
+			//body->SetTransform(pos, 0);
+			
+			if (body->GetType() == b2_dynamicBody)
+			{
+				spHero hero = (Hero*)(body->GetUserData());
+				b2Vec2 pos = body->GetPosition();
+				if (std::abs(pos.Normalize() - Utils::convert(hero->getTargetPosition()).Normalize()) <= 0.05)
+					body->SetLinearVelocity(b2Vec2(0, 0));
+				hero->setPosition(Utils::convert(body->GetPosition()));
+				if (body->GetLinearVelocity() == b2Vec2(0, 0))
+					hero->removeTweens(true);
+			}
 		}
 
 		body = next;
 	}
 }
 
-void MainActor::showHideDebug(Event* ev)
+void MainActor::ShowHideDebug(Event* ev)
 {
 	TouchEvent* te = safeCast<TouchEvent*>(ev);
 	te->stopsImmediatePropagation = true;
@@ -78,7 +95,14 @@ void MainActor::MoveHero(Event* ev)
 	TouchEvent* tev = safeCast<TouchEvent*>(ev);
 	if (tev->localPosition.x > 64 && tev->localPosition.y > 64 && tev->localPosition.y < 630 && tev->localPosition.x < 1080)
 	{
-		hero->addTween(createTween(Actor::TweenPosition(tev->localPosition), 1500));
+		hero->setTargetPosition(tev->localPosition);
+		//hero->addTween(createTween(Actor::TweenPosition(tev->localPosition), 1500));
+		auto body = (b2Body*)(hero->getUserData());
+		b2Vec2 pos = (Utils::convert(tev->localPosition) - body->GetPosition());
+		float force = pos.Normalize();
+		pos = force * pos;
+		body->SetLinearVelocity(pos);
+		
 		int x = hero->getPosition().x, y = hero->getPosition().y;
 		int xTarget = tev->localPosition.x, yTarget = tev->localPosition.y;
 		double tg = (x - xTarget != 0) ? (double)(yTarget - y) / (x - xTarget) : Utils::inf * ((yTarget - y) < 0 ? (-1) : 1);

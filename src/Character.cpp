@@ -12,7 +12,8 @@ Character::Character(const int _health, const int _damage, const int _xp, const 
 	type = _type;
 }
 
-int Character::DealDamage() 
+
+int Character::DealDamage()
 { 
 	srand(time(0));
 	this->addTween(TweenAnim(res::resources.getResAnim(type + "_attack")), 500)->setDoneCallback(CLOSURE(this, &Character::GoIdle));

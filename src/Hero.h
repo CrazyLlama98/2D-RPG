@@ -3,6 +3,7 @@
 #define CHARACTER_CONSTRUCT const std::string _type, const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, const float _scale = 1.0f
 #define CHARACTER_PARAMS const std::string _type, const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, const float _scale
 
+DECLARE_SMART(Hero, spHero)
 class Hero : public Character
 {
 public:
@@ -22,7 +23,11 @@ public:
     // 1 and 'damage'
     int DealDamage();
     void Die();
+
+	void setTargetPosition(const oxygine::Vector2 _targetPosition) { targetPosition = _targetPosition; };
+	oxygine::Vector2 getTargetPosition() const { return targetPosition; };
     
 private:
 	int armor;
+	oxygine::Vector2 targetPosition;
 };

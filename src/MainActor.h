@@ -29,6 +29,10 @@ private:
     void ClickCharacter(oxygine::Event* _event);
     // Checks if two sprites are too close from each other
     bool Overlaps(const oxygine::Vector2 _pos);
-	void showHideDebug(Event* ev);
+	// Toggle the debug view for box2d
+	void ShowHideDebug(Event* ev);
+	// Responds to clicks made on Hero
+	void ClickOnHero(Event* ev);
+	// Updates box2d body's position to follow character
 	void doUpdate(const UpdateState& us);
 };
