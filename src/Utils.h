@@ -19,4 +19,8 @@ public:
 		return oxygine::Vector2(_pos.x * scale, _pos.y * scale);
 	}
 
+	static float distance(const oxygine::Vector2& A, const oxygine::Vector2& B)
+	{
+		return sqrt((A.x - B.x) * (A.x - B.x) + (A.y - B.y) * (A.y - B.y));
+	};
 };
