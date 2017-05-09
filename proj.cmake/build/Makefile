@@ -1422,6 +1422,33 @@ home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.cpp.s:
 	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.cpp.s
 .PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.cpp.s
 
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.o
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.o
+
+# target to build an object file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.o:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.o
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.o
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.i: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.i
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.i
+
+# target to preprocess a source file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.i:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.i
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.i
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.s: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.s
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.s
+
+# target to generate assembly for a file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.s:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.s
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.s
+
 home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o
 
 .PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.o
@@ -1448,6 +1475,33 @@ home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.s: home/andu/Desktop
 home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.s:
 	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.s
 .PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.s
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.o
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.o
+
+# target to build an object file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.o:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.o
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.o
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.i: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.i
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.i
+
+# target to preprocess a source file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.i:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.i
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.i
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.s: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.s
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.s
+
+# target to generate assembly for a file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.s:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.s
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.s
 
 home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.cpp.o
 
@@ -1871,9 +1925,15 @@ help:
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.o"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.i"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Rope/b2Rope.s"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.o"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.i"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.s"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.o"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.i"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.s"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.o"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.i"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.s"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.o"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.i"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Entity.s"

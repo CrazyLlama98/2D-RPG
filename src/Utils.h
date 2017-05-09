@@ -22,5 +22,5 @@ public:
 	static float distance(const oxygine::Vector2& A, const oxygine::Vector2& B)
 	{
 		return sqrt((A.x - B.x) * (A.x - B.x) + (A.y - B.y) * (A.y - B.y));
-	};
+	}
 };

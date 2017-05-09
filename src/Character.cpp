@@ -16,7 +16,8 @@ Character::Character(const int _health, const int _damage, const int _xp, const 
 int Character::DealDamage()
 { 
 	srand(time(0));
-	this->addTween(TweenAnim(res::resources.getResAnim(type + "_attack")), 500)->setDoneCallback(CLOSURE(this, &Character::GoIdle));
+	if (!getFirstTween())
+		addTween(TweenAnim(res::resources.getResAnim(type + "_attack")), 500)->setDoneCallback(CLOSURE(this, &Character::GoIdle));
 	return rand() % damage + 1;
 }
 void Character::Die() { } 
