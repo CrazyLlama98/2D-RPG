@@ -36,6 +36,7 @@ MainActor::MainActor(): _world(0)
 	hero->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickOnHero));
 	//_world->SetContactListener(&contactListener);
 	RandomSpawn();
+    
 }
 
 void MainActor::ClickOnHero(Event * ev)
@@ -179,6 +180,35 @@ void MainActor::RandomSpawn()
 		mob->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickCharacter));
 		addChild(mob);
 	}
+    
+    std::string plants_types[] = { "red_flower", "blue_flower" };
+    srand(time(0));
+    for(int i = _plants.size(); i < 5; ++i)
+    {
+        Vector2 pos;
+        do {
+            pos.x = rand() % (int)getSize().x;
+            pos.y = rand() % (int)getSize().y;
+        } while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos));
+        Environment* _plant = new Environment(res::resources.getResAnim("tree"), _world, pos);
+        _plants.push_back(_plant);
+        _plant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::MoveHero));
+        addChild(_plant);
+
+    }
+    for(int i = _plants.size(); i < 10; ++i)
+    {
+        int type = rand() % 2;
+        Vector2 pos;
+        do {
+            pos.x = rand() % (int)getSize().x;
+            pos.y = rand() % (int)getSize().y;
+        } while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos));
+        SpecialEnvironment* _spPlant = new SpecialEnvironment(res::resources.getResAnim(plants_types[type]), _world, pos);
+        _plants.push_back(_spPlant);
+        _spPlant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::SclickSpecialEnvironment));
+        addChild(_spPlant);
+    }
 }
 
 void MainActor::ClickCharacter(Event* _event)
