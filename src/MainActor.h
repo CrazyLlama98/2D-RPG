@@ -6,6 +6,7 @@
 #include "Entity.h"
 #include "Box2DDebugDraw.h"
 #include "CharactersContactListener.h"
+#include "Environment.h"
 #include <list>
 
 class MainActor : public oxygine::Actor
@@ -16,6 +17,7 @@ public:
 private:
     
     std::list<Character*> _mobs;
+    std::list<Environment*> _plants;
 	b2World* _world;
 	spHero hero;
 	spMap map;
@@ -27,8 +29,10 @@ private:
     void MoveHero(oxygine::Event* ev);
     // Responds to clicks made on Characters (mobs)
     void ClickCharacter(oxygine::Event* _event);
+    // Resspond to clicks made on Special Enviorment(Special Plants)
+    void ClickSpecialEnvironment(oxygine::Event* _event);
     // Checks if two sprites are too close from each other
-    bool Overlaps(const oxygine::Vector2 _pos);
+    bool Overlaps(const oxygine::Vector2 _pos, int _type);
 	// Toggle the debug view for box2d
 	void ShowHideDebug(Event* ev);
 	// Responds to clicks made on Hero

@@ -1,4 +1,5 @@
 #include "MainActor.h"
+#include "SpecialEnvironment.h"
 #include "Utils.h"
 #include "Map.h"
 #include "Hero.h"
@@ -26,7 +27,8 @@ MainActor::MainActor(): _world(0)
 	btn->setPosition(Vector2(1000, 20));
 	btn->attachTo(this);
 
-	hero = new Hero(100, 10, 0, 100, "hero", res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
+	hero = new Hero(100, 15, 0, 100, "hero", res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
+	//_mobs.push_back(hero);
 	addChild(hero);
 	((b2Body*)(hero->getUserData()))->SetGravityScale(0);
 	((b2Body*)(hero->getUserData()))->SetFixedRotation(true);
@@ -34,6 +36,7 @@ MainActor::MainActor(): _world(0)
 	hero->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickOnHero));
 	//_world->SetContactListener(&contactListener);
 	RandomSpawn();
+    
 }
 
 void MainActor::ClickOnHero(Event * ev)
@@ -169,14 +172,41 @@ void MainActor::RandomSpawn()
 		do {
 			pos.x = rand() % (int)getSize().x;
 			pos.y = rand() % (int)getSize().y;
-		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos));
-		Character* mob = new Character(100, 5, 20, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"),
-						 _world, pos, b2_staticBody, 1);
+		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 0));
+		Character *mob = new Character(100, 10, 50, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"), _world, pos, b2_staticBody, 1);
 		_mobs.push_back(mob);
 		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
 		mob->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickCharacter));
 		addChild(mob);
 	}
+    
+    std::string plants_types[] = { "red_flower", "blue_flower" };
+    for(int i = _plants.size(); i < 8; ++i)
+    {
+        Vector2 pos;
+        do {
+            pos.x = rand() % (int)getSize().x;
+            pos.y = rand() % (int)getSize().y;
+        } while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 1));
+        Environment* _plant = new Environment(res::resources.getResAnim("tree"), _world, pos, 0.2);
+        _plants.push_back(_plant);
+        _plant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::MoveHero));
+        addChild(_plant);
+
+    }
+    for(int i = _plants.size(); i < 17; ++i)
+    {
+        int type = rand() % 2;
+        Vector2 pos;
+        do {
+            pos.x = rand() % (int)getSize().x;
+            pos.y = rand() % (int)getSize().y;
+        } while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 1));
+        SpecialEnvironment* _spPlant = new SpecialEnvironment(res::resources.getResAnim(plants_types[type]), _world, pos);
+        _plants.push_back(_spPlant);
+        _spPlant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickSpecialEnvironment));
+        addChild(_spPlant);
+    }
 }
 
 void MainActor::ClickCharacter(Event* _event)
@@ -221,12 +251,58 @@ void MainActor::ClickCharacter(Event* _event)
 	}
 }
 
-bool MainActor::Overlaps(const Vector2 _pos)
+void MainActor::ClickSpecialEnvironment(Event* _event)
 {
+    TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
+    std::cout << "APP_LOG: SPECIAL ENVIRONMENT CLICKED\n";
+    MoveHero(_event);
+    
+    SpecialEnvironment* env = (SpecialEnvironment*)_event->target.get();
+    
+    std::pair<int, int> _randomDrop = env->RandomDrop();
+    
+    switch(_randomDrop.first)
+    {
+        //health
+        case 0: hero->AddHealth(_randomDrop.second);
+        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " HEALTH\n";
+            break;
+        //damage
+        case 1: hero->AddDamage(_randomDrop.second);
+        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " DAMAGE\n";
+            break;
+        //aromr
+        case 2: hero->AddArmor(_randomDrop.second);
+        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " ARMOR\n";
+            break;
+        //xp
+        case 3: hero->AddXp(_randomDrop.second);
+        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " XP\n";
+            break;
+    }
+}
+
+bool MainActor::Overlaps(const Vector2 _pos, int _type)
+{	int dist_1, dist_2;
+	switch (_type)
+	{
+		// If mob
+		case 0: dist_1 = 200; dist_2 = 10;
+				break;
+		// If plant
+		case 1: dist_1 = 10; dist_2 = 100;
+				break;
+	}
 	for (auto it = _mobs.begin(); it != _mobs.end(); ++it)
 	{
 		Vector2 mob_pos = (*it)->getPosition();
-		if (sqrt((mob_pos.x - _pos.x) * (mob_pos.x - _pos.x) + (mob_pos.y - _pos.y) * (mob_pos.y - _pos.y)) < 200)
+		if (sqrt((mob_pos.x - _pos.x) * (mob_pos.x - _pos.x) + (mob_pos.y - _pos.y) * (mob_pos.y - _pos.y)) < dist_1)
+			return true;
+	}
+	for (auto it = _plants.begin(); it != _plants.end(); ++it)
+	{
+		Vector2 plant_pos = (*it)->getPosition();
+		if (sqrt((plant_pos.x - _pos.x) * (plant_pos.x - _pos.x) + (plant_pos.y - _pos.y) * (plant_pos.y - _pos.y)) < dist_2)
 			return true;
 	}
 	return false;

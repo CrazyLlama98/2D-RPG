@@ -1409,6 +1409,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/CharactersContactListener.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.cpp
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Game.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
@@ -1782,10 +1783,12 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActo
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/CharactersContactListener.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.cpp
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
  /home/andu/oxygine/oxygine-framework/oxygine/src/Actor.h
@@ -1971,6 +1974,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/CharactersContactListener.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.cpp

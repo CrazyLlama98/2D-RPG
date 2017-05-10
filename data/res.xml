@@ -22,6 +22,9 @@
 		<image file="dwarf_idle.png" />
 		<image file="dwarf_attack.png" cols="8" />
 		<image file="dwarf_die.png" cols="4" />
+        <image file="red_flower.png" />
+        <image file="blue_flower.png" />
+        <image file="tree.png" />
 	</atlas>
 </resources>
 
