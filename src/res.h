@@ -5,6 +5,5 @@ namespace res
 {
     extern oxygine::Resources resources;
     void load();
-    void free();
-    
+    void free();   
 }

@@ -58,6 +58,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.cpp.o"
   "CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.o"
   "CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.o"
+  "CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Text.cpp.o"
   "2D-RPG.pdb"
   "2D-RPG"
 )

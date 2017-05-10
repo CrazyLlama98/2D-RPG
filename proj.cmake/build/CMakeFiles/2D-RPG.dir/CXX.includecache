@@ -941,6 +941,8 @@ Hero.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
 res.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
+Text.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Text.h
 iostream
 -
 cstdlib
@@ -1001,6 +1003,24 @@ cstdlib
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
 Environment.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Text.cpp
+Text.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Text.h
+res.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
+cstring
+-
+ctime
+-
+cstdlib
+-
+iostream
+-
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Text.h
+oxygine-framework.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/oxygine-framework.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.cpp
 Utils.h
