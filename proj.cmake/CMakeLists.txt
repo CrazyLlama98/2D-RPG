@@ -12,7 +12,7 @@ file(GLOB_RECURSE BOX2DSRC
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OXYGINE_CXX_FLAGS}")
 
-add_executable(2D-RPG ${BOX2DSRC} ../src/Game.cpp ../src/main.cpp ../src/Entity.cpp ../src/Utils.cpp ../src/Character.cpp ../src/Environment.cpp ../src/SpecialEnvironment.cpp ../src/Map.cpp ../src/Hero.cpp ../src/MainActor.cpp ../src/res.cpp ../src/CharactersContactListener.cpp ../src/Box2DDebugDraw.cpp ../src/Game.h ../src/Entity.h ../src/Utils.h ../src/Character.h ../src/Environment.h ../src/SpecialEnvironment.h ../src/Map.h ../src/Hero.h ../src/MainActor.h ../src/res.h ../src/CharactersContactListener.h ../src/Box2DDebugDraw.h)
+add_executable(2D-RPG ${BOX2DSRC} ../src/Game.cpp ../src/main.cpp ../src/Entity.cpp ../src/Utils.cpp ../src/Character.cpp ../src/Environment.cpp ../src/SpecialEnvironment.cpp ../src/Map.cpp ../src/Hero.cpp ../src/MainActor.cpp ../src/res.cpp ../src/CharactersContactListener.cpp ../src/Box2DDebugDraw.cpp ../src/Text.cpp ../src/Game.h ../src/Entity.h ../src/Utils.h ../src/Character.h ../src/Environment.h ../src/SpecialEnvironment.h ../src/Map.h ../src/Hero.h ../src/MainActor.h ../src/res.h ../src/CharactersContactListener.h ../src/Box2DDebugDraw.h ../src/Text.h)
 source_group(box2d FILES ${BOX2DSRC})
 include_directories(../box2d)
 

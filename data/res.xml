@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <resources>
+	<font file="main.fnt" />
 	<set path="sprites" />
 	<atlas>
 		<image file="hero_idle_up.png" />
