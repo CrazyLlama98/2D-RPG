@@ -47,7 +47,7 @@ void MainActor::ClickOnHero(Event * ev)
 void MainActor::doUpdate(const UpdateState& us)
 {
 	_world->Step(us.dt / 1000.0f, 6, 2);
-	// RandomSpawn();
+	RandomSpawn();
 
 	//update each body position on display
 	b2Body* body = _world->GetBodyList();
@@ -214,51 +214,41 @@ void MainActor::ClickCharacter(Event* _event)
     TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
     
     MoveHero(_event);
-    
-    for(auto it : _mobs)
+   	std::cout << "APP_LOG: CHARACTER CLICKED\n";
+   	Character* mob = (Character*)_event->target.get();
+    int heroArmor = hero->GetArmor();
+    int heroHealth = hero->GetHealth();
+    int heroDamage = hero->DealDamage();
+    int mobHealth = mob->GetHealth();
+    int mobDamage = mob->DealDamage();
+        
+    if (heroArmor >= mobDamage)
+    	hero->AddArmor(-mobDamage);
+    else
     {
-        if(it == (Character*)_event->target.get())
-        {
-        	std::cout << "APP_LOG: CHARACTER CLICKED\n";
-        	Character *mob = (Character*)it;
-            int heroArmor = hero->GetArmor();
-            int heroHealth = hero->GetHealth();
-            int heroDamage = hero->DealDamage();
-            int mobHealth = mob->GetHealth();
-            int mobDamage = mob->DealDamage();
-            
-            if(heroArmor >= mobDamage)
-            {
-                hero->AddArmor(-mobDamage);
-            }
-            else
-            {
-                hero->SetArmor(0);
-                hero->AddHealth(heroArmor - mobDamage);
-            }
-            mob->SetHealth(mobHealth - heroDamage);
-            if(hero->GetHealth() <= 0)
-            {
-            	hero->removeTweens(true);
-            	hero->removeAllEventListeners();
-            	this->removeAllEventListeners();
-            	for (it : _mobs)
-            		it->removeAllEventListeners();
-                hero->Die();
-
-                return;
-            }
-            if(mob->GetHealth() <= 0)
-            {
-            	mob->removeTweens(true);
-            	mob->removeAllEventListeners();
-                mob->Die();
-                hero->AddXp(mob->GetXp());
-                // RemoveActor(mob);
-                return;
-            }
-        }
+        hero->SetArmor(0);
+        hero->AddHealth(heroArmor - mobDamage);
     }
+    mob->SetHealth(mobHealth - heroDamage);
+    if (hero->GetHealth() <= 0)
+    {
+    	hero->removeTweens(true);
+    	hero->removeAllEventListeners();
+    	this->removeAllEventListeners();
+    	for (it : _mobs)
+    		it->removeAllEventListeners();
+        hero->Die();
+        return;
+    }
+    if (mob->GetHealth() <= 0)
+    {
+    	mob->removeTweens(true);
+    	mob->removeAllEventListeners();
+        mob->Die();
+        hero->AddXp(mob->GetXp());
+        RemoveActor(mob);
+        return;
+	}
 }
 
 void MainActor::ClickSpecialEnvironment(Event* _event)
@@ -318,26 +308,26 @@ bool MainActor::Overlaps(const Vector2 _pos, int _type)
 	return false;
 }
 
-// void MainActor::RemoveActor(Actor* _act)
-// {
-// 	b2Body* body = _world->GetBodyList();
-// 	while (body)
-// 	{
-// 		spActor actor = (Actor*)body->GetUserData();
-// 		b2Body* next = body->GetNext();
-// 		if (actor == _act)
-// 		{
-// 			body->SetUserData(0);
-// 			_world->DestroyBody(body);
-// 			for (auto it = _mobs.begin(); it != _mobs.end(); ++it)
-// 				if (*it == _act) {
-// 					_mobs.erase(it);
-// 					break;
-// 				}
-// 			_act->addTween(TweenDummy(), 10000)->detachWhenDone();
-// 			break;
-// 		}
+void MainActor::RemoveActor(Actor* _act)
+{
+	b2Body* body = _world->GetBodyList();
+	while (body)
+	{
+		spActor actor = (Actor*)body->GetUserData();
+		b2Body* next = body->GetNext();
+		if (actor == _act)
+		{
+			body->SetUserData(0);
+			_world->DestroyBody(body);
+			for (auto it = _mobs.begin(); it != _mobs.end(); ++it)
+				if ((Actor*)*it == _act) {
+					_mobs.erase(it);
+					break;
+				}
+			_act->addTween(TweenDummy(), 10000)->detachWhenDone();
+			break;
+		}
 
-// 		body = next;
-// 	}
-// }
+		body = next;
+	}
+}

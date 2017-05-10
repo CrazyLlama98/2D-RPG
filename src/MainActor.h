@@ -19,7 +19,7 @@ private:
     std::list<Character*> _mobs;
     std::list<Environment*> _plants;
 	b2World* _world;
-	Hero *hero;
+	spHero hero;
 	spMap map;
 	CharactersContactListener contactListener;
 	spBox2DDraw _debugDraw;
@@ -39,6 +39,6 @@ private:
 	void ClickOnHero(Event* ev);
 	// Updates box2d body's position to follow character
 	void doUpdate(const UpdateState& us);
-
+	// Remove the actor from stage and destroys his body
 	void RemoveActor(Actor* _act);
 };

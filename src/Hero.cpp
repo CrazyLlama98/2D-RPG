@@ -17,5 +17,6 @@ int Hero::DealDamage()
 }
 
 void Hero::Die(){
+	addTween(createTween(TweenRotation(getRotation() + (float)MATH_PI / 2), 2000, 1));
 	addTween(TweenAnim(res::resources.getResAnim("hero_idle_down")), 500, 1);
 }
