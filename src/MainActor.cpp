@@ -4,6 +4,7 @@
 #include "Map.h"
 #include "Hero.h"
 #include "res.h"
+#include "Text.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -223,7 +224,15 @@ void MainActor::ClickCharacter(Event* _event)
 	    int heroDamage = hero->DealDamage();
 	    int mobHealth = mob->GetHealth();
 	    int mobDamage = mob->DealDamage();
-	        
+	    
+	    std::string str = std::to_string(mobDamage);
+	    spText tmob = new Text(str, Color(0xFF0000FF), hero->getPosition());
+	    addChild(tmob);
+
+	    str = std::to_string(heroDamage);
+	    spText thero = new Text(str, Color(0xFFFF00FF), mob->getPosition());
+	    addChild(thero);
+
 	    if (heroArmor >= mobDamage)
 	    	hero->AddArmor(-mobDamage);
 	    else
@@ -250,6 +259,9 @@ void MainActor::ClickCharacter(Event* _event)
 	    	mob->removeAllEventListeners();
 	        mob->Die();
 	        hero->AddXp(mob->GetXp());
+	        std::string str = "XP: +" + std::to_string(mob->GetXp());
+	        spText txp = new Text(str, Color(0xFFA500FF), hero->getPosition(), 1500);
+	        addChild(txp);
 	        RemoveActor(mob);
 	        mob->addTween(TweenDummy(), 10000)->detachWhenDone();
 	        return;
@@ -268,23 +280,37 @@ void MainActor::ClickSpecialEnvironment(Event* _event)
     if (Utils::distance(hero->getPosition(), env->getPosition()) < 50) 
     {
 	    std::pair<int, int> _randomDrop = env->RandomDrop();
-	    
+	    std::string str;
+	    spText tcollect;
+
 	    switch(_randomDrop.first)
 	    {
 	        //health
 	        case 0: hero->AddHealth(_randomDrop.second);
+	        		str = "HP: +" + std::to_string(_randomDrop.second);
+	        		tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
+	        		addChild(tcollect);
 	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " HEALTH\n";
 	            break;
 	        //damage
 	        case 1: hero->AddDamage(_randomDrop.second);
+	        		str = "DMG: +" + std::to_string(_randomDrop.second);
+	        		tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
+	        		addChild(tcollect);
 	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " DAMAGE\n";
 	            break;
 	        //aromr
 	        case 2: hero->AddArmor(_randomDrop.second);
+	        		str = "ARM: +" + std::to_string(_randomDrop.second);
+	        		tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
+	        		addChild(tcollect);
 	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " ARMOR\n";
 	            break;
 	        //xp
 	        case 3: hero->AddXp(_randomDrop.second);
+	        		str = "XP: +" + std::to_string(_randomDrop.second);
+	        		tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
+	        		addChild(tcollect);
 	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " XP\n";
 	            break;
 	    }
