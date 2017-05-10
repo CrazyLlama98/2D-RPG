@@ -27,6 +27,7 @@
         <image file="red_flower.png" />
         <image file="blue_flower.png" />
         <image file="tree.png" />
+		<image file="health.png"/>
 	</atlas>
 </resources>
 

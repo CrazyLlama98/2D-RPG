@@ -27,6 +27,7 @@ private:
 	b2World* _world;
 	spHero hero;
 	spMap map;
+	spProgressBar health;
 	CharactersContactListener contactListener;
 	spBox2DDraw _debugDraw;
 	// Spawns enough Characters until there are ten of them

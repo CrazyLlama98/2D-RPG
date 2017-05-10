@@ -22,20 +22,30 @@ spMainActor MainActor::getMainActor()
 	return mainActor;
 }
 
-MainActor::MainActor(): _world(0)
+MainActor::MainActor() : _world(0)
 {
-    
-    setSize(getStage()->getSize());
-    
+
+	setSize(getStage()->getSize());
+
 	map = new Map("map.xml", "Sprites.png");
 	addChild(map);
-    _world = new b2World(b2Vec2(0, 10));
-	
+	_world = new b2World(b2Vec2(0, 10));
+
 	// The following 4 lines of code are used for Box2dDebug -- comment them to make the debug button to disappear 
 	spButton btn = new Button();
 	btn->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ShowHideDebug));
-	btn->setPosition(Vector2(1000, 20));
+	btn->setPosition(Vector2(400, 10));
 	btn->attachTo(this);
+	btn->setSize(Vector2(20, 20));
+
+	//healthBar
+	health = new ProgressBar();
+	health->setResAnim(res::resources.getResAnim("health"));
+	health->setAnchor(Vector2(0.5f, 0.5f));
+	health->setPosition(Vector2(900, 20));
+	health->setSize(Vector2(300, 10));
+	health->setDirection(ProgressBar::dir_0);
+	addChild(health);
 
 	hero = Hero::getHero(_world, getSize() / 2);
 	//_mobs.push_back(hero);
@@ -46,7 +56,7 @@ MainActor::MainActor(): _world(0)
 	hero->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickOnHero));
 	//_world->SetContactListener(&contactListener);
 	RandomSpawn();
-    
+
 }
 
 void MainActor::ClickOnHero(Event * ev)
@@ -59,30 +69,17 @@ void MainActor::doUpdate(const UpdateState& us)
 	_world->Step(us.dt / 1000.0f, 6, 2);
 	RandomSpawn();
 
-	//update each body position on display
-	b2Body* body = _world->GetBodyList();
-	while (body)
-	{
-		spActor actor = (Actor*)body->GetUserData();
-		b2Body* next = body->GetNext();
-		if (actor)
-		{
-			//body->SetTransform(pos, 0);
-			
-			if (body->GetType() == b2_dynamicBody)
-			{
-				spHero hero = (Hero*)(body->GetUserData());
-				b2Vec2 pos = body->GetPosition();
-				if (std::abs(pos.Normalize() - Utils::convert(hero->getTargetPosition()).Normalize()) <= 0.05)
-					body->SetLinearVelocity(b2Vec2(0, 0));
-				hero->setPosition(Utils::convert(body->GetPosition()));
-				if (body->GetLinearVelocity() == b2Vec2(0, 0))
-					hero->removeTweens(true);
-			}
-		}
+	health->addTween(ProgressBar::TweenProgress(hero->GetHealth() / 100.0f), 20);
+	//health->setProgress(hero->GetHealth() / 100.0f);
 
-		body = next;
-	}
+	//update each body position on display
+	b2Body* body = (b2Body*)(hero->getUserData());
+	b2Vec2 pos = body->GetPosition();
+	if (std::abs(pos.Normalize() - Utils::convert(hero->getTargetPosition()).Normalize()) <= 0.05)
+		body->SetLinearVelocity(b2Vec2(0, 0));
+	hero->setPosition(Utils::convert(body->GetPosition()));
+	if (body->GetLinearVelocity() == b2Vec2(0, 0))
+		hero->removeTweens(true);
 }
 
 void MainActor::ShowHideDebug(Event* ev)
@@ -114,7 +111,7 @@ void MainActor::MoveHero(Event* ev)
 		const float force = (2 / sqrt(pos.x * pos.x + pos.y * pos.y));
 		pos = force * pos;
 		body->SetLinearVelocity(pos);
-		
+
 		int x = hero->getPosition().x, y = hero->getPosition().y;
 		int xTarget = tev->localPosition.x, yTarget = tev->localPosition.y;
 		double tg = (x - xTarget != 0) ? (double)(yTarget - y) / (x - xTarget) : Utils::inf * ((yTarget - y) < 0 ? (-1) : 1);
@@ -126,7 +123,7 @@ void MainActor::MoveHero(Event* ev)
 					hero->addTween(TweenQueue::create(
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_left")), 1500, 3),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_left")), 500, 1)));
-				else 
+				else
 					hero->addTween(TweenQueue::create(
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_up")), 1500, 3),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_up")), 500, 1)));
@@ -189,158 +186,159 @@ void MainActor::RandomSpawn()
 		mob->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickCharacter));
 		addChild(mob);
 	}
-    
-    std::string plants_types[] = { "red_flower", "blue_flower" };
-    for(int i = _plants.size(); i < 8; ++i)
-    {
-        Vector2 pos;
-        do {
-            pos.x = rand() % (int)getSize().x;
-            pos.y = rand() % (int)getSize().y;
-        } while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 1));
-        Environment* _plant = new Environment(res::resources.getResAnim("tree"), _world, pos, 0.2);
-        _plants.push_back(_plant);
-        _plant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::MoveHero));
-        addChild(_plant);
 
-    }
-    for(int i = _plants.size(); i < 17; ++i)
-    {
-        int type = rand() % 2;
-        Vector2 pos;
-        do {
-            pos.x = rand() % (int)getSize().x;
-            pos.y = rand() % (int)getSize().y;
-        } while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 1));
-        SpecialEnvironment* _spPlant = new SpecialEnvironment(res::resources.getResAnim(plants_types[type]), _world, pos);
-        _plants.push_back(_spPlant);
-        _spPlant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickSpecialEnvironment));
-        addChild(_spPlant);
-    }
+	std::string plants_types[] = { "red_flower", "blue_flower" };
+	for (int i = _plants.size(); i < 8; ++i)
+	{
+		Vector2 pos;
+		do {
+			pos.x = rand() % (int)getSize().x;
+			pos.y = rand() % (int)getSize().y;
+		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 1));
+		Environment* _plant = new Environment(res::resources.getResAnim("tree"), _world, pos, 0.2);
+		_plants.push_back(_plant);
+		_plant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::MoveHero));
+		addChild(_plant);
+
+	}
+	for (int i = _plants.size(); i < 17; ++i)
+	{
+		int type = rand() % 2;
+		Vector2 pos;
+		do {
+			pos.x = rand() % (int)getSize().x;
+			pos.y = rand() % (int)getSize().y;
+		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 1));
+		SpecialEnvironment* _spPlant = new SpecialEnvironment(res::resources.getResAnim(plants_types[type]), _world, pos);
+		_plants.push_back(_spPlant);
+		_spPlant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickSpecialEnvironment));
+		addChild(_spPlant);
+	}
 }
 
 void MainActor::ClickCharacter(Event* _event)
 {
-    TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
-    
-    MoveHero(_event);
-   	std::cout << "APP_LOG: CHARACTER CLICKED\n";
-   	Character* mob = (Character*)_event->target.get();
-   	if (Utils::distance(mob->getPosition(), hero->getPosition()) < 80) 
-   	{
-	    int heroArmor = hero->GetArmor();
-	    int heroHealth = hero->GetHealth();
-	    int heroDamage = hero->DealDamage();
-	    int mobHealth = mob->GetHealth();
-	    int mobDamage = mob->DealDamage();
-	    
-	    std::string str = std::to_string(mobDamage);
-	    spText tmob = new Text(str, Color(0xFF0000FF), hero->getPosition());
-	    addChild(tmob);
+	TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
 
-	    str = std::to_string(heroDamage);
-	    spText thero = new Text(str, Color(0xFFFF00FF), mob->getPosition());
-	    addChild(thero);
+	MoveHero(_event);
+	std::cout << "APP_LOG: CHARACTER CLICKED\n";
+	Character* mob = (Character*)_event->target.get();
+	if (Utils::distance(mob->getPosition(), hero->getPosition()) < 80)
+	{
+		int heroArmor = hero->GetArmor();
+		int heroHealth = hero->GetHealth();
+		int heroDamage = hero->DealDamage();
+		int mobHealth = mob->GetHealth();
+		int mobDamage = mob->DealDamage();
 
-	    if (heroArmor >= mobDamage)
-	    	hero->AddArmor(-mobDamage);
-	    else
-	    {
-	        hero->SetArmor(0);
-	        hero->AddHealth(heroArmor - mobDamage);
-	    }
-	    mob->SetHealth(mobHealth - heroDamage);
+		std::string str = std::to_string(mobDamage);
+		spText tmob = new Text(str, Color(0xFF0000FF), hero->getPosition());
+		addChild(tmob);
 
-	    if (hero->GetHealth() <= 0)
-	    {
-	    	hero->removeTweens(true);
-	    	hero->removeAllEventListeners();
-	    	this->removeAllEventListeners();
-	    	for (auto it : _mobs)
-	    		it->removeAllEventListeners();
-	        hero->Die();
+		str = std::to_string(heroDamage);
+		spText thero = new Text(str, Color(0xFFFF00FF), mob->getPosition());
+		addChild(thero);
+
+		if (heroArmor >= mobDamage)
+			hero->AddArmor(-mobDamage);
+		else
+		{
+			hero->SetArmor(0);
+			hero->AddHealth(heroArmor - mobDamage);
+		}
+		mob->SetHealth(mobHealth - heroDamage);
+
+		if (hero->GetHealth() <= 0)
+		{
+			hero->removeTweens(true);
+			hero->removeAllEventListeners();
+			this->removeAllEventListeners();
+			for (auto it : _mobs)
+				it->removeAllEventListeners();
+			hero->Die();
 	        GameOver();
-	        return;
-	    }
+			return;
+		}
 
-	    if (mob->GetHealth() <= 0)
-	    {
-	    	mob->removeTweens(true);
-	    	mob->removeAllEventListeners();
-	        mob->Die();
-	        hero->AddXp(mob->GetXp());
-	        std::string str = "XP: +" + std::to_string(mob->GetXp());
-	        spText txp = new Text(str, Color(0xFFA500FF), hero->getPosition(), 1500);
-	        addChild(txp);
-	        RemoveActor(mob);
-	        mob->addTween(TweenDummy(), 10000)->detachWhenDone();
-	        return;
+		if (mob->GetHealth() <= 0)
+		{
+			mob->removeTweens(true);
+			mob->removeAllEventListeners();
+			mob->Die();
+			hero->AddXp(mob->GetXp());
+			std::string str = "XP: +" + std::to_string(mob->GetXp());
+			spText txp = new Text(str, Color(0xFFA500FF), hero->getPosition(), 1500);
+			addChild(txp);
+			RemoveActor(mob);
+			mob->addTween(TweenDummy(), 10000)->detachWhenDone();
+			return;
 		}
 	}
 }
 
 void MainActor::ClickSpecialEnvironment(Event* _event)
 {
-    TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
-    std::cout << "APP_LOG: SPECIAL ENVIRONMENT CLICKED\n";
+	TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
+	std::cout << "APP_LOG: SPECIAL ENVIRONMENT CLICKED\n";
 
-    SpecialEnvironment* env = (SpecialEnvironment*)_event->target.get();
-    
-    std::cout << "APP_LOG: DISTANCE - " << Utils::distance(hero->getPosition(), env->getPosition()) << '\n';
-    if (Utils::distance(hero->getPosition(), env->getPosition()) < 50) 
-    {
-	    std::pair<int, int> _randomDrop = env->RandomDrop();
-	    std::string str;
-	    spText tcollect;
+	SpecialEnvironment* env = (SpecialEnvironment*)_event->target.get();
 
-	    switch(_randomDrop.first)
-	    {
-	        //health
-	        case 0: hero->AddHealth(_randomDrop.second);
-	        		str = "HP: +" + std::to_string(_randomDrop.second);
-	        		tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
-	        		addChild(tcollect);
-	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " HEALTH\n";
-	            break;
-	        //damage
-	        case 1: hero->AddDamage(_randomDrop.second);
-	        		str = "DMG: +" + std::to_string(_randomDrop.second);
-	        		tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
-	        		addChild(tcollect);
-	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " DAMAGE\n";
-	            break;
-	        //aromr
-	        case 2: hero->AddArmor(_randomDrop.second);
-	        		str = "ARM: +" + std::to_string(_randomDrop.second);
-	        		tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
-	        		addChild(tcollect);
-	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " ARMOR\n";
-	            break;
-	        //xp
-	        case 3: hero->AddXp(_randomDrop.second);
-	        		str = "XP: +" + std::to_string(_randomDrop.second);
-	        		tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
-	        		addChild(tcollect);
-	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " XP\n";
-	            break;
-	    }
-	    
-	    env->removeAllEventListeners();
-	    RemoveActor(env);
-	    env->detach();
+	std::cout << "APP_LOG: DISTANCE - " << Utils::distance(hero->getPosition(), env->getPosition()) << '\n';
+	if (Utils::distance(hero->getPosition(), env->getPosition()) < 50)
+	{
+		std::pair<int, int> _randomDrop = env->RandomDrop();
+		std::string str;
+		spText tcollect;
+
+		switch (_randomDrop.first)
+		{
+			//health
+		case 0: hero->AddHealth(_randomDrop.second);
+			str = "HP: +" + std::to_string(_randomDrop.second);
+			tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
+			addChild(tcollect);
+			std::cout << "APP_LOG: ADDED " << _randomDrop.second << " HEALTH\n";
+			break;
+			//damage
+		case 1: hero->AddDamage(_randomDrop.second);
+			str = "DMG: +" + std::to_string(_randomDrop.second);
+			tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
+			addChild(tcollect);
+			std::cout << "APP_LOG: ADDED " << _randomDrop.second << " DAMAGE\n";
+			break;
+			//aromr
+		case 2: hero->AddArmor(_randomDrop.second);
+			str = "ARM: +" + std::to_string(_randomDrop.second);
+			tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
+			addChild(tcollect);
+			std::cout << "APP_LOG: ADDED " << _randomDrop.second << " ARMOR\n";
+			break;
+			//xp
+		case 3: hero->AddXp(_randomDrop.second);
+			str = "XP: +" + std::to_string(_randomDrop.second);
+			tcollect = new Text(str, Color(0xFFA500FF), hero->getPosition());
+			addChild(tcollect);
+			std::cout << "APP_LOG: ADDED " << _randomDrop.second << " XP\n";
+			break;
+		}
+
+		env->removeAllEventListeners();
+		RemoveActor(env);
+		env->detach();
 	}
 }
 
 bool MainActor::Overlaps(const Vector2 _pos, int _type)
-{	int dist_1, dist_2;
+{
+	int dist_1, dist_2;
 	switch (_type)
 	{
 		// If mob
-		case 0: dist_1 = 200; dist_2 = 10;
-				break;
+	case 0: dist_1 = 200; dist_2 = 10;
+		break;
 		// If plant
-		case 1: dist_1 = 10; dist_2 = 100;
-				break;
+	case 1: dist_1 = 10; dist_2 = 100;
+		break;
 	}
 	for (auto it = _mobs.begin(); it != _mobs.end(); ++it)
 	{
