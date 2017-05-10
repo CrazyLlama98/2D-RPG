@@ -3,6 +3,7 @@
 	<font file="main.fnt" />
 	<set path="sprites" />
 	<atlas>
+		<image file="gameover.png" />
 		<image file="hero_idle_up.png" />
 		<image file="hero_idle_down.png" cols="3" />
 		<image file="hero_idle_right.png" cols="3" />

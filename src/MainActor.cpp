@@ -256,6 +256,7 @@ void MainActor::ClickCharacter(Event* _event)
 			for (auto it : _mobs)
 				it->removeAllEventListeners();
 			hero->Die();
+	        GameOver();
 			return;
 		}
 
@@ -379,4 +380,15 @@ void MainActor::RemoveActor(Actor* _act)
 
 		body = next;
 	}
+}
+
+void MainActor::GameOver()
+{
+	spSprite img = new Sprite;
+	img->setResAnim(res::resources.getResAnim("gameover"));
+	img->setAnchor(0.5f, 0.5f);
+	img->setSize(getSize() / 2);
+	img->setPosition(Vector2(getSize().x / 2, getSize().y + img->getSize().y));
+	img->addTween(TweenPosition(getSize() / 2), 3000);
+	addChild(img);
 }

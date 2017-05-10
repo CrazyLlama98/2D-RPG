@@ -48,4 +48,6 @@ private:
 	void doUpdate(const UpdateState& us);
 	// Remove the actor from stage and destroys his body
 	void RemoveActor(Actor* _act);
+
+	void GameOver();
 };
