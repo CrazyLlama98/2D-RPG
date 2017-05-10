@@ -993,6 +993,10 @@ oxygine-framework.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.cpp
 SpecialEnvironment.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
+ctime
+-
+cstdlib
+-
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
 Environment.h

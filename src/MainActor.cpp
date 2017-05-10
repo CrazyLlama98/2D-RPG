@@ -172,7 +172,7 @@ void MainActor::RandomSpawn()
 		do {
 			pos.x = rand() % (int)getSize().x;
 			pos.y = rand() % (int)getSize().y;
-		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos));
+		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 0));
 		Character *mob = new Character(100, 10, 50, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"), _world, pos, b2_staticBody, 1);
 		_mobs.push_back(mob);
 		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
@@ -264,11 +264,10 @@ void MainActor::ClickCharacter(Event* _event)
 void MainActor::ClickSpecialEnvironment(Event* _event)
 {
     TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
-    
+    std::cout << "APP_LOG: SPECIAL ENVIRONMENT CLICKED\n";
     MoveHero(_event);
     
     SpecialEnvironment* env = (SpecialEnvironment*)_event->target.get();
-<<<<<<< HEAD
     
     std::pair<int, int> _randomDrop = env->RandomDrop();
     
@@ -276,20 +275,21 @@ void MainActor::ClickSpecialEnvironment(Event* _event)
     {
         //health
         case 0: hero->AddHealth(_randomDrop.second);
+        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " HEALTH\n";
             break;
         //damage
         case 1: hero->AddDamage(_randomDrop.second);
+        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " DAMAGE\n";
             break;
         //aromr
         case 2: hero->AddArmor(_randomDrop.second);
+        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " ARMOR\n";
             break;
         //xp
         case 3: hero->AddXp(_randomDrop.second);
+        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " XP\n";
             break;
     }
-    
-=======
->>>>>>> origin/ClcikSpecialEnv
 }
 
 bool MainActor::Overlaps(const Vector2 _pos, int _type)

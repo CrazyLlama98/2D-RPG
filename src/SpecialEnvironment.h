@@ -5,11 +5,9 @@ class SpecialEnvironment : public Environment
 {
 public:
 	SpecialEnvironment(ENV_CONSTRUCT);
-
-private:
 	/* RandomDrop *
 	 **************
 	 * "Drops" randomly one of the following: Health(0), Damage(1), Armor(2), Xp(3).
 	*/
-    std::pair<int, int> RandomDrop();
+	std::pair<int, int> RandomDrop();
 };
