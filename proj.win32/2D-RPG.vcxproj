@@ -169,6 +169,7 @@
     <ClCompile Include="..\src\Map.cpp" />
     <ClCompile Include="..\src\res.cpp" />
     <ClCompile Include="..\src\SpecialEnvironment.cpp" />
+    <ClCompile Include="..\src\Text.cpp" />
     <ClCompile Include="..\src\Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -230,6 +231,7 @@
     <ClInclude Include="..\src\Map.h" />
     <ClInclude Include="..\src\res.h" />
     <ClInclude Include="..\src\SpecialEnvironment.h" />
+    <ClInclude Include="..\src\Text.h" />
     <ClInclude Include="..\src\Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
