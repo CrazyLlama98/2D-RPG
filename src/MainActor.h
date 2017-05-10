@@ -35,4 +35,6 @@ private:
 	void ClickOnHero(Event* ev);
 	// Updates box2d body's position to follow character
 	void doUpdate(const UpdateState& us);
+
+	void RemoveActor(Actor* _act);
 };
