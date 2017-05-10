@@ -27,7 +27,6 @@ MainActor::MainActor(): _world(0)
 	btn->attachTo(this);
 
 	hero = new Hero(100, 10, 0, 100, "hero", res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
-	//_entities.push_back(hero);
 	addChild(hero);
 	((b2Body*)(hero->getUserData()))->SetGravityScale(0);
 	((b2Body*)(hero->getUserData()))->SetFixedRotation(true);
@@ -45,7 +44,7 @@ void MainActor::ClickOnHero(Event * ev)
 void MainActor::doUpdate(const UpdateState& us)
 {
 	_world->Step(us.dt / 1000.0f, 6, 2);
-	// RandomSpawn();
+	RandomSpawn();
 
 	//update each body position on display
 	b2Body* body = _world->GetBodyList();
@@ -163,7 +162,7 @@ void MainActor::RandomSpawn()
 {
 	std::string mob_types[] = { "skeleton", "dwarf", "troll" };
 	srand(time(0));
-	for (int i = _entities.size(); i < 10; ++i)
+	for (int i = _mobs.size(); i < 10; ++i)
 	{
 		int type = rand() % 3;
 		Vector2 pos;
@@ -171,9 +170,9 @@ void MainActor::RandomSpawn()
 			pos.x = rand() % (int)getSize().x;
 			pos.y = rand() % (int)getSize().y;
 		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos));
-		Character *mob = new Character(100, 5, 20, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"),
+		Character* mob = new Character(100, 5, 20, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"),
 						 _world, pos, b2_staticBody, 1);
-		_entities.push_back(mob);
+		_mobs.push_back(mob);
 		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
 		mob->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickCharacter));
 		addChild(mob);
@@ -185,56 +184,46 @@ void MainActor::ClickCharacter(Event* _event)
     TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
     
     MoveHero(_event);
-    
-    for(auto it : _entities)
+   	std::cout << "APP_LOG: CHARACTER CLICKED\n";
+   	Character* mob = (Character*)_event->target.get();
+    int heroArmor = hero->GetArmor();
+    int heroHealth = hero->GetHealth();
+    int heroDamage = hero->DealDamage();
+    int mobHealth = mob->GetHealth();
+    int mobDamage = mob->DealDamage();
+        
+    if (heroArmor >= mobDamage)
+    	hero->AddArmor(-mobDamage);
+    else
     {
-        if(it == (Character*)_event->target.get())
-        {
-        	std::cout << "APP_LOG: CHARACTER CLICKED\n";
-        	Character *mob = (Character*)it;
-            int heroArmor = hero->GetArmor();
-            int heroHealth = hero->GetHealth();
-            int heroDamage = hero->DealDamage();
-            int mobHealth = mob->GetHealth();
-            int mobDamage = mob->DealDamage();
-            
-            if(heroArmor >= mobDamage)
-            {
-                hero->AddArmor(-mobDamage);
-            }
-            else
-            {
-                hero->SetArmor(0);
-                hero->AddHealth(heroArmor - mobDamage);
-            }
-            mob->SetHealth(mobHealth - heroDamage);
-            if(hero->GetHealth() <= 0)
-            {
-            	hero->removeTweens(true);
-            	hero->removeAllEventListeners();
-            	this->removeAllEventListeners();
-            	for (it : _entities)
-            		it->removeAllEventListeners();
-                hero->Die();
-
-                return;
-            }
-            if(mob->GetHealth() <= 0)
-            {
-            	mob->removeTweens(true);
-            	mob->removeAllEventListeners();
-                mob->Die();
-                hero->AddXp(mob->GetXp());
-                // RemoveActor(mob);
-                return;
-            }
-        }
+        hero->SetArmor(0);
+        hero->AddHealth(heroArmor - mobDamage);
     }
+    mob->SetHealth(mobHealth - heroDamage);
+    if (hero->GetHealth() <= 0)
+    {
+    	hero->removeTweens(true);
+    	hero->removeAllEventListeners();
+    	this->removeAllEventListeners();
+    	for (it : _mobs)
+    		it->removeAllEventListeners();
+        hero->Die();
+        return;
+    }
+    if (mob->GetHealth() <= 0)
+    {
+    	mob->removeTweens(true);
+    	mob->removeAllEventListeners();
+        mob->Die();
+        hero->AddXp(mob->GetXp());
+        RemoveActor(mob);
+        return;
+	}
 }
 
 bool MainActor::Overlaps(const Vector2 _pos)
 {
-	for (auto it = _entities.begin(); it != _entities.end(); ++it)
+	for (auto it = _mobs.begin(); it != _mobs.end(); ++it)
 	{
 		Vector2 mob_pos = (*it)->getPosition();
 		if (sqrt((mob_pos.x - _pos.x) * (mob_pos.x - _pos.x) + (mob_pos.y - _pos.y) * (mob_pos.y - _pos.y)) < 200)
@@ -243,26 +232,26 @@ bool MainActor::Overlaps(const Vector2 _pos)
 	return false;
 }
 
-// void MainActor::RemoveActor(Actor* _act)
-// {
-// 	b2Body* body = _world->GetBodyList();
-// 	while (body)
-// 	{
-// 		spActor actor = (Actor*)body->GetUserData();
-// 		b2Body* next = body->GetNext();
-// 		if (actor == _act)
-// 		{
-// 			body->SetUserData(0);
-// 			_world->DestroyBody(body);
-// 			for (auto it = _entities.begin(); it != _entities.end(); ++it)
-// 				if (*it == _act) {
-// 					_entities.erase(it);
-// 					break;
-// 				}
-// 			_act->addTween(TweenDummy(), 10000)->detachWhenDone();
-// 			break;
-// 		}
+void MainActor::RemoveActor(Actor* _act)
+{
+	b2Body* body = _world->GetBodyList();
+	while (body)
+	{
+		spActor actor = (Actor*)body->GetUserData();
+		b2Body* next = body->GetNext();
+		if (actor == _act)
+		{
+			body->SetUserData(0);
+			_world->DestroyBody(body);
+			for (auto it = _mobs.begin(); it != _mobs.end(); ++it)
+				if ((Actor*)*it == _act) {
+					_mobs.erase(it);
+					break;
+				}
+			_act->addTween(TweenDummy(), 10000)->detachWhenDone();
+			break;
+		}
 
-// 		body = next;
-// 	}
-// }
+		body = next;
+	}
+}
