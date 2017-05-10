@@ -27,7 +27,7 @@ MainActor::MainActor(): _world(0)
 	btn->setPosition(Vector2(1000, 20));
 	btn->attachTo(this);
 
-	hero = new Hero(100, 10, 0, 100, "hero", res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
+	hero = new Hero(100, 15, 0, 100, "hero", res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
 	//_mobs.push_back(hero);
 	addChild(hero);
 	((b2Body*)(hero->getUserData()))->SetGravityScale(0);
@@ -173,7 +173,7 @@ void MainActor::RandomSpawn()
 			pos.x = rand() % (int)getSize().x;
 			pos.y = rand() % (int)getSize().y;
 		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos));
-		Character *mob = new Character(100, 5, 20, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"),
+		Character *mob = new Character(100, 10, 50, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"),
 						 _world, pos, b2_staticBody, 1);
 		_mobs.push_back(mob);
 		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
@@ -270,6 +270,24 @@ void MainActor::ClickSpecialEnvironment(Event* _event)
     MoveHero(_event);
     
     SpecialEnvironment* env = (SpecialEnvironment*)_event->target.get();
+    
+    std::pair<int, int> _randomDrop = env->RandomDrop();
+    
+    switch(_randomDrop.first)
+    {
+        //health
+        case 0: hero->AddHealth(_randomDrop.second);
+            break;
+        //damage
+        case 1: hero->AddDamage(_randomDrop.second);
+            break;
+        //aromr
+        case 2: hero->AddArmor(_randomDrop.second);
+            break;
+        //xp
+        case 3: hero->AddXp(_randomDrop.second);
+            break;
+    }
     
 }
 
