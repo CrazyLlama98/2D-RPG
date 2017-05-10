@@ -10,12 +10,12 @@ public:
     Hero(const int _health, const int _damage, const int _xp, const int _armor, CHARACTER_CONSTRUCT);
 	
 	int GetArmor() const { return armor; };
-	void SetArmor(const int _armor) { armor = _armor; }
-    void AddArmor(const int _armor) { armor += _armor; }
+    void SetArmor(const int _armor) { armor = std::min(_armor, 100); }
+    void AddArmor(const int _armor) { armor = std::min(_armor + armor, 100); }
 
-    void AddDamage(const int _damage) { damage += _damage; }
+    void AddDamage(const int _damage) { damage = std::min(_damage + damage, 50); }
 
-    void AddHealth(const int _health) { health += _health; }
+    void AddHealth(const int _health) { health = std::min(_health + health, 100); }
 	
     void AddXp(const int _xp) { xp += _xp; }
     
