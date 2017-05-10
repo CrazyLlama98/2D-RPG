@@ -12,14 +12,14 @@ Entity::Entity(const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vec
 
 	b2BodyDef bodyDef;
 	bodyDef.type = _def;
-	bodyDef.position = Utils::convert(_pos);
+	bodyDef.position = Utils::convert(oxygine::Vector2(_pos.x, _pos.y + 10));
 
 	b2Body* body = _world->CreateBody(&bodyDef);
 	setUserData(body);
 	setScale(_scale);
 
 	b2PolygonShape shape;
-	shape.SetAsBox(getWidth() / Utils::scale / 2 * _scale, getWidth() / Utils::scale / 2 * _scale);
+	shape.SetAsBox(getWidth() / Utils::scale / 4 * _scale, getHeight() / Utils::scale / 4 * _scale);
 
 	b2FixtureDef fixtureDef;
 	fixtureDef.shape = &shape;

@@ -2,6 +2,7 @@
 #include "oxygine-framework.h"
 #include "Box2D/Box2D.h"
 
+DECLARE_SMART(Entity, spEntity);
 class Entity : public oxygine::Sprite 
 {
 public:

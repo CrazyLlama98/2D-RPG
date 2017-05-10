@@ -822,6 +822,28 @@ Box2D/Rope/b2Rope.h
 Box2D/Common/b2Draw.h
 -
 
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2DDebugDraw.cpp
+Box2DDebugDraw.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2DDebugDraw.h
+core/VideoDriver.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/core/VideoDriver.h
+RenderState.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/RenderState.h
+core/gl/VideoDriverGLES20.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/core/gl/VideoDriverGLES20.h
+core/gl/ShaderProgramGL.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/core/gl/ShaderProgramGL.h
+Material.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Material.h
+STDMaterial.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/STDMaterial.h
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2DDebugDraw.h
+Actor.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Actor.h
+Box2D/Box2D.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2D/Box2D.h
+
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.cpp
 Character.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
@@ -831,12 +853,30 @@ cstdlib
 -
 ctime
 -
+iostream
+-
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
 Entity.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
 cstring
 -
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/CharactersContactListener.cpp
+CharactersContactListener.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/CharactersContactListener.h
+Utils.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
+iostream
+-
+
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/CharactersContactListener.h
+Box2D/Box2D.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2D/Box2D.h
+Character.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
+oxygine-framework.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/oxygine-framework.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.cpp
 Entity.h
@@ -891,6 +931,8 @@ Character.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.cpp
 MainActor.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
+SpecialEnvironment.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
 Utils.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
 Map.h
@@ -921,6 +963,12 @@ Box2D/Box2D.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2D/Box2D.h
 Entity.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
+Box2DDebugDraw.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2DDebugDraw.h
+CharactersContactListener.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/CharactersContactListener.h
+Environment.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
 list
 -
 
@@ -945,6 +993,10 @@ oxygine-framework.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.cpp
 SpecialEnvironment.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
+ctime
+-
+cstdlib
+-
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
 Environment.h
@@ -1179,6 +1231,14 @@ oxygine-include.h
 /home/andu/oxygine/oxygine-framework/oxygine/src/oxygine-include.h
 core/Renderer.h
 /home/andu/oxygine/oxygine-framework/oxygine/src/core/Renderer.h
+
+/home/andu/oxygine/oxygine-framework/oxygine/src/STDMaterial.h
+oxygine-include.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/oxygine-include.h
+STDRenderer.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/STDRenderer.h
+Material.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/Material.h
 
 /home/andu/oxygine/oxygine-framework/oxygine/src/STDRenderer.h
 oxygine-include.h
@@ -1509,6 +1569,82 @@ FileSystem.h
 /home/andu/oxygine/oxygine-framework/oxygine/src/core/FileSystem.h
 string
 -
+
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/ShaderProgramGL.h
+../ShaderProgram.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/ShaderProgram.h
+oxgl.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/oxgl.h
+
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/VertexDeclarationGL.h
+oxygine-include.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/oxygine-include.h
+../VertexDeclaration.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/VertexDeclaration.h
+oxgl.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/oxgl.h
+
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/VideoDriverGL.h
+oxygine-include.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/oxygine-include.h
+../VideoDriver.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/VideoDriver.h
+VertexDeclarationGL.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/VertexDeclarationGL.h
+oxgl.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/oxgl.h
+
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/VideoDriverGLES20.h
+oxygine-include.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/oxygine-include.h
+VideoDriverGL.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/VideoDriverGL.h
+core/Restorable.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/core/Restorable.h
+../ShaderProgram.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/ShaderProgram.h
+../file.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/file.h
+
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/oxgl.h
+oxygine-include.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/oxygine-include.h
+IwImage.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/IwImage.h
+IwGL.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/IwGL.h
+GLES/gl.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/GLES/gl.h
+GLES/glext.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/GLES/glext.h
+gles/egl.h
+-
+SDL_config.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/SDL_config.h
+SDL_opengl.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/SDL_opengl.h
+GLES2/gl2.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/GLES2/gl2.h
+GLES2/gl2ext.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/GLES2/gl2ext.h
+TargetConditionals.h
+-
+OpenGLES/ES2/gl.h
+-
+OpenGLES/ES2/glext.h
+-
+OpenGLES/ES1/gl.h
+-
+OpenGLES/ES1/glext.h
+-
+SDL_opengl.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/SDL_opengl.h
+GLES2/gl2.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/GLES2/gl2.h
+GLES2/gl2ext.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/GLES2/gl2ext.h
+SDL_opengl.h
+/home/andu/oxygine/oxygine-framework/oxygine/src/core/gl/SDL_opengl.h
 
 /home/andu/oxygine/oxygine-framework/oxygine/src/core/intrusive_ptr.h
 oxygine-include.h
@@ -2357,6 +2493,34 @@ begin_code.h
 /usr/include/SDL2/begin_code.h
 close_code.h
 /usr/include/SDL2/close_code.h
+
+/usr/include/SDL2/SDL_opengl.h
+SDL_config.h
+/usr/include/SDL2/SDL_config.h
+gl_mangle.h
+/usr/include/SDL2/gl_mangle.h
+windows.h
+-
+SDL_opengl_glext.h
+/usr/include/SDL2/SDL_opengl_glext.h
+
+/usr/include/SDL2/SDL_opengl_glext.h
+windows.h
+-
+stddef.h
+-
+inttypes.h
+-
+inttypes.h
+-
+inttypes.h
+-
+stdint.h
+-
+stdint.h
+-
+inttypes.h
+-
 
 /usr/include/SDL2/SDL_pixels.h
 SDL_stdinc.h

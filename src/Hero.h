@@ -3,18 +3,19 @@
 #define CHARACTER_CONSTRUCT const std::string _type, const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, const float _scale = 1.0f
 #define CHARACTER_PARAMS const std::string _type, const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vector2 &_pos, const float _scale
 
+DECLARE_SMART(Hero, spHero)
 class Hero : public Character
 {
 public:
     Hero(const int _health, const int _damage, const int _xp, const int _armor, CHARACTER_CONSTRUCT);
 	
 	int GetArmor() const { return armor; };
-	void SetArmor(const int _armor) { armor = _armor; }
-    void AddArmor(const int _armor) { armor += _armor; }
+    void SetArmor(const int _armor) { armor = std::min(_armor, 100); }
+    void AddArmor(const int _armor) { armor = std::min(_armor + armor, 100); }
 
-    void AddDamage(const int _damage) { damage += _damage; }
+    void AddDamage(const int _damage) { damage = std::min(_damage + damage, 50); }
 
-    void AddHealth(const int _health) { health += _health; }
+    void AddHealth(const int _health) { health = std::min(_health + health, 100); }
 	
     void AddXp(const int _xp) { xp += _xp; }
     
@@ -22,7 +23,11 @@ public:
     // 1 and 'damage'
     int DealDamage();
     void Die();
+
+	void setTargetPosition(const oxygine::Vector2 _targetPosition) { targetPosition = _targetPosition; };
+	oxygine::Vector2 getTargetPosition() const { return targetPosition; };
     
 private:
-	int armor; 
+	int armor;
+	oxygine::Vector2 targetPosition;
 };

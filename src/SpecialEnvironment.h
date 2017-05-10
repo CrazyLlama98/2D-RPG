@@ -4,15 +4,10 @@
 class SpecialEnvironment : public Environment
 {
 public:
-	SpecialEnvironment(ENTITY_CONSTRUCT);
-
-private:
+	SpecialEnvironment(ENV_CONSTRUCT);
 	/* RandomDrop *
 	 **************
-	 * "Drops" randomly one of the following: Health, Damage, Armor, Xp. Used
-	 * internaly in Respawn function.
-	 * Params: Two arrays of pointers to functions. One that points to Get
-	 * functions and one that points to Set functions of Hero methods.
+	 * "Drops" randomly one of the following: Health(0), Damage(1), Armor(2), Xp(3).
 	*/
-	void RandomDrop(int (*_get[4])(), void (*_set[4])());
+	std::pair<int, int> RandomDrop();
 };
