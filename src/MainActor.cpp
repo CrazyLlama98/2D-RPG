@@ -173,8 +173,7 @@ void MainActor::RandomSpawn()
 			pos.x = rand() % (int)getSize().x;
 			pos.y = rand() % (int)getSize().y;
 		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos));
-		Character *mob = new Character(100, 10, 50, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"),
-						 _world, pos, b2_staticBody, 1);
+		Character *mob = new Character(100, 10, 50, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"), _world, pos, b2_staticBody, 1);
 		_mobs.push_back(mob);
 		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
 		mob->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickCharacter));
@@ -182,31 +181,30 @@ void MainActor::RandomSpawn()
 	}
     
     std::string plants_types[] = { "red_flower", "blue_flower" };
-    srand(time(0));
-    for(int i = _plants.size(); i < 5; ++i)
+    for(int i = _plants.size(); i < 8; ++i)
     {
         Vector2 pos;
         do {
             pos.x = rand() % (int)getSize().x;
             pos.y = rand() % (int)getSize().y;
-        } while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos));
-        Environment* _plant = new Environment(res::resources.getResAnim("tree"), _world, pos);
+        } while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 1));
+        Environment* _plant = new Environment(res::resources.getResAnim("tree"), _world, pos, 0.2);
         _plants.push_back(_plant);
         _plant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::MoveHero));
         addChild(_plant);
 
     }
-    for(int i = _plants.size(); i < 10; ++i)
+    for(int i = _plants.size(); i < 17; ++i)
     {
         int type = rand() % 2;
         Vector2 pos;
         do {
             pos.x = rand() % (int)getSize().x;
             pos.y = rand() % (int)getSize().y;
-        } while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos));
+        } while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 1));
         SpecialEnvironment* _spPlant = new SpecialEnvironment(res::resources.getResAnim(plants_types[type]), _world, pos);
         _plants.push_back(_spPlant);
-        _spPlant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::SclickSpecialEnvironment));
+        _spPlant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickSpecialEnvironment));
         addChild(_spPlant);
     }
 }
@@ -270,6 +268,7 @@ void MainActor::ClickSpecialEnvironment(Event* _event)
     MoveHero(_event);
     
     SpecialEnvironment* env = (SpecialEnvironment*)_event->target.get();
+<<<<<<< HEAD
     
     std::pair<int, int> _randomDrop = env->RandomDrop();
     
@@ -289,14 +288,31 @@ void MainActor::ClickSpecialEnvironment(Event* _event)
             break;
     }
     
+=======
+>>>>>>> origin/ClcikSpecialEnv
 }
 
-bool MainActor::Overlaps(const Vector2 _pos)
-{
+bool MainActor::Overlaps(const Vector2 _pos, int _type)
+{	int dist_1, dist_2;
+	switch (_type)
+	{
+		// If mob
+		case 0: dist_1 = 200; dist_2 = 10;
+				break;
+		// If plant
+		case 1: dist_1 = 10; dist_2 = 100;
+				break;
+	}
 	for (auto it = _mobs.begin(); it != _mobs.end(); ++it)
 	{
 		Vector2 mob_pos = (*it)->getPosition();
-		if (sqrt((mob_pos.x - _pos.x) * (mob_pos.x - _pos.x) + (mob_pos.y - _pos.y) * (mob_pos.y - _pos.y)) < 200)
+		if (sqrt((mob_pos.x - _pos.x) * (mob_pos.x - _pos.x) + (mob_pos.y - _pos.y) * (mob_pos.y - _pos.y)) < dist_1)
+			return true;
+	}
+	for (auto it = _plants.begin(); it != _plants.end(); ++it)
+	{
+		Vector2 plant_pos = (*it)->getPosition();
+		if (sqrt((plant_pos.x - _pos.x) * (plant_pos.x - _pos.x) + (plant_pos.y - _pos.y) * (plant_pos.y - _pos.y)) < dist_2)
 			return true;
 	}
 	return false;
