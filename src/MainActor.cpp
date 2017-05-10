@@ -12,6 +12,15 @@
 
 using namespace oxygine;
 
+spMainActor MainActor::mainActor = 0;
+
+spMainActor MainActor::getMainActor()
+{
+	if (mainActor == 0)
+		mainActor = new MainActor();
+	return mainActor;
+}
+
 MainActor::MainActor(): _world(0)
 {
     

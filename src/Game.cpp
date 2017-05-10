@@ -11,7 +11,7 @@ void game_init()
 {
 	res::load();
 	
-	MainActor *game = new MainActor();
+	spMainActor game = MainActor::getMainActor();
 	getStage()->addChild(game);
 }
 

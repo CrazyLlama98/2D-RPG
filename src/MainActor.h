@@ -9,13 +9,19 @@
 #include "Environment.h"
 #include <list>
 
+DECLARE_SMART(MainActor, spMainActor)
 class MainActor : public oxygine::Actor
 {
 public:
-    MainActor();
+	static spMainActor getMainActor();
 
 private:
-    
+	//Singleton
+	MainActor();
+
+	//Instance
+	static spMainActor mainActor;
+
     std::list<Character*> _mobs;
     std::list<Environment*> _plants;
 	b2World* _world;
