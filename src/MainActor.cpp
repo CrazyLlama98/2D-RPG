@@ -216,39 +216,44 @@ void MainActor::ClickCharacter(Event* _event)
     MoveHero(_event);
    	std::cout << "APP_LOG: CHARACTER CLICKED\n";
    	Character* mob = (Character*)_event->target.get();
-    int heroArmor = hero->GetArmor();
-    int heroHealth = hero->GetHealth();
-    int heroDamage = hero->DealDamage();
-    int mobHealth = mob->GetHealth();
-    int mobDamage = mob->DealDamage();
-        
-    if (heroArmor >= mobDamage)
-    	hero->AddArmor(-mobDamage);
-    else
-    {
-        hero->SetArmor(0);
-        hero->AddHealth(heroArmor - mobDamage);
-    }
-    mob->SetHealth(mobHealth - heroDamage);
-    if (hero->GetHealth() <= 0)
-    {
-    	hero->removeTweens(true);
-    	hero->removeAllEventListeners();
-    	this->removeAllEventListeners();
-    	for (it : _mobs)
-    		it->removeAllEventListeners();
-        hero->Die();
-        return;
-    }
-    if (mob->GetHealth() <= 0)
-    {
-    	mob->removeTweens(true);
-    	mob->removeAllEventListeners();
-        mob->Die();
-        hero->AddXp(mob->GetXp());
-        RemoveActor(mob);
-        _act->addTween(TweenDummy(), 10000)->detachWhenDone();
-        return;
+   	if (Utils::distance(mob->getPosition(), hero->getPosition()) < 80) 
+   	{
+	    int heroArmor = hero->GetArmor();
+	    int heroHealth = hero->GetHealth();
+	    int heroDamage = hero->DealDamage();
+	    int mobHealth = mob->GetHealth();
+	    int mobDamage = mob->DealDamage();
+	        
+	    if (heroArmor >= mobDamage)
+	    	hero->AddArmor(-mobDamage);
+	    else
+	    {
+	        hero->SetArmor(0);
+	        hero->AddHealth(heroArmor - mobDamage);
+	    }
+	    mob->SetHealth(mobHealth - heroDamage);
+
+	    if (hero->GetHealth() <= 0)
+	    {
+	    	hero->removeTweens(true);
+	    	hero->removeAllEventListeners();
+	    	this->removeAllEventListeners();
+	    	for (it : _mobs)
+	    		it->removeAllEventListeners();
+	        hero->Die();
+	        return;
+	    }
+
+	    if (mob->GetHealth() <= 0)
+	    {
+	    	mob->removeTweens(true);
+	    	mob->removeAllEventListeners();
+	        mob->Die();
+	        hero->AddXp(mob->GetXp());
+	        RemoveActor(mob);
+	        mob->addTween(TweenDummy(), 10000)->detachWhenDone();
+	        return;
+		}
 	}
 }
 
@@ -256,34 +261,38 @@ void MainActor::ClickSpecialEnvironment(Event* _event)
 {
     TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
     std::cout << "APP_LOG: SPECIAL ENVIRONMENT CLICKED\n";
-    MoveHero(_event);
-    
+
     SpecialEnvironment* env = (SpecialEnvironment*)_event->target.get();
     
-    std::pair<int, int> _randomDrop = env->RandomDrop();
-    
-    switch(_randomDrop.first)
+    std::cout << "APP_LOG: DISTANCE - " << Utils::distance(hero->getPosition(), env->getPosition()) << '\n';
+    if (Utils::distance(hero->getPosition(), env->getPosition()) < 50) 
     {
-        //health
-        case 0: hero->AddHealth(_randomDrop.second);
-        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " HEALTH\n";
-            break;
-        //damage
-        case 1: hero->AddDamage(_randomDrop.second);
-        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " DAMAGE\n";
-            break;
-        //aromr
-        case 2: hero->AddArmor(_randomDrop.second);
-        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " ARMOR\n";
-            break;
-        //xp
-        case 3: hero->AddXp(_randomDrop.second);
-        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " XP\n";
-            break;
-    }
-    
-    env->removeAllEventListeners();
-    RemoveActor(env);
+	    std::pair<int, int> _randomDrop = env->RandomDrop();
+	    
+	    switch(_randomDrop.first)
+	    {
+	        //health
+	        case 0: hero->AddHealth(_randomDrop.second);
+	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " HEALTH\n";
+	            break;
+	        //damage
+	        case 1: hero->AddDamage(_randomDrop.second);
+	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " DAMAGE\n";
+	            break;
+	        //aromr
+	        case 2: hero->AddArmor(_randomDrop.second);
+	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " ARMOR\n";
+	            break;
+	        //xp
+	        case 3: hero->AddXp(_randomDrop.second);
+	        		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " XP\n";
+	            break;
+	    }
+	    
+	    env->removeAllEventListeners();
+	    RemoveActor(env);
+	    env->detach();
+	}
 }
 
 bool MainActor::Overlaps(const Vector2 _pos, int _type)
@@ -326,9 +335,13 @@ void MainActor::RemoveActor(Actor* _act)
 			for (auto it = _mobs.begin(); it != _mobs.end(); ++it)
 				if ((Actor*)*it == _act) {
 					_mobs.erase(it);
-					break;
+					return;
 				}
-			break;
+			for (auto it = _plants.begin(); it != _plants.end(); ++it)
+				if ((Actor*)*it == _act) {
+					_plants.erase(it);
+					return;
+				}
 		}
 
 		body = next;
