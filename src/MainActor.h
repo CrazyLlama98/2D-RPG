@@ -32,7 +32,6 @@ private:
     // Resspond to clicks made on Special Enviorment(Special Plants)
     void ClickSpecialEnvironment(oxygine::Event* _event);
     // Checks if two sprites are too close from each other
-    bool Overlaps(const oxygine::Vector2 _pos);
     bool Overlaps(const oxygine::Vector2 _pos, int _type);
 	// Toggle the debug view for box2d
 	void ShowHideDebug(Event* ev);
