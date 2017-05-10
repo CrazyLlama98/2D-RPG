@@ -247,6 +247,7 @@ void MainActor::ClickCharacter(Event* _event)
         mob->Die();
         hero->AddXp(mob->GetXp());
         RemoveActor(mob);
+        _act->addTween(TweenDummy(), 10000)->detachWhenDone();
         return;
 	}
 }
@@ -280,6 +281,9 @@ void MainActor::ClickSpecialEnvironment(Event* _event)
         		std::cout << "APP_LOG: ADDED " << _randomDrop.second << " XP\n";
             break;
     }
+    
+    env->removeAllEventListeners();
+    RemoveActor(env);
 }
 
 bool MainActor::Overlaps(const Vector2 _pos, int _type)
@@ -324,7 +328,6 @@ void MainActor::RemoveActor(Actor* _act)
 					_mobs.erase(it);
 					break;
 				}
-			_act->addTween(TweenDummy(), 10000)->detachWhenDone();
 			break;
 		}
 
