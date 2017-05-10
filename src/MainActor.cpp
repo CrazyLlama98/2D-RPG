@@ -238,7 +238,7 @@ void MainActor::ClickCharacter(Event* _event)
 	    	hero->removeTweens(true);
 	    	hero->removeAllEventListeners();
 	    	this->removeAllEventListeners();
-	    	for (it : _mobs)
+	    	for (auto it : _mobs)
 	    		it->removeAllEventListeners();
 	        hero->Die();
 	        return;
