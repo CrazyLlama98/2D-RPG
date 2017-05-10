@@ -15,7 +15,8 @@ public:
 
 private:
     
-    std::list<Entity*> _entities;
+    std::list<Character*> _mobs;
+    std::list<Enviorment*> _plants;
 	b2World* _world;
 	Hero *hero;
 	spMap map;
@@ -27,6 +28,8 @@ private:
     void MoveHero(oxygine::Event* ev);
     // Responds to clicks made on Characters (mobs)
     void ClickCharacter(oxygine::Event* _event);
+    // Resspond to clicks made on Special Enviorment(Special Plants)
+    void ClickSpecialEnvironment(oxygine::Event* _event);
     // Checks if two sprites are too close from each other
     bool Overlaps(const oxygine::Vector2 _pos);
 	// Toggle the debug view for box2d

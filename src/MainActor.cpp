@@ -163,7 +163,7 @@ void MainActor::RandomSpawn()
 {
 	std::string mob_types[] = { "skeleton", "dwarf", "troll" };
 	srand(time(0));
-	for (int i = _entities.size(); i < 10; ++i)
+	for (int i = _mobs.size(); i < 10; ++i)
 	{
 		int type = rand() % 3;
 		Vector2 pos;
@@ -173,7 +173,7 @@ void MainActor::RandomSpawn()
 		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos));
 		Character *mob = new Character(100, 5, 20, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"),
 						 _world, pos, b2_staticBody, 1);
-		_entities.push_back(mob);
+		_mobs.push_back(mob);
 		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
 		mob->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickCharacter));
 		addChild(mob);
@@ -186,7 +186,7 @@ void MainActor::ClickCharacter(Event* _event)
     
     MoveHero(_event);
     
-    for(auto it : _entities)
+    for(auto it : _mobs)
     {
         if(it == (Character*)_event->target.get())
         {
@@ -230,6 +230,22 @@ void MainActor::ClickCharacter(Event* _event)
             }
         }
     }
+}
+
+void MainActor::ClickSpecialEnvironment(Event* _event)
+{
+    TouchEvent* _tevent = safeCast<TouchEvent*>(_event);
+    
+    MoveHero(_event);
+    
+    for(auto it : _plants)
+    {
+        if (it == (SpecialEnvironment*)_event->target.get())
+        {
+            
+        }
+    }
+    
 }
 
 bool MainActor::Overlaps(const Vector2 _pos)
