@@ -2,6 +2,7 @@
 #include "res.h"
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
 
 Character::Character(const int _health, const int _damage, const int _xp, const std::string _type, ENTITY_PARAMS) :
 	Entity(_res, _world, _pos, _def, _scale)
@@ -20,7 +21,9 @@ int Character::DealDamage()
 		addTween(TweenAnim(res::resources.getResAnim(type + "_attack")), 500)->setDoneCallback(CLOSURE(this, &Character::GoIdle));
 	return rand() % damage + 1;
 }
-void Character::Die() { } 
+void Character::Die() {
+	addTween(TweenAnim(res::resources.getResAnim(type + "_die")), 500);
+} 
 
 void Character::GoIdle(oxygine::Event *_event)
 {

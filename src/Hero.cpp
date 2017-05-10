@@ -16,4 +16,6 @@ int Hero::DealDamage()
 	return rand() % damage + 1;
 }
 
-void Hero::Die(){ };
+void Hero::Die(){
+	addTween(TweenAnim(res::resources.getResAnim("hero_idle_down")), 500, 1);
+}

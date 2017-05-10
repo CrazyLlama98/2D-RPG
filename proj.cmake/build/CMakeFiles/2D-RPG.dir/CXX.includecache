@@ -853,6 +853,8 @@ cstdlib
 -
 ctime
 -
+iostream
+-
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
 Entity.h

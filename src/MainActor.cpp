@@ -45,6 +45,7 @@ void MainActor::ClickOnHero(Event * ev)
 void MainActor::doUpdate(const UpdateState& us)
 {
 	_world->Step(us.dt / 1000.0f, 6, 2);
+	// RandomSpawn();
 
 	//update each body position on display
 	b2Body* body = _world->GetBodyList();
@@ -96,10 +97,9 @@ void MainActor::MoveHero(Event* ev)
 	if (tev->localPosition.x > 64 && tev->localPosition.y > 64 && tev->localPosition.y < 630 && tev->localPosition.x < 1080)
 	{
 		hero->setTargetPosition(tev->localPosition);
-		//hero->addTween(createTween(Actor::TweenPosition(tev->localPosition), 1500));
 		auto body = (b2Body*)(hero->getUserData());
 		b2Vec2 pos = (Utils::convert(tev->localPosition) - body->GetPosition());
-		float force = pos.Normalize();
+		const float force = (2 / sqrt(pos.x * pos.x + pos.y * pos.y));
 		pos = force * pos;
 		body->SetLinearVelocity(pos);
 		
@@ -112,22 +112,22 @@ void MainActor::MoveHero(Event* ev)
 			{
 				if (tg > -1)
 					hero->addTween(TweenQueue::create(
-						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_left")), 1500, 1),
+						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_left")), 1500, 3),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_left")), 500, 1)));
 				else 
 					hero->addTween(TweenQueue::create(
-						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_up")), 1500, 1),
+						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_up")), 1500, 3),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_up")), 500, 1)));
 			}
 			else if (x - xTarget <= 0)
 			{
 				if (tg > -1)
 					hero->addTween(TweenQueue::create(
-						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_right")), 1500, 1),
+						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_right")), 1500, 3),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_right")), 500, 1)));
 				else
 					hero->addTween(TweenQueue::create(
-						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_down")), 1500, 1),
+						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_down")), 1500, 3),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_down")), 500, 1)));
 			}
 		}
@@ -137,22 +137,22 @@ void MainActor::MoveHero(Event* ev)
 			{
 				if (tg < 1)
 					hero->addTween(TweenQueue::create(
-						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_left")), 1500, 1),
+						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_left")), 1500, 3),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_left")), 500, 1)));
 				else
 					hero->addTween(TweenQueue::create(
-						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_down")), 1500, 1),
+						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_down")), 1500, 3),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_down")), 500, 1)));
 			}
 			else
 			{
 				if (tg < 1)
 					hero->addTween(TweenQueue::create(
-						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_right")), 1500, 1),
+						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_right")), 1500, 3),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_right")), 500, 1)));
 				else
 					hero->addTween(TweenQueue::create(
-						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_up")), 1500, 1),
+						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_walk_up")), 1500, 3),
 						createTween(Sprite::TweenAnim(res::resources.getResAnim("hero_idle_up")), 500, 1)));
 			}
 		}
@@ -163,7 +163,7 @@ void MainActor::RandomSpawn()
 {
 	std::string mob_types[] = { "skeleton", "dwarf", "troll" };
 	srand(time(0));
-	for (int i = _entities.size(); i < 11; ++i)
+	for (int i = _entities.size(); i < 10; ++i)
 	{
 		int type = rand() % 3;
 		Vector2 pos;
@@ -200,22 +200,32 @@ void MainActor::ClickCharacter(Event* _event)
             
             if(heroArmor >= mobDamage)
             {
-                hero->SetArmor(heroArmor - mobDamage);
+                hero->AddArmor(-mobDamage);
             }
             else
             {
                 hero->SetArmor(0);
-                hero->SetHealth(heroHealth + heroArmor - mobDamage);
+                hero->AddHealth(heroArmor - mobDamage);
             }
             mob->SetHealth(mobHealth - heroDamage);
             if(hero->GetHealth() <= 0)
             {
+            	hero->removeTweens(true);
+            	hero->removeAllEventListeners();
+            	this->removeAllEventListeners();
+            	for (it : _entities)
+            		it->removeAllEventListeners();
                 hero->Die();
+
                 return;
             }
             if(mob->GetHealth() <= 0)
             {
+            	mob->removeTweens(true);
+            	mob->removeAllEventListeners();
                 mob->Die();
+                hero->AddXp(mob->GetXp());
+                // RemoveActor(mob);
                 return;
             }
         }
@@ -232,3 +242,27 @@ bool MainActor::Overlaps(const Vector2 _pos)
 	}
 	return false;
 }
+
+// void MainActor::RemoveActor(Actor* _act)
+// {
+// 	b2Body* body = _world->GetBodyList();
+// 	while (body)
+// 	{
+// 		spActor actor = (Actor*)body->GetUserData();
+// 		b2Body* next = body->GetNext();
+// 		if (actor == _act)
+// 		{
+// 			body->SetUserData(0);
+// 			_world->DestroyBody(body);
+// 			for (auto it = _entities.begin(); it != _entities.end(); ++it)
+// 				if (*it == _act) {
+// 					_entities.erase(it);
+// 					break;
+// 				}
+// 			_act->addTween(TweenDummy(), 10000)->detachWhenDone();
+// 			break;
+// 		}
+
+// 		body = next;
+// 	}
+// }
