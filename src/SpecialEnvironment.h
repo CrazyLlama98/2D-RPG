@@ -4,7 +4,7 @@
 class SpecialEnvironment : public Environment
 {
 public:
-	SpecialEnvironment(ENTITY_CONSTRUCT);
+	SpecialEnvironment(ENV_CONSTRUCT);
 
 private:
 	/* RandomDrop *

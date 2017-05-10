@@ -1,4 +1,5 @@
 #include "MainActor.h"
+#include "SpecialEnvironment.h"
 #include "Utils.h"
 #include "Map.h"
 #include "Hero.h"
@@ -27,7 +28,7 @@ MainActor::MainActor(): _world(0)
 	btn->attachTo(this);
 
 	hero = new Hero(100, 10, 0, 100, "hero", res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
-	//_entities.push_back(hero);
+	//_mobs.push_back(hero);
 	addChild(hero);
 	((b2Body*)(hero->getUserData()))->SetGravityScale(0);
 	((b2Body*)(hero->getUserData()))->SetFixedRotation(true);
@@ -213,7 +214,7 @@ void MainActor::ClickCharacter(Event* _event)
             	hero->removeTweens(true);
             	hero->removeAllEventListeners();
             	this->removeAllEventListeners();
-            	for (it : _entities)
+            	for (it : _mobs)
             		it->removeAllEventListeners();
                 hero->Die();
 
@@ -238,19 +239,13 @@ void MainActor::ClickSpecialEnvironment(Event* _event)
     
     MoveHero(_event);
     
-    for(auto it : _plants)
-    {
-        if (it == (SpecialEnvironment*)_event->target.get())
-        {
-            
-        }
-    }
+    SpecialEnvironment* env = (SpecialEnvironment*)_event->target.get();
     
 }
 
 bool MainActor::Overlaps(const Vector2 _pos)
 {
-	for (auto it = _entities.begin(); it != _entities.end(); ++it)
+	for (auto it = _mobs.begin(); it != _mobs.end(); ++it)
 	{
 		Vector2 mob_pos = (*it)->getPosition();
 		if (sqrt((mob_pos.x - _pos.x) * (mob_pos.x - _pos.x) + (mob_pos.y - _pos.y) * (mob_pos.y - _pos.y)) < 200)
@@ -270,9 +265,9 @@ bool MainActor::Overlaps(const Vector2 _pos)
 // 		{
 // 			body->SetUserData(0);
 // 			_world->DestroyBody(body);
-// 			for (auto it = _entities.begin(); it != _entities.end(); ++it)
+// 			for (auto it = _mobs.begin(); it != _mobs.end(); ++it)
 // 				if (*it == _act) {
-// 					_entities.erase(it);
+// 					_mobs.erase(it);
 // 					break;
 // 				}
 // 			_act->addTween(TweenDummy(), 10000)->detachWhenDone();

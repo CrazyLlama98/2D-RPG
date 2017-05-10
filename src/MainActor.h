@@ -6,6 +6,7 @@
 #include "Entity.h"
 #include "Box2DDebugDraw.h"
 #include "CharactersContactListener.h"
+#include "Environment.h"
 #include <list>
 
 class MainActor : public oxygine::Actor
@@ -16,7 +17,7 @@ public:
 private:
     
     std::list<Character*> _mobs;
-    std::list<Enviorment*> _plants;
+    std::list<Environment*> _plants;
 	b2World* _world;
 	Hero *hero;
 	spMap map;
