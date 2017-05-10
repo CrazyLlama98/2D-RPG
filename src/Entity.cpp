@@ -24,7 +24,7 @@ Entity::Entity(const oxygine::ResAnim *_res, b2World *_world, const oxygine::Vec
 	b2FixtureDef fixtureDef;
 	fixtureDef.shape = &shape;
 	fixtureDef.density = 1.0f;
-	fixtureDef.friction = 800.0f;
+	fixtureDef.friction = 5.0f;
 
 	body->CreateFixture(&fixtureDef);
 	body->SetUserData(this);

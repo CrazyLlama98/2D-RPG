@@ -7,8 +7,8 @@ DECLARE_SMART(Hero, spHero)
 class Hero : public Character
 {
 public:
-    Hero(const int _health, const int _damage, const int _xp, const int _armor, CHARACTER_CONSTRUCT);
-	
+	static spHero getHero(b2World* _world, oxygine::Vector2 size);
+
 	int GetArmor() const { return armor; };
     void SetArmor(const int _armor) { armor = std::min(_armor, 100); }
     void AddArmor(const int _armor) { armor = std::min(_armor + armor, 100); }
@@ -28,6 +28,10 @@ public:
 	oxygine::Vector2 getTargetPosition() const { return targetPosition; };
     
 private:
+	//Singleton
+	Hero(const int _health, const int _damage, const int _xp, const int _armor, CHARACTER_CONSTRUCT);
+	//smart pointer instance
+	static spHero hero;
 	int armor;
 	oxygine::Vector2 targetPosition;
 };

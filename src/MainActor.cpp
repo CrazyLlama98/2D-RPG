@@ -27,7 +27,7 @@ MainActor::MainActor(): _world(0)
 	btn->setPosition(Vector2(1000, 20));
 	btn->attachTo(this);
 
-	hero = new Hero(100, 15, 0, 100, "hero", res::resources.getResAnim("hero_idle_up"), _world, getSize() / 2, 0.6);
+	hero = Hero::getHero(_world, getSize() / 2);
 	//_mobs.push_back(hero);
 	addChild(hero);
 	((b2Body*)(hero->getUserData()))->SetGravityScale(0);
