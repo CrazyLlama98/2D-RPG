@@ -48,6 +48,12 @@ private:
 	void doUpdate(const UpdateState& us);
 	// Remove the actor from stage and destroys his body
 	void RemoveActor(Actor* _act);
+	// Returns mobs health by level
+	int GetMobHealth(int mobLevel);
+	// Return mobs damage by level
+	int GetMobDamage(int mobLevel);
+	// Returns mobs xp by level
+	int GetMobXp(int mobLevel);
 
 	void GameOver();
 };

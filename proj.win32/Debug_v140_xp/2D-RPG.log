@@ -1,5 +1,5 @@
-﻿  SpecialEnvironment.cpp
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\specialenvironment.cpp(14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  Character.cpp
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\character.cpp(21): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
 b2BroadPhase.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
   oxygine_d.lib(jerror.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
 b2BroadPhase.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification

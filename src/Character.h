@@ -26,9 +26,12 @@ public:
 	// Resets the sprite to idle state
 	void GoIdle(oxygine::Event *_event);
 
+	int GetMaxHealth() const { return maxHealth; };
+	int GetMaxDamage() const { return maxDamage; };
+
 protected:
 	int xp, health, damage;
     int maxHealth, maxDamage;
-    static int level;
+    int level;
 	std::string type;
 };
