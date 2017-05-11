@@ -104,7 +104,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../oxygine-framework/oxygine/src/;../../oxygine-framework\oxygine\third_party\win32\pthreads\include/;..\dependencies\openal\include\;..\dependencies\tremor\tremor;..\dependencies\libogg\include\;../src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\oxygine\oxygine-framework\oxygine\src;C:\oxygine\oxygine-framework\oxygine\third_party\win32\pthreads\include;..\dependencies\openal\include\;..\dependencies\tremor\tremor;..\dependencies\libogg\include\;../src</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
