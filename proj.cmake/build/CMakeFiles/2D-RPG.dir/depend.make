@@ -1613,6 +1613,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Hero.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Hero.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/res.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/snd.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Actor.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AnimationFrame.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AsyncTask.h
@@ -1711,6 +1712,12 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/ImageUtils.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/intrusive_list.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/stringUtils.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/oxygine-sound.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/ResSound.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundInstance.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundPlayer.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundSystem.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundSystemNull.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Hero.cpp.o: /usr/include/SDL2/SDL_atomic.h

@@ -262,7 +262,8 @@ void MainActor::ClickCharacter(Event* _event)
 			this->removeAllEventListeners();
 			for (auto it : _mobs)
 				it->removeAllEventListeners();
-			hero->Die();
+			std::cout<<"WORKING\n";
+			hero->Die(mob->GetType());
 	        GameOver();
 			return;
 		}

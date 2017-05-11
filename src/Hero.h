@@ -22,7 +22,7 @@ public:
     // Anims the hero when attacking and returns a random value between
     // 1 and 'damage'
     int DealDamage();
-    void Die();
+    void Die(std::string mob_type);
 
 	void setTargetPosition(const oxygine::Vector2 _targetPosition) { targetPosition = _targetPosition; };
 	oxygine::Vector2 getTargetPosition() const { return targetPosition; };

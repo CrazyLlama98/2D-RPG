@@ -12,5 +12,33 @@
 	<sound file="skeleton_attack7.ogg" />
 	<sound file="skeleton_attack8.ogg" />
 	<sound file="skeleton_death1.ogg" />
-
+	<sound file="skeleton_kill1.ogg" />
+	<sound file="troll_attack1.ogg" />
+	<sound file="troll_attack2.ogg" />
+	<sound file="troll_attack3.ogg" />
+	<sound file="troll_attack4.ogg" />
+	<sound file="troll_attack5.ogg" />
+	<sound file="troll_attack6.ogg" />
+	<sound file="troll_attack7.ogg" />
+	<sound file="troll_attack8.ogg" />
+	<sound file="troll_attack9.ogg" />
+	<sound file="troll_attack10.ogg" />
+	<sound file="troll_death1.ogg" />
+	<sound file="troll_kill1.ogg" />
+	<sound file="dwarf_attack1.ogg" />
+	<sound file="dwarf_attack2.ogg" />
+	<sound file="dwarf_attack3.ogg" />
+	<sound file="dwarf_attack4.ogg" />
+	<sound file="dwarf_attack5.ogg" />
+	<sound file="dwarf_attack6.ogg" />
+	<sound file="dwarf_attack7.ogg" />
+	<sound file="dwarf_attack8.ogg" />
+	<sound file="dwarf_attack9.ogg" />
+	<sound file="dwarf_attack10.ogg" />
+	<sound file="dwarf_death1.ogg" />
+	<sound file="dwarf_death2.ogg" />
+	<sound file="dwarf_death3.ogg" />
+	<sound file="dwarf_death4.ogg" />
+	<sound file="dwarf_death5.ogg" />
+	<sound file="dwarf_kill1.ogg" />
 </resources>

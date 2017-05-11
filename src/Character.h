@@ -26,6 +26,8 @@ public:
 	// Resets the sprite to idle state
 	void GoIdle(oxygine::Event *_event);
 
+	std::string GetType() { return type; }
+
 protected:
 	int xp, health, damage;
 	std::string type;

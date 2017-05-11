@@ -23,6 +23,10 @@ int Character::DealDamage()
 		int nr;
 		if (type == "skeleton")
 			nr = 8;
+		else if (type == "troll")
+			nr = 10;
+		else if (type == "dwarf")
+			nr = 10;
 		snd::sfxPlayer.play(snd::resources.get(type + "_attack" + std::to_string(rand() % nr + 1)));
 	}
 	return rand() % damage + 1;
@@ -32,6 +36,10 @@ void Character::Die() {
 	int nr;
 	if (type == "skeleton")
 		nr = 1;
+	else if (type == "troll")
+		nr = 1;
+	else if (type == "dwarf")
+		nr = 5;
 	snd::sfxPlayer.play(snd::resources.get(type + "_death" + std::to_string(rand() % nr + 1)));
 } 
 

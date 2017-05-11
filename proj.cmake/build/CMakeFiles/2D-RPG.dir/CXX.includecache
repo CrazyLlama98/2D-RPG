@@ -921,6 +921,8 @@ Hero.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
 res.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
+snd.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/snd.h
 iostream
 -
 cstdlib
