@@ -23,4 +23,32 @@ public:
 	{
 		return sqrt((A.x - B.x) * (A.x - B.x) + (A.y - B.y) * (A.y - B.y));
 	}
+    int GetMobHealth(const int level)
+    {
+        int health = 100;
+        for(int i = 1; i <= level; i++)
+        {
+            health += (1 / 4) * health;
+        }
+        return health;
+    }
+    int GetMobDamage(const int level)
+    {
+        int damage = 10;
+        for(int i = 1; i <= level; i++)
+        {
+            damage += (1 / 4) * damage;
+        }
+        return damage;
+    }
+    int GetMobXp(const int level)
+    {
+        int xp = 100;
+        for(int i = 1; i <= level; i++)
+        {
+            xp += (1 / 4) * xp;
+        }
+        return xp;
+    }
+
 };

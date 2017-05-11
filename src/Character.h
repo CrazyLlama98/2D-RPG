@@ -15,10 +15,10 @@ public:
 	void Die();
 
 	int GetHealth() const { return health; };
-    void SetHealth(const int _health) { health = std::min(_health, 100); };
+    void SetHealth(const int _health) { health = std::min(_health, maxHealth); };
 
 	int GetDamage() const { return damage; };
-    void SetDamage(const int _damage) { damage = std::min(_damage, 100); };
+    void SetDamage(const int _damage) { damage = std::min(_damage, maxDamage); };
 
 	int GetXp() const { return xp; };
 	void SetXp(const int _xp) { xp = _xp; };
@@ -26,9 +26,14 @@ public:
 	// Resets the sprite to idle state
 	void GoIdle(oxygine::Event *_event);
 
+	int GetMaxHealth() const { return maxHealth; };
+	int GetMaxDamage() const { return maxDamage; };
 	std::string GetType() { return type; }
+
 
 protected:
 	int xp, health, damage;
+    int maxHealth, maxDamage;
+    int level;
 	std::string type;
 };

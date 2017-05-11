@@ -1,92 +1,9 @@
-<<<<<<< HEAD
-﻿  Utils.cpp
-  Text.cpp
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\text.cpp(17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  SpecialEnvironment.cpp
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\specialenvironment.cpp(9): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  res.cpp
-  Map.cpp
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\map.cpp(27): warning C4018: '<': signed/unsigned mismatch
-  MainActor.cpp
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(135): warning C4244: 'initializing': conversion from 'const float' to 'int', possible loss of data
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(136): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(194): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(200): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(201): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(215): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(216): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(218): warning C4305: 'argument': truncation from 'double' to 'const float'
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(229): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(230): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  main.cpp
-  Hero.cpp
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\hero.cpp(24): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Game.cpp
-  Environment.cpp
-  Entity.cpp
-  CharactersContactListener.cpp
-  Character.cpp
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\character.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Box2DDebugDraw.cpp
-  b2Rope.cpp
-  b2WheelJoint.cpp
-  b2WeldJoint.cpp
-  b2RopeJoint.cpp
-  b2RevoluteJoint.cpp
-  b2PulleyJoint.cpp
-  Generating Code...
-  Compiling...
-  b2PrismaticJoint.cpp
-  b2MouseJoint.cpp
-  b2MotorJoint.cpp
-  b2Joint.cpp
-  b2GearJoint.cpp
-  b2FrictionJoint.cpp
-  b2DistanceJoint.cpp
-  b2PolygonContact.cpp
-  b2PolygonAndCircleContact.cpp
-  b2EdgeAndPolygonContact.cpp
-  b2EdgeAndCircleContact.cpp
-  b2ContactSolver.cpp
-  b2Contact.cpp
-  b2CircleContact.cpp
-  b2ChainAndPolygonContact.cpp
-  b2ChainAndCircleContact.cpp
-  b2WorldCallbacks.cpp
-  b2World.cpp
-  b2Island.cpp
-  b2Fixture.cpp
-  Generating Code...
-  Compiling...
-  b2ContactManager.cpp
-  b2Body.cpp
-  b2Timer.cpp
-  b2StackAllocator.cpp
-  b2Settings.cpp
-  b2Math.cpp
-  b2Draw.cpp
-  b2BlockAllocator.cpp
-  b2PolygonShape.cpp
-  b2EdgeShape.cpp
-  b2CircleShape.cpp
-  b2ChainShape.cpp
-  b2TimeOfImpact.cpp
-  b2DynamicTree.cpp
-  b2Distance.cpp
-  b2Collision.cpp
-  b2CollidePolygon.cpp
-  b2CollideEdge.cpp
-  b2CollideCircle.cpp
-  b2BroadPhase.cpp
-  Generating Code...
+﻿  Character.cpp
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\character.cpp(21): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
 b2BroadPhase.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
-=======
-﻿b2BroadPhase.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
->>>>>>> Sounds
   oxygine_d.lib(jerror.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
 b2BroadPhase.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
   Finished generating code
   2D-RPG.vcxproj -> C:\Users\liviu\Google Drive\ProiectOOP\2D-RPG\proj.win32\Debug_v140_xp\2D-RPG.exe

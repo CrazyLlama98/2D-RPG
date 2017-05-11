@@ -12,6 +12,8 @@ Character::Character(const int _health, const int _damage, const int _xp, const 
 	damage = _damage;
 	xp = _xp;
 	type = _type;
+	maxHealth = _health;
+	maxDamage = _damage;
 }
 
 

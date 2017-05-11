@@ -11,6 +11,11 @@ Hero::Hero(const int _health, const int _damage, const int _xp, const int _armor
 	Character(_health, _damage, _xp, _type, _res, _world, _pos, b2_dynamicBody, _scale), targetPosition(getPosition())
 {
     armor = _armor;
+    level = 1;
+    quest = 100;
+    maxHealth = 100;
+    maxDamage = 15;
+    maxArmor = 100;
 }
 
 spHero Hero::getHero(b2World* _world, oxygine::Vector2 size)
@@ -24,6 +29,16 @@ int Hero::DealDamage()
 {
 	srand(time(0));
 	return rand() % damage + 1;
+}
+
+void Hero::IncreaseLevel()
+{
+    ++level;
+    //Update maxHealth, maxDamage, maxArmor at each level
+    maxArmor += (1 / 4) * maxArmor;
+    maxDamage += (1 / 4) * maxDamage;
+    maxHealth += (1 / 4) * maxHealth;
+    quest *= 2;
 }
 
 void Hero::Die(std::string mob_type){
