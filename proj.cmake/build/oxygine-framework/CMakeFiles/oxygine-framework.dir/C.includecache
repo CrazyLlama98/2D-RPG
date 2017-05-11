@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/ioapi.c
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/ioapi.c
 stdio.h
 -
 stdlib.h
@@ -14,13 +14,13 @@ stdlib.h
 string.h
 -
 zlib.h
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/zlib.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/zlib.h
 ioapi.h
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/ioapi.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/ioapi.h
 
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/ioapi.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/ioapi.h
 
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/ioapi_mem.c
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/ioapi_mem.c
 stdio.h
 -
 stdlib.h
@@ -28,11 +28,11 @@ stdlib.h
 string.h
 -
 zlib.h
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/zlib.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/zlib.h
 ioapi.h
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/ioapi.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/ioapi.h
 
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/unzip.c
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/unzip.c
 stdio.h
 -
 stdlib.h
@@ -40,9 +40,9 @@ stdlib.h
 string.h
 -
 zlib.h
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/zlib.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/zlib.h
 unzip.h
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/unzip.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/unzip.h
 stddef.h
 -
 string.h
@@ -52,19 +52,19 @@ stdlib.h
 errno.h
 -
 crypt.h
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/crypt.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/crypt.h
 
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/unzip.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/unzip.h
 zlib.h
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/zlib.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/zlib.h
 ioapi.h
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/ioapi.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/ioapi.h
 bzlib.h
-/home/andu/oxygine/oxygine-framework/oxygine/src/minizip/bzlib.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/minizip/bzlib.h
 
-/home/andu/oxygine/oxygine-framework/oxygine/src/utils/cdecode.c
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/utils/cdecode.c
 cdecode.h
-/home/andu/oxygine/oxygine-framework/oxygine/src/utils/cdecode.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/utils/cdecode.h
 
-/home/andu/oxygine/oxygine-framework/oxygine/src/utils/cdecode.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src/utils/cdecode.h
 

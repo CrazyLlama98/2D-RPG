@@ -77,11 +77,11 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/andu/oxygine/oxygine-framework/oxygine/src"
-  "/home/andu/oxygine/oxygine-framework/oxygine/third_party/linux/pthreads/include"
-  "/home/andu/oxygine/oxygine-framework/oxygine/third_party/linux/zlib"
+  "../oxygine-framework/oxygine/src"
+  "../oxygine-framework/oxygine/third_party/linux/pthreads/include"
+  "../oxygine-framework/oxygine/third_party/linux/zlib"
   "/usr/include/SDL2"
-  "/home/andu/oxygine/oxygine-sound-master/src"
+  "../oxygine-sound-master/src"
   "../../box2d"
   "../../../../../../../oxygine-sound-master"
   )

@@ -1,4 +1,4 @@
-# Install script for directory: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor
+# Install script for directory: /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

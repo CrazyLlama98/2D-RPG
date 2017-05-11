@@ -58,17 +58,17 @@ include oxygine-sound/tremor/CMakeFiles/tremor.dir/progress.make
 include oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/block.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/block.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/block.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/block.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/block.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/block.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/block.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/block.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/block.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/block.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/block.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/block.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/block.c > CMakeFiles/tremor.dir/Tremor/block.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/block.c" > CMakeFiles/tremor.dir/Tremor/block.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/block.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/block.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/block.c -o CMakeFiles/tremor.dir/Tremor/block.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/block.c" -o CMakeFiles/tremor.dir/Tremor/block.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/block.c.o.requires:
 
@@ -82,17 +82,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/block.c.o.provides.build: oxyg
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/codebook.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/codebook.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/codebook.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/codebook.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/codebook.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/codebook.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/codebook.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/codebook.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/codebook.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/codebook.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/codebook.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/codebook.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/codebook.c > CMakeFiles/tremor.dir/Tremor/codebook.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/codebook.c" > CMakeFiles/tremor.dir/Tremor/codebook.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/codebook.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/codebook.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/codebook.c -o CMakeFiles/tremor.dir/Tremor/codebook.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/codebook.c" -o CMakeFiles/tremor.dir/Tremor/codebook.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/codebook.c.o.requires:
 
@@ -106,17 +106,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/codebook.c.o.provides.build: o
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor0.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor0.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/floor0.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor0.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/floor0.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor0.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/floor0.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/floor0.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/floor0.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/floor0.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor0.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/floor0.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/floor0.c > CMakeFiles/tremor.dir/Tremor/floor0.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/floor0.c" > CMakeFiles/tremor.dir/Tremor/floor0.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor0.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/floor0.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/floor0.c -o CMakeFiles/tremor.dir/Tremor/floor0.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/floor0.c" -o CMakeFiles/tremor.dir/Tremor/floor0.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor0.c.o.requires:
 
@@ -130,17 +130,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor0.c.o.provides.build: oxy
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor1.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor1.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/floor1.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor1.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/floor1.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor1.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/floor1.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/floor1.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/floor1.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/floor1.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/floor1.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/floor1.c > CMakeFiles/tremor.dir/Tremor/floor1.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/floor1.c" > CMakeFiles/tremor.dir/Tremor/floor1.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/floor1.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/floor1.c -o CMakeFiles/tremor.dir/Tremor/floor1.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/floor1.c" -o CMakeFiles/tremor.dir/Tremor/floor1.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor1.c.o.requires:
 
@@ -154,17 +154,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/floor1.c.o.provides.build: oxy
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/info.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/info.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/info.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/info.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/info.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/info.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/info.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/info.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/info.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/info.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/info.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/info.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/info.c > CMakeFiles/tremor.dir/Tremor/info.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/info.c" > CMakeFiles/tremor.dir/Tremor/info.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/info.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/info.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/info.c -o CMakeFiles/tremor.dir/Tremor/info.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/info.c" -o CMakeFiles/tremor.dir/Tremor/info.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/info.c.o.requires:
 
@@ -178,17 +178,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/info.c.o.provides.build: oxygi
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mapping0.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mapping0.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/mapping0.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mapping0.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/mapping0.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mapping0.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/mapping0.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/mapping0.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/mapping0.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/mapping0.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mapping0.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/mapping0.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/mapping0.c > CMakeFiles/tremor.dir/Tremor/mapping0.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/mapping0.c" > CMakeFiles/tremor.dir/Tremor/mapping0.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mapping0.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/mapping0.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/mapping0.c -o CMakeFiles/tremor.dir/Tremor/mapping0.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/mapping0.c" -o CMakeFiles/tremor.dir/Tremor/mapping0.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mapping0.c.o.requires:
 
@@ -202,17 +202,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mapping0.c.o.provides.build: o
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mdct.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mdct.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/mdct.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mdct.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/mdct.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mdct.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/mdct.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/mdct.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/mdct.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/mdct.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mdct.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/mdct.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/mdct.c > CMakeFiles/tremor.dir/Tremor/mdct.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/mdct.c" > CMakeFiles/tremor.dir/Tremor/mdct.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mdct.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/mdct.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/mdct.c -o CMakeFiles/tremor.dir/Tremor/mdct.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/mdct.c" -o CMakeFiles/tremor.dir/Tremor/mdct.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mdct.c.o.requires:
 
@@ -226,17 +226,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/mdct.c.o.provides.build: oxygi
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/registry.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/registry.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/registry.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/registry.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/registry.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/registry.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/registry.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/registry.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/registry.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/registry.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/registry.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/registry.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/registry.c > CMakeFiles/tremor.dir/Tremor/registry.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/registry.c" > CMakeFiles/tremor.dir/Tremor/registry.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/registry.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/registry.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/registry.c -o CMakeFiles/tremor.dir/Tremor/registry.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/registry.c" -o CMakeFiles/tremor.dir/Tremor/registry.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/registry.c.o.requires:
 
@@ -250,17 +250,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/registry.c.o.provides.build: o
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/res012.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/res012.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/res012.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/res012.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/res012.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/res012.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/res012.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/res012.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/res012.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/res012.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/res012.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/res012.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/res012.c > CMakeFiles/tremor.dir/Tremor/res012.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/res012.c" > CMakeFiles/tremor.dir/Tremor/res012.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/res012.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/res012.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/res012.c -o CMakeFiles/tremor.dir/Tremor/res012.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/res012.c" -o CMakeFiles/tremor.dir/Tremor/res012.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/res012.c.o.requires:
 
@@ -274,17 +274,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/res012.c.o.provides.build: oxy
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/sharedbook.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/sharedbook.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/sharedbook.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/sharedbook.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/sharedbook.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/sharedbook.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/sharedbook.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/sharedbook.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/sharedbook.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/sharedbook.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/sharedbook.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/sharedbook.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/sharedbook.c > CMakeFiles/tremor.dir/Tremor/sharedbook.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/sharedbook.c" > CMakeFiles/tremor.dir/Tremor/sharedbook.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/sharedbook.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/sharedbook.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/sharedbook.c -o CMakeFiles/tremor.dir/Tremor/sharedbook.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/sharedbook.c" -o CMakeFiles/tremor.dir/Tremor/sharedbook.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/sharedbook.c.o.requires:
 
@@ -298,17 +298,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/sharedbook.c.o.provides.build:
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/synthesis.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/synthesis.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/synthesis.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/synthesis.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/synthesis.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/synthesis.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/synthesis.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/synthesis.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/synthesis.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/synthesis.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/synthesis.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/synthesis.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/synthesis.c > CMakeFiles/tremor.dir/Tremor/synthesis.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/synthesis.c" > CMakeFiles/tremor.dir/Tremor/synthesis.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/synthesis.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/synthesis.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/synthesis.c -o CMakeFiles/tremor.dir/Tremor/synthesis.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/synthesis.c" -o CMakeFiles/tremor.dir/Tremor/synthesis.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/synthesis.c.o.requires:
 
@@ -322,17 +322,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/synthesis.c.o.provides.build: 
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/vorbisfile.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/vorbisfile.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/vorbisfile.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/vorbisfile.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/vorbisfile.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/vorbisfile.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/vorbisfile.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/vorbisfile.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/vorbisfile.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/vorbisfile.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/vorbisfile.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/vorbisfile.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/vorbisfile.c > CMakeFiles/tremor.dir/Tremor/vorbisfile.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/vorbisfile.c" > CMakeFiles/tremor.dir/Tremor/vorbisfile.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/vorbisfile.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/vorbisfile.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/vorbisfile.c -o CMakeFiles/tremor.dir/Tremor/vorbisfile.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/vorbisfile.c" -o CMakeFiles/tremor.dir/Tremor/vorbisfile.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/vorbisfile.c.o.requires:
 
@@ -346,17 +346,17 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/vorbisfile.c.o.provides.build:
 
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/window.c.o: oxygine-sound/tremor/CMakeFiles/tremor.dir/flags.make
-oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/window.c.o: /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/window.c
+oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/window.c.o: ../oxygine-sound-master/dependencies/tremor/Tremor/window.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/window.c.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/window.c.o   -c /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/window.c
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tremor.dir/Tremor/window.c.o   -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/window.c"
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tremor.dir/Tremor/window.c.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/window.c > CMakeFiles/tremor.dir/Tremor/window.c.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/window.c" > CMakeFiles/tremor.dir/Tremor/window.c.i
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tremor.dir/Tremor/window.c.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/dependencies/tremor/Tremor/window.c -o CMakeFiles/tremor.dir/Tremor/window.c.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor/Tremor/window.c" -o CMakeFiles/tremor.dir/Tremor/window.c.s
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/Tremor/window.c.o.requires:
 
@@ -433,6 +433,6 @@ oxygine-sound/tremor/CMakeFiles/tremor.dir/clean:
 .PHONY : oxygine-sound/tremor/CMakeFiles/tremor.dir/clean
 
 oxygine-sound/tremor/CMakeFiles/tremor.dir/depend:
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake" /home/andu/oxygine/oxygine-sound-master/dependencies/tremor "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor/CMakeFiles/tremor.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/dependencies/tremor" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor/CMakeFiles/tremor.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : oxygine-sound/tremor/CMakeFiles/tremor.dir/depend
 

@@ -58,17 +58,17 @@ include oxygine-sound/CMakeFiles/oxygine-sound.dir/progress.make
 include oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/ResSound.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.o: ../oxygine-sound-master/src/sound/ResSound.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/ResSound.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/ResSound.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/ResSound.cpp > CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/ResSound.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/ResSound.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/ResSound.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.o.requires:
 
@@ -82,17 +82,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/ResSound.cpp.o.provides.bui
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundInstance.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.o: ../oxygine-sound-master/src/sound/SoundInstance.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/SoundInstance.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/SoundInstance.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/SoundInstance.cpp > CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/SoundInstance.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/SoundInstance.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/SoundInstance.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.o.requires:
 
@@ -106,17 +106,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundInstance.cpp.o.provide
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundPlayer.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.o: ../oxygine-sound-master/src/sound/SoundPlayer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/SoundPlayer.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/SoundPlayer.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/SoundPlayer.cpp > CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/SoundPlayer.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/SoundPlayer.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/SoundPlayer.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.o.requires:
 
@@ -130,17 +130,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundPlayer.cpp.o.provides.
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundSystem.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.o: ../oxygine-sound-master/src/sound/SoundSystem.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/SoundSystem.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/SoundSystem.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/SoundSystem.cpp > CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/SoundSystem.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/SoundSystem.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/SoundSystem.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.o.requires:
 
@@ -154,17 +154,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/SoundSystem.cpp.o.provides.
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundSystemNull.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.o: ../oxygine-sound-master/src/sound/null/SoundSystemNull.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundSystemNull.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/null/SoundSystemNull.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundSystemNull.cpp > CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/null/SoundSystemNull.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundSystemNull.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/null/SoundSystemNull.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.o.requires:
 
@@ -178,17 +178,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundSystemNull.cpp.o.
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundNull.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.o: ../oxygine-sound-master/src/sound/null/SoundNull.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundNull.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/null/SoundNull.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundNull.cpp > CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/null/SoundNull.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundNull.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/null/SoundNull.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.o.requires:
 
@@ -202,17 +202,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/null/SoundNull.cpp.o.provid
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/OggStream.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.o: ../oxygine-sound-master/src/sound/OggStream.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/OggStream.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/OggStream.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/OggStream.cpp > CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/OggStream.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/OggStream.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/OggStream.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.o.requires:
 
@@ -226,17 +226,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/OggStream.cpp.o.provides.bu
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/MemoryStream.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.o: ../oxygine-sound-master/src/sound/MemoryStream.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/MemoryStream.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/MemoryStream.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/MemoryStream.cpp > CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/MemoryStream.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/MemoryStream.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/MemoryStream.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.o.requires:
 
@@ -250,17 +250,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/MemoryStream.cpp.o.provides
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/WavStream.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.o: ../oxygine-sound-master/src/sound/WavStream.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/WavStream.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/WavStream.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/WavStream.cpp > CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/WavStream.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/WavStream.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/WavStream.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.o.requires:
 
@@ -274,17 +274,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/WavStream.cpp.o.provides.bu
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundHandleOAL.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.o: ../oxygine-sound-master/src/sound/oal/SoundHandleOAL.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundHandleOAL.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/SoundHandleOAL.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundHandleOAL.cpp > CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/SoundHandleOAL.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundHandleOAL.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/SoundHandleOAL.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.o.requires:
 
@@ -298,17 +298,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundHandleOAL.cpp.o.pr
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundOAL.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.o: ../oxygine-sound-master/src/sound/oal/SoundOAL.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundOAL.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/SoundOAL.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundOAL.cpp > CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/SoundOAL.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundOAL.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/SoundOAL.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.o.requires:
 
@@ -322,17 +322,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundOAL.cpp.o.provides
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundSystemOAL.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.o: ../oxygine-sound-master/src/sound/oal/SoundSystemOAL.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundSystemOAL.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/SoundSystemOAL.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundSystemOAL.cpp > CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/SoundSystemOAL.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/oal/SoundSystemOAL.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/SoundSystemOAL.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.o.requires:
 
@@ -346,17 +346,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/SoundSystemOAL.cpp.o.pr
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StreamingSoundHandleOAL.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.o: ../oxygine-sound-master/src/sound/oal/StreamingSoundHandleOAL.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StreamingSoundHandleOAL.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/StreamingSoundHandleOAL.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StreamingSoundHandleOAL.cpp > CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/StreamingSoundHandleOAL.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StreamingSoundHandleOAL.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/StreamingSoundHandleOAL.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL.cpp.o.requires:
 
@@ -370,17 +370,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StreamingSoundHandleOAL
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StaticSoundHandleOAL.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.o: ../oxygine-sound-master/src/sound/oal/StaticSoundHandleOAL.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StaticSoundHandleOAL.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/StaticSoundHandleOAL.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StaticSoundHandleOAL.cpp > CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/StaticSoundHandleOAL.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StaticSoundHandleOAL.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/StaticSoundHandleOAL.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cpp.o.requires:
 
@@ -394,17 +394,17 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticSoundHandleOAL.cp
 
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.o: oxygine-sound/CMakeFiles/oxygine-sound.dir/flags.make
-oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StaticStreamOAL.cpp
+oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.o: ../oxygine-sound-master/src/sound/oal/StaticStreamOAL.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.o"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.o -c /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StaticStreamOAL.cpp
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/StaticStreamOAL.cpp"
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.i"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StaticStreamOAL.cpp > CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.i
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/StaticStreamOAL.cpp" > CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.i
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.s"
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andu/oxygine/oxygine-sound-master/src/sound/oal/StaticStreamOAL.cpp -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.s
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src/sound/oal/StaticStreamOAL.cpp" -o CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.s
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/src/sound/oal/StaticStreamOAL.cpp.o.requires:
 
@@ -487,6 +487,6 @@ oxygine-sound/CMakeFiles/oxygine-sound.dir/clean:
 .PHONY : oxygine-sound/CMakeFiles/oxygine-sound.dir/clean
 
 oxygine-sound/CMakeFiles/oxygine-sound.dir/depend:
-	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake" /home/andu/oxygine/oxygine-sound-master "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/CMakeFiles/oxygine-sound.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/CMakeFiles/oxygine-sound.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : oxygine-sound/CMakeFiles/oxygine-sound.dir/depend
 

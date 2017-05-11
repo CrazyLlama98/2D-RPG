@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = -DOX_HAVE_LIBJPEG -DOX_HAVE_LIBPNG -DOX_NO_HTTP
 
-CXX_INCLUDES = -I/home/andu/oxygine/oxygine-framework/oxygine/src -I/home/andu/oxygine/oxygine-framework/oxygine/third_party/linux/pthreads/include -I/home/andu/oxygine/oxygine-framework/oxygine/third_party/linux/zlib -I/usr/include/SDL2 -I/home/andu/oxygine/oxygine-sound-master/src -I"/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/../box2d" -I"/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/../../../../../../oxygine-sound-master" 
+CXX_INCLUDES = -I"/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/src" -I"/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/third_party/linux/pthreads/include" -I"/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework/oxygine/third_party/linux/zlib" -I/usr/include/SDL2 -I"/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-sound-master/src" -I"/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/../box2d" -I"/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/../../../../../../oxygine-sound-master" 
 
