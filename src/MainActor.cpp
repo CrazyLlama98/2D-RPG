@@ -38,7 +38,7 @@ MainActor::MainActor() : _world(0)
 	btn->attachTo(this);
 	btn->setSize(Vector2(20, 20));
 
-	//healthBar
+	//healthBar bar
 	health = new ProgressBar();
 	health->setResAnim(res::resources.getResAnim("health"));
 	health->setAnchor(Vector2(0.5f, 0.5f));
@@ -47,7 +47,7 @@ MainActor::MainActor() : _world(0)
 	health->setDirection(ProgressBar::dir_0);
 	addChild(health);
 
-	//armor
+	//armor bar
 	armor = new ProgressBar();
 	armor->setResAnim(res::resources.getResAnim("armor"));
 	armor->setAnchor(Vector2(0.5f, 0.5f));
@@ -55,6 +55,15 @@ MainActor::MainActor() : _world(0)
 	armor->setSize(Vector2(300, 8));
 	armor->setDirection(ProgressBar::dir_0);
 	addChild(armor);
+
+	//xp bar
+	xp = new ProgressBar();
+	xp->setResAnim(res::resources.getResAnim("xp"));
+	xp->setAnchor(Vector2(0.5f, 0.5f));
+	xp->setPosition(Vector2(900, 26));
+	xp->setSize(Vector2(300, 8));
+	xp->setDirection(ProgressBar::dir_0);
+	addChild(xp);
 
 	hero = Hero::getHero(_world, getSize() / 2);
 	//_mobs.push_back(hero);
@@ -78,8 +87,10 @@ void MainActor::doUpdate(const UpdateState& us)
 	_world->Step(us.dt / 1000.0f, 6, 2);
 	RandomSpawn();
 
+	//TODO: create propertys for hero to acceess max health, max armour and xp to level up
 	health->addTween(ProgressBar::TweenProgress(hero->GetHealth() / 100.0f), 20);
 	armor->addTween(ProgressBar::TweenProgress(hero->GetArmor() / 100.0f), 20);
+	xp->addTween(ProgressBar::TweenProgress(hero->GetXp() / 100.0f), 20);
 
 	//update each body position on display
 	b2Body* body = (b2Body*)(hero->getUserData());
