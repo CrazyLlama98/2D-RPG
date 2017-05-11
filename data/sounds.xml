@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<resources>
+	<set path="sounds" />	
+
+	<sound file="music.ogg" streaming="true"/>
+	<sound file="skeleton_attack1.ogg" />
+	<sound file="skeleton_attack2.ogg" />
+	<sound file="skeleton_attack3.ogg" />
+	<sound file="skeleton_attack4.ogg" />
+	<sound file="skeleton_attack5.ogg" />
+	<sound file="skeleton_attack6.ogg" />
+	<sound file="skeleton_attack7.ogg" />
+	<sound file="skeleton_attack8.ogg" />
+	<sound file="skeleton_death1.ogg" />
+
+</resources>
