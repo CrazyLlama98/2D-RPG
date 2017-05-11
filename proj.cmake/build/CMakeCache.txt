@@ -190,6 +190,12 @@ OPENGL_glu_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLU.so
 OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 
 //Value Computed by CMake
+OXYGINESOUND_BINARY_DIR:STATIC=/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound
+
+//Value Computed by CMake
+OXYGINESOUND_SOURCE_DIR:STATIC=/home/andu/oxygine/oxygine-sound-master
+
+//Value Computed by CMake
 OXYGINE_BINARY_DIR:STATIC=/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework
 
 //Value Computed by CMake
@@ -198,8 +204,20 @@ OXYGINE_SOURCE_DIR:STATIC=/home/andu/oxygine/oxygine-framework
 //Path to a file.
 SDL2_INCLUDE_DIRS:PATH=/usr/include
 
+//Value Computed by CMake
+TREMOR_BINARY_DIR:STATIC=/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor
+
+//Value Computed by CMake
+TREMOR_SOURCE_DIR:STATIC=/home/andu/oxygine/oxygine-sound-master/dependencies/tremor
+
 //Dependencies for target
 oxygine-framework_LIB_DEPENDS:STATIC=
+
+//Dependencies for the target
+oxygine-sound_LIB_DEPENDS:STATIC=general;-lopenal;general;-logg;
+
+//Dependencies for target
+tremor_LIB_DEPENDS:STATIC=
 
 
 ########################
@@ -292,7 +310,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -12,3 +12,17 @@
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework/CMakeFiles/install/strip.dir
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework/CMakeFiles/install/local.dir
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework/CMakeFiles/edit_cache.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/CMakeFiles/install.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/CMakeFiles/list_install_components.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/CMakeFiles/rebuild_cache.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/CMakeFiles/oxygine-sound.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/CMakeFiles/install/strip.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/CMakeFiles/install/local.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/CMakeFiles/edit_cache.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor/CMakeFiles/install.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor/CMakeFiles/list_install_components.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor/CMakeFiles/rebuild_cache.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor/CMakeFiles/tremor.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor/CMakeFiles/install/strip.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor/CMakeFiles/install/local.dir
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor/CMakeFiles/edit_cache.dir

@@ -4,6 +4,7 @@
 #include "Map.h"
 #include "Hero.h"
 #include "res.h"
+#include "snd.h"
 #include "Text.h"
 #include <iostream>
 #include <cstdlib>
@@ -24,6 +25,8 @@ spMainActor MainActor::getMainActor()
 
 MainActor::MainActor() : _world(0)
 {
+	snd::resources.loadXML("sounds.xml");
+	snd::musicPlayer.play(snd::resources.get("music"));
 
 	setSize(getStage()->getSize());
 
@@ -68,6 +71,10 @@ void MainActor::doUpdate(const UpdateState& us)
 {
 	_world->Step(us.dt / 1000.0f, 6, 2);
 	RandomSpawn();
+
+	SoundSystem::get()->update();
+	snd::sfxPlayer.update();
+	snd::musicPlayer.update();
 
 	health->addTween(ProgressBar::TweenProgress(hero->GetHealth() / 100.0f), 20);
 	//health->setProgress(hero->GetHealth() / 100.0f);

@@ -64,6 +64,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.cpp" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Utils.cpp.o"
   "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/main.cpp" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/main.cpp.o"
   "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.cpp" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.cpp.o"
+  "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/snd.cpp" "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -80,11 +81,15 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/andu/oxygine/oxygine-framework/oxygine/third_party/linux/pthreads/include"
   "/home/andu/oxygine/oxygine-framework/oxygine/third_party/linux/zlib"
   "/usr/include/SDL2"
+  "/home/andu/oxygine/oxygine-sound-master/src"
   "../../box2d"
+  "../../../../../../../oxygine-sound-master"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/CMakeFiles/oxygine-sound.dir/DependInfo.cmake"
+  "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-sound/tremor/CMakeFiles/tremor.dir/DependInfo.cmake"
   "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/oxygine-framework/CMakeFiles/oxygine-framework.dir/DependInfo.cmake"
   )
 

@@ -1497,6 +1497,30 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Text.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Text.cpp.o.provides.build: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Text.cpp.o
 
 
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: CMakeFiles/2D-RPG.dir/flags.make
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/snd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o -c "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/snd.cpp"
+
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/snd.cpp" > CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.i
+
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/snd.cpp" -o CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.s
+
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o.requires:
+
+.PHONY : CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o.requires
+
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o.provides: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o.requires
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o.provides.build
+.PHONY : CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o.provides
+
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o.provides.build: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o
+
+
 # Object files for target 2D-RPG
 2D__RPG_OBJECTS = \
 "CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Common/b2BlockAllocator.cpp.o" \
@@ -1558,7 +1582,8 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Text.cpp
 "CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.cpp.o" \
 "CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.o" \
 "CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.o" \
-"CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Text.cpp.o"
+"CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Text.cpp.o" \
+"CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o"
 
 # External object files for target 2D-RPG
 2D__RPG_EXTERNAL_OBJECTS =
@@ -1623,12 +1648,15 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Text.cpp
 2D-RPG: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.o
 2D-RPG: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.o
 2D-RPG: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Text.cpp.o
+2D-RPG: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o
 2D-RPG: CMakeFiles/2D-RPG.dir/build.make
+2D-RPG: oxygine-sound/liboxygine-sound.a
+2D-RPG: oxygine-sound/tremor/libtremor.a
 2D-RPG: oxygine-framework/liboxygine-framework.a
 2D-RPG: /usr/lib/x86_64-linux-gnu/libGLU.so
 2D-RPG: /usr/lib/x86_64-linux-gnu/libGL.so
 2D-RPG: CMakeFiles/2D-RPG.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Linking CXX executable 2D-RPG"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Linking CXX executable 2D-RPG"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/2D-RPG.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1696,6 +1724,7 @@ CMakeFiles/2D-RPG.dir/requires: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultat
 CMakeFiles/2D-RPG.dir/requires: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/CharactersContactListener.cpp.o.requires
 CMakeFiles/2D-RPG.dir/requires: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Box2DDebugDraw.cpp.o.requires
 CMakeFiles/2D-RPG.dir/requires: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Text.cpp.o.requires
+CMakeFiles/2D-RPG.dir/requires: CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o.requires
 
 .PHONY : CMakeFiles/2D-RPG.dir/requires
 

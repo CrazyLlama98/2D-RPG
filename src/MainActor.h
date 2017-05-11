@@ -30,6 +30,7 @@ private:
 	spProgressBar health;
 	CharactersContactListener contactListener;
 	spBox2DDraw _debugDraw;
+
 	// Spawns enough Characters until there are ten of them
 	void RandomSpawn();
 	// Moves the hero around the map

@@ -677,6 +677,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Characte
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Character.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Entity.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/res.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/snd.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Actor.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AnimationFrame.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AsyncTask.h
@@ -775,6 +776,12 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Characte
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/ImageUtils.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/intrusive_list.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/stringUtils.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/oxygine-sound.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/ResSound.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundInstance.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundPlayer.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundSystem.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundSystemNull.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /usr/include/SDL2/SDL_atomic.h
@@ -1415,6 +1422,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/MainActor.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Map.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/res.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/snd.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Actor.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AnimationFrame.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AsyncTask.h
@@ -1513,6 +1521,12 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/ImageUtils.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/intrusive_list.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/stringUtils.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/oxygine-sound.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/ResSound.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundInstance.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundPlayer.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundSystem.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundSystemNull.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /usr/include/SDL2/SDL_atomic.h
@@ -1791,6 +1805,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActo
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Text.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Utils.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/res.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/snd.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Actor.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AnimationFrame.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AsyncTask.h
@@ -1889,6 +1904,12 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActo
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/ImageUtils.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/intrusive_list.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/stringUtils.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/oxygine-sound.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/ResSound.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundInstance.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundPlayer.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundSystem.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundSystemNull.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/MainActor.cpp.o: /usr/include/SDL2/SDL_atomic.h
@@ -2860,4 +2881,154 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.cpp.
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.cpp.o: /usr/include/SDL2/SDL_video.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.cpp.o: /usr/include/SDL2/begin_code.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.cpp.o: /usr/include/SDL2/close_code.h
+
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/snd.cpp
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/snd.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Actor.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AnimationFrame.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/AsyncTask.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Box9Sprite.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Button.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/ClipRectActor.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Clock.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/ColorRectSprite.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/DebugActor.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Draggable.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Event.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/EventDispatcher.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Font.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/HttpRequestTask.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Image.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Input.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/InputText.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/KeyEvent.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/MaskedSprite.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/MemoryTexture.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/PointerState.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/ProgressBar.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Property.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/RenderState.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/STDRenderer.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Serializable.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Serialize.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/SlidingActor.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Sprite.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Stage.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/TextField.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/TextStyle.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/ThreadLoader.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/TouchEvent.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/Tween.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/TweenAnim.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/TweenQueue.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/UpdateState.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/VisualStyle.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/WebImage.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/closure/closure.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/closure/closure_impl.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/FileSystem.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/ImageData.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/ImageDataOperations.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/Mem2Native.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/Mutex.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/NativeTexture.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/Object.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/Renderer.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/Restorable.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/STDFileSystem.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/ShaderProgram.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/Texture.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/ThreadDispatcher.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/VertexDeclaration.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/VideoDriver.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/file.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/intrusive_ptr.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/log.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/ox_debug.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/oxygine.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/pixel.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/ref_counter.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/core/vertex.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/initActor.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/key.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/math/AffineTransform.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/math/Color.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/math/Matrix.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/math/Rect.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/math/ScalarMath.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/math/Vector2.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/math/Vector3.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/math/Vector4.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/oxygine-forwards.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/oxygine-framework.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/oxygine-include.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/oxygine_include.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/pugixml/pugiconfig.hpp
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/pugixml/pugixml.hpp
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/res/CreateResourceContext.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/res/ResAnim.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/res/ResAtlas.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/res/ResBuffer.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/res/ResFont.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/res/ResFontBM.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/res/ResStarlingAtlas.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/res/Resource.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/res/Resources.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/res/SingleResAnim.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/text_utils/Aligner.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/text_utils/Node.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/text_utils/TextBuilder.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/AtlasTool.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/ImageUtils.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/intrusive_list.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-framework/oxygine/src/utils/stringUtils.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/oxygine-sound.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/ResSound.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundInstance.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundPlayer.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/SoundSystem.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundSystemNull.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_assert.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_atomic.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_audio.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_blendmode.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_clipboard.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_config.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_cpuinfo.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_endian.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_error.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_events.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_filesystem.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_gamecontroller.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_gesture.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_haptic.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_hints.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_joystick.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_keyboard.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_keycode.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_loadso.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_log.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_main.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_messagebox.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_mouse.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_mutex.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_pixels.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_platform.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_power.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_quit.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_rect.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_render.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_rwops.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_scancode.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_stdinc.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_surface.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_system.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_thread.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_timer.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_touch.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_version.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/SDL_video.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/begin_code.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o: /usr/include/SDL2/close_code.h
 

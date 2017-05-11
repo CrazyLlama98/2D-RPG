@@ -180,6 +180,32 @@ oxygine-framework/fast:
 	$(MAKE) -f oxygine-framework/CMakeFiles/oxygine-framework.dir/build.make oxygine-framework/CMakeFiles/oxygine-framework.dir/build
 .PHONY : oxygine-framework/fast
 
+#=============================================================================
+# Target rules for targets named oxygine-sound
+
+# Build rule for target.
+oxygine-sound: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 oxygine-sound
+.PHONY : oxygine-sound
+
+# fast build rule for target.
+oxygine-sound/fast:
+	$(MAKE) -f oxygine-sound/CMakeFiles/oxygine-sound.dir/build.make oxygine-sound/CMakeFiles/oxygine-sound.dir/build
+.PHONY : oxygine-sound/fast
+
+#=============================================================================
+# Target rules for targets named tremor
+
+# Build rule for target.
+tremor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tremor
+.PHONY : tremor
+
+# fast build rule for target.
+tremor/fast:
+	$(MAKE) -f oxygine-sound/tremor/CMakeFiles/tremor.dir/build.make oxygine-sound/tremor/CMakeFiles/tremor.dir/build
+.PHONY : tremor/fast
+
 home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Collision/Shapes/b2ChainShape.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Collision/Shapes/b2ChainShape.cpp.o
 
 .PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Collision/Shapes/b2ChainShape.o
@@ -1800,6 +1826,33 @@ home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.cpp.s:
 	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.cpp.s
 .PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.cpp.s
 
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.o: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.o
+
+# target to build an object file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.o
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.i: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.i
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.i
+
+# target to preprocess a source file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.i:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.i
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.i
+
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.s: home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.s
+
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.s
+
+# target to generate assembly for a file
+home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.s:
+	$(MAKE) -f CMakeFiles/2D-RPG.dir/build.make CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.s
+.PHONY : home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1814,6 +1867,8 @@ help:
 	@echo "... install/local"
 	@echo "... edit_cache"
 	@echo "... oxygine-framework"
+	@echo "... oxygine-sound"
+	@echo "... tremor"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Collision/Shapes/b2ChainShape.o"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Collision/Shapes/b2ChainShape.i"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/box2d/Box2D/Collision/Shapes/b2ChainShape.s"
@@ -1994,6 +2049,9 @@ help:
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.o"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.i"
 	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/res.s"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.o"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.i"
+	@echo "... home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/snd.s"
 .PHONY : help
 
 
