@@ -15,10 +15,10 @@ public:
 	void Die();
 
 	int GetHealth() const { return health; };
-    void SetHealth(const int _health) { health = std::min(_health, 100); };
+    void SetHealth(const int _health) { health = std::min(_health, maxHealth); };
 
 	int GetDamage() const { return damage; };
-    void SetDamage(const int _damage) { damage = std::min(_damage, 100); };
+    void SetDamage(const int _damage) { damage = std::min(_damage, maxDamage); };
 
 	int GetXp() const { return xp; };
 	void SetXp(const int _xp) { xp = _xp; };
@@ -28,5 +28,7 @@ public:
 
 protected:
 	int xp, health, damage;
+    int maxHealth, maxDamage;
+    static int level;
 	std::string type;
 };

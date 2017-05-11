@@ -10,14 +10,23 @@ public:
 	static spHero getHero(b2World* _world, oxygine::Vector2 size);
 
 	int GetArmor() const { return armor; };
-    void SetArmor(const int _armor) { armor = std::min(_armor, 100); }
-    void AddArmor(const int _armor) { armor = std::min(_armor + armor, 100); }
+    void SetArmor(const int _armor) { armor = std::min(_armor, maxArmor); }
+    void AddArmor(const int _armor) { armor = std::min(_armor + armor, maxArmor); }
 
-    void AddDamage(const int _damage) { damage = std::min(_damage + damage, 50); }
+    void AddDamage(const int _damage) { damage = std::min(_damage + damage, maxDamage); }
 
-    void AddHealth(const int _health) { health = std::min(_health + health, 100); }
+    void AddHealth(const int _health) { health = std::min(_health + health, maxHealth); }
 	
-    void AddXp(const int _xp) { xp += _xp; }
+    void AddXp(const int _xp)
+    {
+        xp += _xp;
+        //Verify if the current quest was completed
+        if(xp >= quest)
+        {
+            IncreaseLevel();
+        }
+        
+    }
     
     // Anims the hero when attacking and returns a random value between
     // 1 and 'damage'
@@ -30,8 +39,10 @@ public:
 private:
 	//Singleton
 	Hero(const int _health, const int _damage, const int _xp, const int _armor, CHARACTER_CONSTRUCT);
-	//smart pointer instance
-	static spHero hero;
-	int armor;
+    void IncreaseLevel();
+    //smart pointer instance
+    static spHero hero;
+	int armor, maxArmor;
+    int quest;
 	oxygine::Vector2 targetPosition;
 };
