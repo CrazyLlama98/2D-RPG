@@ -28,6 +28,8 @@
         <image file="blue_flower.png" />
         <image file="tree.png" />
 		<image file="health.png"/>
+		<image file="armor.png"/>
+		<image file="xp.png"/>
 	</atlas>
 </resources>
 

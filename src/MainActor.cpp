@@ -42,10 +42,19 @@ MainActor::MainActor() : _world(0)
 	health = new ProgressBar();
 	health->setResAnim(res::resources.getResAnim("health"));
 	health->setAnchor(Vector2(0.5f, 0.5f));
-	health->setPosition(Vector2(900, 20));
-	health->setSize(Vector2(300, 10));
+	health->setPosition(Vector2(900, 10));
+	health->setSize(Vector2(300, 8));
 	health->setDirection(ProgressBar::dir_0);
 	addChild(health);
+
+	//armor
+	armor = new ProgressBar();
+	armor->setResAnim(res::resources.getResAnim("armor"));
+	armor->setAnchor(Vector2(0.5f, 0.5f));
+	armor->setPosition(Vector2(900, 18));
+	armor->setSize(Vector2(300, 8));
+	armor->setDirection(ProgressBar::dir_0);
+	addChild(armor);
 
 	hero = Hero::getHero(_world, getSize() / 2);
 	//_mobs.push_back(hero);
@@ -70,7 +79,7 @@ void MainActor::doUpdate(const UpdateState& us)
 	RandomSpawn();
 
 	health->addTween(ProgressBar::TweenProgress(hero->GetHealth() / 100.0f), 20);
-	//health->setProgress(hero->GetHealth() / 100.0f);
+	armor->addTween(ProgressBar::TweenProgress(hero->GetArmor() / 100.0f), 20);
 
 	//update each body position on display
 	b2Body* body = (b2Body*)(hero->getUserData());

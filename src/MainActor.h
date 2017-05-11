@@ -28,6 +28,8 @@ private:
 	spHero hero;
 	spMap map;
 	spProgressBar health;
+	spProgressBar armor;
+	spProgressBar xp;
 	CharactersContactListener contactListener;
 	spBox2DDraw _debugDraw;
 	// Spawns enough Characters until there are ten of them

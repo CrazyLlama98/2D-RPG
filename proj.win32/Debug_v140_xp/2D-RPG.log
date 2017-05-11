@@ -1,5 +1,14 @@
-﻿  SpecialEnvironment.cpp
-c:\users\liviu\google drive\proiectoop\2d-rpg\src\specialenvironment.cpp(14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  MainActor.cpp
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(124): warning C4244: 'initializing': conversion from 'const float' to 'int', possible loss of data
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(125): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(183): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(189): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(190): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(204): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(205): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(207): warning C4305: 'argument': truncation from 'double' to 'const float'
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(218): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\liviu\google drive\proiectoop\2d-rpg\src\mainactor.cpp(219): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 b2BroadPhase.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
   oxygine_d.lib(jerror.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
 b2BroadPhase.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
