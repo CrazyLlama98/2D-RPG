@@ -76,8 +76,16 @@ MainActor::MainActor() : _world(0)
 	this->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::MoveHero));
 	hero->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickOnHero));
 	//_world->SetContactListener(&contactListener);
+	hero->addEventListener(TouchEvent::OVER, CLOSURE(this, &MainActor::HoverOnHero));
 	RandomSpawn();
 
+}
+
+void MainActor::HoverOnHero(Event * ev)
+{
+	std::string str = std::to_string(hero->GetDamage());
+	spText thero = new Text(str, Color(0xFFFF00FF), hero->getPosition());
+	addChild(thero);
 }
 
 void MainActor::ClickOnHero(Event * ev)
@@ -94,9 +102,9 @@ void MainActor::doUpdate(const UpdateState& us)
 	snd::sfxPlayer.update();
 	snd::musicPlayer.update();
 
-	health->addTween(ProgressBar::TweenProgress(hero->GetHealth() / 100.0f), 20);
-	armor->addTween(ProgressBar::TweenProgress(hero->GetArmor() / 100.0f), 20);
-	xp->addTween(ProgressBar::TweenProgress(hero->GetXp() / 100.0f), 20);
+	health->addTween(ProgressBar::TweenProgress(hero->GetHealth() / (float)hero->GetMaxHealth()), 20);
+	armor->addTween(ProgressBar::TweenProgress(hero->GetArmor() / (float)hero->GetMaxArmor()), 20);
+	xp->addTween(ProgressBar::TweenProgress(hero->GetXp() / (float)hero->GetNextLevelXp()), 20);
 
 	//update each body position on display
 	b2Body* body = (b2Body*)(hero->getUserData());
@@ -417,12 +425,12 @@ int MainActor::GetMobHealth(int mobLevel)
 
 int MainActor::GetMobDamage(int mobLevel)
 {
-	return hero->GetMaxDamage() - 3 * (hero->GetLevel() - mobLevel);
+	return 10 + 3 * (mobLevel - 1);
 }
 
 int MainActor::GetMobXp(int mobLevel)
 {
-	return mobLevel * 25;
+	return mobLevel * 50;
 }
 
 void MainActor::GameOver()

@@ -14,7 +14,7 @@ Hero::Hero(const int _health, const int _damage, const int _xp, const int _armor
     level = 1;
     quest = 100;
     maxHealth = 100;
-    maxDamage = 15;
+    maxDamage = 25;
     maxArmor = 100;
 }
 

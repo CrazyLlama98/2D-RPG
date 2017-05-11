@@ -21,6 +21,7 @@ public:
 	void SetLevel(const int _level) { level = _level; };
 
 	int GetNextLevelXp() const { return quest; };
+	int GetMaxArmor() { return maxArmor; };
 
     void AddXp(const int _xp)
     {

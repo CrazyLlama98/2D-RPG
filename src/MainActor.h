@@ -45,6 +45,8 @@ private:
     bool Overlaps(const oxygine::Vector2 _pos, int _type);
 	// Toggle the debug view for box2d
 	void ShowHideDebug(Event* ev);
+	// Responds to hover mouse over hero
+	void HoverOnHero(Event* ev);
 	// Responds to clicks made on Hero
 	void ClickOnHero(Event* ev);
 	// Updates box2d body's position to follow character
