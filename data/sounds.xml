@@ -41,4 +41,5 @@
 	<sound file="dwarf_death4.ogg" />
 	<sound file="dwarf_death5.ogg" />
 	<sound file="dwarf_kill1.ogg" />
+	<sound file="collect1.ogg" />
 </resources>

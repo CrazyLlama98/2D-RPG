@@ -2193,6 +2193,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialE
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.cpp
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/snd.h
  /home/andu/oxygine/oxygine-framework/oxygine/src/Actor.h
  /home/andu/oxygine/oxygine-framework/oxygine/src/AnimationFrame.h
  /home/andu/oxygine/oxygine-framework/oxygine/src/AsyncTask.h
@@ -2291,6 +2292,12 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialE
  /home/andu/oxygine/oxygine-framework/oxygine/src/utils/ImageUtils.h
  /home/andu/oxygine/oxygine-framework/oxygine/src/utils/intrusive_list.h
  /home/andu/oxygine/oxygine-framework/oxygine/src/utils/stringUtils.h
+ /home/andu/oxygine/oxygine-sound-master/src/oxygine-sound.h
+ /home/andu/oxygine/oxygine-sound-master/src/sound/ResSound.h
+ /home/andu/oxygine/oxygine-sound-master/src/sound/SoundInstance.h
+ /home/andu/oxygine/oxygine-sound-master/src/sound/SoundPlayer.h
+ /home/andu/oxygine/oxygine-sound-master/src/sound/SoundSystem.h
+ /home/andu/oxygine/oxygine-sound-master/src/sound/null/SoundSystemNull.h
  /usr/include/SDL2/SDL.h
  /usr/include/SDL2/SDL_assert.h
  /usr/include/SDL2/SDL_atomic.h
