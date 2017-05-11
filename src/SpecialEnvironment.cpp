@@ -1,5 +1,7 @@
 #include "SpecialEnvironment.h"
+#include "snd.h"
 #include <ctime>
+#include <cstring>
 #include <cstdlib>
 
 SpecialEnvironment::SpecialEnvironment(ENV_PARAMS) : Environment(_res, _world, _pos, _scale) { }
@@ -25,6 +27,9 @@ std::pair<int, int> SpecialEnvironment::RandomDrop()
         case 3: amount = rand() % 50 + 1;
             break;
     }
+
+    int nr = 1;
+    snd::sfxPlayer.play(snd::resources.get("collect" + std::to_string(rand() % nr + 1)));
     
     return std::make_pair(type, amount);
 }

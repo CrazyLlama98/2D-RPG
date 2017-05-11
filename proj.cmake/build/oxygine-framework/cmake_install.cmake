@@ -1,4 +1,4 @@
-# Install script for directory: /home/andu/oxygine/oxygine-framework
+# Install script for directory: /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/proj.cmake/oxygine-framework
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

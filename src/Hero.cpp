@@ -1,5 +1,6 @@
 #include "Hero.h"
 #include "res.h"
+#include "snd.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -25,7 +26,17 @@ int Hero::DealDamage()
 	return rand() % damage + 1;
 }
 
-void Hero::Die(){
+void Hero::Die(std::string mob_type){
 	addTween(createTween(TweenRotation(getRotation() + (float)MATH_PI / 2), 2000, 1));
 	addTween(TweenAnim(res::resources.getResAnim("hero_idle_down")), 500, 1);
+	int nr;
+	std::cout<<"STILL WORKING\n";
+	if (mob_type == "skeleton")
+		nr = 1;
+	else if (mob_type == "troll")
+		nr = 1;
+	else if (mob_type == "dwarf")
+		nr = 1;
+	snd::sfxPlayer.play(snd::resources.get(mob_type + "_kill" + std::to_string(rand() % nr + 1)));
+	std::cout<<"STILL STILL WORKING\n";
 }

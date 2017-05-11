@@ -4,6 +4,7 @@
 #include "Map.h"
 #include "Hero.h"
 #include "res.h"
+#include "snd.h"
 #include "Text.h"
 #include <iostream>
 #include <cstdlib>
@@ -24,6 +25,8 @@ spMainActor MainActor::getMainActor()
 
 MainActor::MainActor() : _world(0)
 {
+	snd::resources.loadXML("sounds.xml");
+	snd::musicPlayer.play(snd::resources.get("music"));
 
 	setSize(getStage()->getSize());
 
@@ -87,7 +90,10 @@ void MainActor::doUpdate(const UpdateState& us)
 	_world->Step(us.dt / 1000.0f, 6, 2);
 	RandomSpawn();
 
-	//TODO: create propertys for hero to acceess max health, max armour and xp to level up
+	SoundSystem::get()->update();
+	snd::sfxPlayer.update();
+	snd::musicPlayer.update();
+
 	health->addTween(ProgressBar::TweenProgress(hero->GetHealth() / 100.0f), 20);
 	armor->addTween(ProgressBar::TweenProgress(hero->GetArmor() / 100.0f), 20);
 	xp->addTween(ProgressBar::TweenProgress(hero->GetXp() / 100.0f), 20);
@@ -275,7 +281,8 @@ void MainActor::ClickCharacter(Event* _event)
 			this->removeAllEventListeners();
 			for (auto it : _mobs)
 				it->removeAllEventListeners();
-			hero->Die();
+			std::cout<<"WORKING\n";
+			hero->Die(mob->GetType());
 	        GameOver();
 			return;
 		}
