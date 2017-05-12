@@ -8,10 +8,9 @@
 spHero Hero::hero = 0;
 
 Hero::Hero(const int _health, const int _damage, const int _xp, const int _armor, CHARACTER_PARAMS) :
-	Character(_health, _damage, _xp, _type, _res, _world, _pos, b2_dynamicBody, _scale), targetPosition(getPosition())
+	Character(_health, _damage, _xp, 1, _type, _res, _world, _pos, b2_dynamicBody, _scale), targetPosition(getPosition())
 {
     armor = _armor;
-    level = 1;
     quest = 100;
     maxHealth = 100;
     maxDamage = 25;

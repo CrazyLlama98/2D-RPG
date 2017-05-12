@@ -17,7 +17,6 @@ public:
 
     void AddHealth(const int _health) { health = std::min(_health + health, maxHealth); }
 
-	int GetLevel() const { return level; };
 	void SetLevel(const int _level) { level = _level; };
 
 	int GetNextLevelXp() const { return quest; };

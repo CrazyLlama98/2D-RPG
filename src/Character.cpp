@@ -1,11 +1,13 @@
 #include "Character.h"
 #include "res.h"
 #include "snd.h"
+#include "Text.h"
+#include "MainActor.h"
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
 
-Character::Character(const int _health, const int _damage, const int _xp, const std::string _type, ENTITY_PARAMS) :
+Character::Character(const int _health, const int _damage, const int _xp, const int _level, const std::string _type, ENTITY_PARAMS) :
 	Entity(_res, _world, _pos, _def, _scale)
 {
 	health = _health;
@@ -14,6 +16,7 @@ Character::Character(const int _health, const int _damage, const int _xp, const 
 	type = _type;
 	maxHealth = _health;
 	maxDamage = _damage;
+	level = _level;
 }
 
 

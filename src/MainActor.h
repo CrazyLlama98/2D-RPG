@@ -7,6 +7,7 @@
 #include "Box2DDebugDraw.h"
 #include "CharactersContactListener.h"
 #include "Environment.h"
+#include "SpecialEnvironment.h"
 #include <list>
 
 DECLARE_SMART(MainActor, spMainActor)
@@ -24,6 +25,7 @@ private:
 
     std::list<Character*> _mobs;
     std::list<Environment*> _plants;
+    std::list<SpecialEnvironment*> _spPlants;
 	b2World* _world;
 	spHero hero;
 	spMap map;
@@ -46,7 +48,13 @@ private:
 	// Toggle the debug view for box2d
 	void ShowHideDebug(Event* ev);
 	// Responds to hover mouse over hero
-	void HoverOnHero(Event* ev);
+	void OverCharacter(Event* ev);
+
+	void OutOfCharacter(Event* ev);
+
+	void OverHero(Event* ev);
+
+	void OutOfHero(Event* ev);
 	// Responds to clicks made on Hero
 	void ClickOnHero(Event* ev);
 	// Updates box2d body's position to follow character

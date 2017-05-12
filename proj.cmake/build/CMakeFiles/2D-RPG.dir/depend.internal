@@ -778,9 +778,17 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Characte
  ../oxygine-sound-master/src/sound/SoundPlayer.h
  ../oxygine-sound-master/src/sound/SoundSystem.h
  ../oxygine-sound-master/src/sound/null/SoundSystemNull.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Box2DDebugDraw.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.cpp
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Character.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/CharactersContactListener.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Text.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/snd.h
  /usr/include/SDL2/SDL.h
@@ -1526,6 +1534,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Hero.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/snd.h
  /usr/include/SDL2/SDL.h
@@ -2107,6 +2116,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.cpp
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Map.h
+ /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
  /usr/include/SDL2/SDL.h
  /usr/include/SDL2/SDL_assert.h
@@ -2152,43 +2162,6 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.
  /usr/include/SDL2/begin_code.h
  /usr/include/SDL2/close_code.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o
- ../../box2d/Box2D/Box2D.h
- ../../box2d/Box2D/Collision/Shapes/b2ChainShape.h
- ../../box2d/Box2D/Collision/Shapes/b2CircleShape.h
- ../../box2d/Box2D/Collision/Shapes/b2EdgeShape.h
- ../../box2d/Box2D/Collision/Shapes/b2PolygonShape.h
- ../../box2d/Box2D/Collision/Shapes/b2Shape.h
- ../../box2d/Box2D/Collision/b2BroadPhase.h
- ../../box2d/Box2D/Collision/b2Collision.h
- ../../box2d/Box2D/Collision/b2Distance.h
- ../../box2d/Box2D/Collision/b2DynamicTree.h
- ../../box2d/Box2D/Collision/b2TimeOfImpact.h
- ../../box2d/Box2D/Common/b2BlockAllocator.h
- ../../box2d/Box2D/Common/b2Draw.h
- ../../box2d/Box2D/Common/b2GrowableStack.h
- ../../box2d/Box2D/Common/b2Math.h
- ../../box2d/Box2D/Common/b2Settings.h
- ../../box2d/Box2D/Common/b2StackAllocator.h
- ../../box2d/Box2D/Common/b2Timer.h
- ../../box2d/Box2D/Dynamics/Contacts/b2Contact.h
- ../../box2d/Box2D/Dynamics/Joints/b2DistanceJoint.h
- ../../box2d/Box2D/Dynamics/Joints/b2FrictionJoint.h
- ../../box2d/Box2D/Dynamics/Joints/b2GearJoint.h
- ../../box2d/Box2D/Dynamics/Joints/b2Joint.h
- ../../box2d/Box2D/Dynamics/Joints/b2MotorJoint.h
- ../../box2d/Box2D/Dynamics/Joints/b2MouseJoint.h
- ../../box2d/Box2D/Dynamics/Joints/b2PrismaticJoint.h
- ../../box2d/Box2D/Dynamics/Joints/b2PulleyJoint.h
- ../../box2d/Box2D/Dynamics/Joints/b2RevoluteJoint.h
- ../../box2d/Box2D/Dynamics/Joints/b2RopeJoint.h
- ../../box2d/Box2D/Dynamics/Joints/b2WeldJoint.h
- ../../box2d/Box2D/Dynamics/Joints/b2WheelJoint.h
- ../../box2d/Box2D/Dynamics/b2Body.h
- ../../box2d/Box2D/Dynamics/b2ContactManager.h
- ../../box2d/Box2D/Dynamics/b2Fixture.h
- ../../box2d/Box2D/Dynamics/b2TimeStep.h
- ../../box2d/Box2D/Dynamics/b2World.h
- ../../box2d/Box2D/Dynamics/b2WorldCallbacks.h
  ../oxygine-framework/oxygine/src/Actor.h
  ../oxygine-framework/oxygine/src/AnimationFrame.h
  ../oxygine-framework/oxygine/src/AsyncTask.h
@@ -2293,8 +2266,6 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialE
  ../oxygine-sound-master/src/sound/SoundPlayer.h
  ../oxygine-sound-master/src/sound/SoundSystem.h
  ../oxygine-sound-master/src/sound/null/SoundSystemNull.h
- /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Entity.h
- /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.cpp
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
  /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/snd.h

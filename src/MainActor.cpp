@@ -1,5 +1,4 @@
 #include "MainActor.h"
-#include "SpecialEnvironment.h"
 #include "Utils.h"
 #include "Map.h"
 #include "Hero.h"
@@ -15,6 +14,8 @@
 using namespace oxygine;
 
 spMainActor MainActor::mainActor = 0;
+spText hero_level;
+spActor layer;
 
 spMainActor MainActor::getMainActor()
 {
@@ -28,10 +29,15 @@ MainActor::MainActor() : _world(0)
 	snd::resources.loadXML("sounds.xml");
 	snd::musicPlayer.play(snd::resources.get("music"));
 
+
 	setSize(getStage()->getSize());
+
+	layer = new Actor;
+	layer->setSize(getSize());
 
 	map = new Map("map.xml", "Sprites.png");
 	addChild(map);
+	addChild(layer);
 	_world = new b2World(b2Vec2(0, 10));
 
 	// The following 4 lines of code are used for Box2dDebug -- comment them to make the debug button to disappear 
@@ -67,25 +73,57 @@ MainActor::MainActor() : _world(0)
 	xp->setSize(Vector2(300, 8));
 	xp->setDirection(ProgressBar::dir_0);
 	addChild(xp);
+	
 
 	hero = Hero::getHero(_world, getSize() / 2);
 	//_mobs.push_back(hero);
 	addChild(hero);
+	std::string str = "LVL:  " + std::to_string(hero->GetLevel());
+	hero_level = new Text(str, Color(0xFFFF00FF), Vector2(660, -10), false, 0, 0);
+	addChild(hero_level);
 	((b2Body*)(hero->getUserData()))->SetGravityScale(0);
 	((b2Body*)(hero->getUserData()))->SetFixedRotation(true);
 	this->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::MoveHero));
 	hero->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickOnHero));
 	//_world->SetContactListener(&contactListener);
-	hero->addEventListener(TouchEvent::OVER, CLOSURE(this, &MainActor::HoverOnHero));
+	hero->addEventListener(TouchEvent::OVER, CLOSURE(this, &MainActor::OverHero));
+	hero->addEventListener(TouchEvent::OUT, CLOSURE(this, &MainActor::OutOfHero));
 	RandomSpawn();
-
 }
 
-void MainActor::HoverOnHero(Event * ev)
+void MainActor::OverCharacter(Event * ev)
 {
-	std::string str = std::to_string(hero->GetDamage());
-	spText thero = new Text(str, Color(0xFFFF00FF), hero->getPosition());
-	addChild(thero);
+	TouchEvent* tev = safeCast<TouchEvent*>(ev);
+	spCharacter mob = (Character*)tev->target.get();
+	std::string str = "LVL: " + std::to_string(mob->GetLevel());
+	spText tmob = new Text(str, Color(0xFFFF00FF), mob->getPosition() + Vector2(-25, -80), false, 0, 0);
+	layer->addChild(tmob);
+}
+
+void MainActor::OutOfCharacter(Event * ev)
+{
+	layer->removeChildren();
+}
+
+void MainActor::OverHero(Event * ev)
+{
+	std::string str = "DMG: " + std::to_string(hero->GetDamage());
+	spText thero = new Text(str, Color(0xFFFF00FF), hero->getPosition() + Vector2(-80, -60), false, 0, 0);
+	layer->addChild(thero);
+	str = "HP: " + std::to_string(hero->GetHealth());
+	thero = new Text(str, Color(0xFFFF00FF), hero->getPosition() + Vector2(10, -60), false, 0, 0);
+	layer->addChild(thero);
+	str = "XP: " + std::to_string(hero->GetXp());
+	thero = new Text(str, Color(0xFFFF00FF), hero->getPosition() + Vector2(10, 0), false, 0, 0);
+	layer->addChild(thero);
+	str = "ARM: " + std::to_string(hero->GetArmor());
+	thero = new Text(str, Color(0xFFFF00FF), hero->getPosition() + Vector2(-80, 0), false, 0, 0);
+	layer->addChild(thero);
+}
+
+void MainActor::OutOfHero(Event * ev)
+{
+	layer->removeChildren();
 }
 
 void MainActor::ClickOnHero(Event * ev)
@@ -97,6 +135,9 @@ void MainActor::doUpdate(const UpdateState& us)
 {
 	_world->Step(us.dt / 1000.0f, 6, 2);
 	RandomSpawn();
+
+	std::string str = "LVL:  " + std::to_string(hero->GetLevel());
+	hero_level->SetText(str);
 
 	SoundSystem::get()->update();
 	snd::sfxPlayer.update();
@@ -215,10 +256,12 @@ void MainActor::RandomSpawn()
 			pos.y = rand() % (int)getSize().y;
 		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 0));
         int mobLevel = rand() % hero->GetLevel() + 1;
-        Character *mob = new Character(GetMobHealth(mobLevel), GetMobDamage(mobLevel), GetMobXp(mobLevel), mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"), _world, pos, b2_staticBody, 1);
+        Character *mob = new Character(GetMobHealth(mobLevel), GetMobDamage(mobLevel), GetMobXp(mobLevel), mobLevel, mob_types[type], res::resources.getResAnim(mob_types[type] + "_idle"), _world, pos, b2_staticBody, 1);
 		_mobs.push_back(mob);
 		mob->addTween(TweenAnim(res::resources.getResAnim(mob_types[type] + "_spawn")), 700);
 		mob->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickCharacter));
+		mob->addEventListener(TouchEvent::OVER, CLOSURE(this, &MainActor::OverCharacter));
+		mob->addEventListener(TouchEvent::OUT, CLOSURE(this, &MainActor::OutOfCharacter));
 		addChild(mob);
 	}
 
@@ -236,7 +279,7 @@ void MainActor::RandomSpawn()
 		addChild(_plant);
 
 	}
-	for (int i = _plants.size(); i < 17; ++i)
+	for (int i = _spPlants.size(); i < 10; ++i)
 	{
 		int type = rand() % 2;
 		Vector2 pos;
@@ -244,8 +287,8 @@ void MainActor::RandomSpawn()
 			pos.x = rand() % (int)getSize().x;
 			pos.y = rand() % (int)getSize().y;
 		} while (pos.x < 64 || pos.x > 1080 || pos.y < 64 || pos.y > 630 || Overlaps(pos, 1));
-		SpecialEnvironment* _spPlant = new SpecialEnvironment(res::resources.getResAnim(plants_types[type]), _world, pos);
-		_plants.push_back(_spPlant);
+		SpecialEnvironment* _spPlant = new SpecialEnvironment(res::resources.getResAnim(plants_types[type]), pos);
+		_spPlants.push_back(_spPlant);
 		_spPlant->addEventListener(TouchEvent::CLICK, CLOSURE(this, &MainActor::ClickSpecialEnvironment));
 		addChild(_spPlant);
 	}
@@ -290,8 +333,8 @@ void MainActor::ClickCharacter(Event* _event)
 			this->removeAllEventListeners();
 			for (auto it : _mobs)
 				it->removeAllEventListeners();
-			std::cout<<"WORKING\n";
 			hero->Die(mob->GetType());
+			layer->removeChildren();
 	        GameOver();
 			return;
 		}
@@ -303,9 +346,10 @@ void MainActor::ClickCharacter(Event* _event)
 			mob->Die();
 			hero->AddXp(mob->GetXp());
 			std::string str = "XP: +" + std::to_string(mob->GetXp());
-			spText txp = new Text(str, Color(0xFFA500FF), hero->getPosition(), 1500);
+			spText txp = new Text(str, Color(0xFFA500FF), hero->getPosition(), true, 1500, true);
 			addChild(txp);
 			RemoveActor(mob);
+			layer->removeChildren();
 			mob->addTween(TweenDummy(), 10000)->detachWhenDone();
 			return;
 		}
@@ -370,10 +414,10 @@ bool MainActor::Overlaps(const Vector2 _pos, int _type)
 	switch (_type)
 	{
 		// If mob
-	case 0: dist_1 = 200; dist_2 = 10;
+	case 0: dist_1 = 200; dist_2 = 30;
 		break;
 		// If plant
-	case 1: dist_1 = 10; dist_2 = 100;
+	case 1: dist_1 = 30; dist_2 = 100;
 		break;
 	}
 	for (auto it = _mobs.begin(); it != _mobs.end(); ++it)
@@ -393,6 +437,11 @@ bool MainActor::Overlaps(const Vector2 _pos, int _type)
 
 void MainActor::RemoveActor(Actor* _act)
 {
+	for (auto it = _spPlants.begin(); it != _spPlants.end(); ++it)
+				if ((Actor*)*it == _act) {
+					_spPlants.erase(it);
+					return;
+				}
 	b2Body* body = _world->GetBodyList();
 	while (body)
 	{

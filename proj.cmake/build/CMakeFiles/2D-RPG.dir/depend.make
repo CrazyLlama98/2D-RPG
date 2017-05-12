@@ -777,9 +777,17 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Characte
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: ../oxygine-sound-master/src/sound/SoundPlayer.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: ../oxygine-sound-master/src/sound/SoundSystem.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: ../oxygine-sound-master/src/sound/null/SoundSystemNull.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Box2DDebugDraw.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Character.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Character.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/CharactersContactListener.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Entity.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Environment.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Hero.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/MainActor.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Map.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/SpecialEnvironment.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Text.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/res.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/snd.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Character.cpp.o: /usr/include/SDL2/SDL.h
@@ -1525,6 +1533,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Hero.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/MainActor.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Map.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/SpecialEnvironment.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/res.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/snd.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Game.cpp.o: /usr/include/SDL2/SDL.h
@@ -2106,6 +2115,7 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/MainActor.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Map.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Map.h
+CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/SpecialEnvironment.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Utils.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /usr/include/SDL2/SDL_assert.h
@@ -2151,43 +2161,6 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /usr/include/SDL2/begin_code.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/Map.cpp.o: /usr/include/SDL2/close_code.h
 
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Box2D.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Collision/Shapes/b2ChainShape.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Collision/Shapes/b2CircleShape.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Collision/Shapes/b2EdgeShape.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Collision/Shapes/b2PolygonShape.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Collision/Shapes/b2Shape.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Collision/b2BroadPhase.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Collision/b2Collision.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Collision/b2Distance.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Collision/b2DynamicTree.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Collision/b2TimeOfImpact.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Common/b2BlockAllocator.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Common/b2Draw.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Common/b2GrowableStack.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Common/b2Math.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Common/b2Settings.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Common/b2StackAllocator.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Common/b2Timer.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Contacts/b2Contact.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2DistanceJoint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2FrictionJoint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2GearJoint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2Joint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2MotorJoint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2MouseJoint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2PrismaticJoint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2PulleyJoint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2RevoluteJoint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2RopeJoint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2WeldJoint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/Joints/b2WheelJoint.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/b2Body.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/b2ContactManager.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/b2Fixture.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/b2TimeStep.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/b2World.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../../box2d/Box2D/Dynamics/b2WorldCallbacks.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../oxygine-framework/oxygine/src/Actor.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../oxygine-framework/oxygine/src/AnimationFrame.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../oxygine-framework/oxygine/src/AsyncTask.h
@@ -2292,8 +2265,6 @@ CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialE
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../oxygine-sound-master/src/sound/SoundPlayer.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../oxygine-sound-master/src/sound/SoundSystem.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: ../oxygine-sound-master/src/sound/null/SoundSystemNull.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Entity.h
-CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/Environment.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/SpecialEnvironment.cpp
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/SpecialEnvironment.h
 CMakeFiles/2D-RPG.dir/home/andu/Desktop/Facultate/Anul_I/OOP/2D-RPG/src/SpecialEnvironment.cpp.o: /home/andu/Desktop/Facultate/Anul\ I/OOP/2D-RPG/src/snd.h

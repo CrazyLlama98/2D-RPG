@@ -2025,6 +2025,10 @@ res.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/res.h
 snd.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/snd.h
+Text.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Text.h
+MainActor.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
 cstdlib
 -
 ctime
@@ -2111,8 +2115,6 @@ Character.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.cpp
 MainActor.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/MainActor.h
-SpecialEnvironment.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
 Utils.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Utils.h
 Map.h
@@ -2153,6 +2155,8 @@ CharactersContactListener.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/CharactersContactListener.h
 Environment.h
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
+SpecialEnvironment.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
 list
 -
 
@@ -2187,8 +2191,8 @@ cstdlib
 -
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/SpecialEnvironment.h
-Environment.h
-/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Environment.h
+oxygine-framework.h
+/home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/oxygine-framework.h
 
 /home/andu/Desktop/Facultate/Anul I/OOP/2D-RPG/src/Text.cpp
 Text.h

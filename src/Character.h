@@ -7,7 +7,7 @@
 DECLARE_SMART(Character, spCharacter);
 class Character : public Entity {
 public:
-	Character(const int _health, const int _damage, const int _xp, const std::string _type, ENTITY_CONSTRUCT);
+	Character(const int _health, const int _damage, const int _xp, const int _level, const std::string _type, ENTITY_CONSTRUCT);
 
 	// Anims the character when attacking and returns a random value between
 	// 1 and 'damage'
@@ -30,6 +30,7 @@ public:
 	int GetMaxDamage() const { return maxDamage; };
 	std::string GetType() { return type; }
 
+	int GetLevel() { return level; }
 
 protected:
 	int xp, health, damage;

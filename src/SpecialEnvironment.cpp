@@ -4,7 +4,12 @@
 #include <cstring>
 #include <cstdlib>
 
-SpecialEnvironment::SpecialEnvironment(ENV_PARAMS) : Environment(_res, _world, _pos, _scale) { }
+SpecialEnvironment::SpecialEnvironment(oxygine::ResAnim* _res, oxygine::Vector2 _pos, const float _scale)
+{ 
+    setResAnim(_res);
+    setPosition(_pos);
+    setScale(_scale);
+}
 
 std::pair<int, int> SpecialEnvironment::RandomDrop()
 {
